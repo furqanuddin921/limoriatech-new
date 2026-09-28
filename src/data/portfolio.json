@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "slug": "enterprise-resource-planning",
+    "title": "Integrated Enterprise Resource Planning (ERP)",
+    "client": "PT Manufaktur Mega Perkasa",
+    "category": "Enterprise System",
+    "year": "2025",
+    "summary": "Implementasi sistem ERP terintegrasi untuk mengelola supply chain, inventory, dan akuntansi di 14 pabrik dan gudang.",
+    "challenge": "Sistem lama terfragmentasi sehingga rekonsiliasi data stok dan laporan keuangan memakan waktu hingga 2 minggu setiap akhir bulan.",
+    "solution": "Membangun sistem ERP terpusat dengan sinkronisasi data real-time, integrasi barcode scanner gudang, dan dashboard analitik eksekutif.",
+    "impact": [
+      "Mengurangi waktu rekonsiliasi laporan keuangan bulanan dari 14 hari menjadi 1 hari",
+      "Akurasi stok pergudangan meningkat menjadi 99.4%",
+      "Efisiensi biaya operasional inventaris hingga 28%"
+    ],
+    "techStack": ["Next.js", "Golang", "PostgreSQL", "Docker", "Redis"],
+    "image": "/assets/portfolio/project-1.jpg"
+  },
+  {
+    "id": "2",
+    "slug": "mobile-field-operations",
+    "title": "Aplikasi Mobile Operasional & Pelaporan Lapangan",
+    "client": "Mitra Distribusi Nusantara",
+    "category": "Mobile App",
+    "year": "2025",
+    "summary": "Aplikasi mobile offline-first untuk 500+ kurir dan surveyor lapangan di berbagai wilayah pelosok Indonesia.",
+    "challenge": "Area kerja lapangan sering kehilangan koneksi internet (blind spot), menyebabkan data penyerahan barang tertunda atau hilang.",
+    "solution": "Merancang aplikasi mobile dengan sistem local SQLite database, auto-sync queue saat terdeteksi koneksi, dan geotagging terverifikasi.",
+    "impact": [
+      "Peningkatan 45% kecepatan update status pengiriman ke pelanggan",
+      "Zero data loss berkat mekanisme offline-sync otomatis",
+      "Tingkat kepuasan kurir lapangan 4.8 / 5.0"
+    ],
+    "techStack": ["Flutter", "Dart", "Node.js", "PostgreSQL", "Google Maps API"],
+    "image": "/assets/portfolio/project-2.jpg"
+  },
+  {
+    "id": "3",
+    "slug": "banking-integration-gateway",
+    "title": "High-Throughput Payment & API Gateway Middleware",
+    "client": "FinTech Solusi Transaksi",
+    "category": "API & Integration",
+    "year": "2026",
+    "summary": "Pengembangan middleware API terintegrasi yang menghubungkan sistem core banking dengan payment gateway dan e-wallet.",
+    "challenge": "Lonjakan transaksi saat flash sale sering menyebabkan timeout dan ketidaksinkronan saldo akun pengguna.",
+    "solution": "Arsitektur microservices berbasis event-driven dengan Apache Kafka, Redis caching layer, dan otomatisasi rate limiting.",
+    "impact": [
+      "Mampu memproses hingga 8.500 transaksi per detik dengan latensi rata-rata < 120ms",
+      "Availability uptime tercapai di angka 99.98%",
+      "Kepatuhan penuh terhadap standar regulasi keamanan transaksi finansial"
+    ],
+    "techStack": ["Java Spring Boot", "Kafka", "Redis", "Kubernetes", "PostgreSQL"],
+    "image": "/assets/portfolio/project-3.jpg"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "mainNav": [
+    { "title": "Beranda", "href": "/" },
+    { "title": "Tentang Kami", "href": "/about/" },
+    {
+      "title": "Layanan",
+      "href": "/services/",
+      "children": [
+        {
+          "title": "Tech Service",
+          "href": "/services/#tech-services",
+          "description": "Business research, strategic planning, web & mobile app development."
+        },
+        {
+          "title": "Digital Financial Services",
+          "href": "/services/#financial-services",
+          "description": "Accounting, tax, audit, litigation, liquidator & digital platforms."
+        }
+      ]
+    },
+    { "title": "Portofolio", "href": "/portfolio/" },
+    { "title": "Kontak", "href": "/contact/" }
+  ],
+  "footer": {
+    "techLinks": [
+      { "title": "Business Research", "href": "/services/business-research/" },
+      { "title": "Strategic Planning", "href": "/services/strategic-planning/" },
+      { "title": "Market Analysis", "href": "/services/market-analysis/" },
+      { "title": "Website Applications", "href": "/services/website-applications/" },
+      { "title": "Mobile Applications", "href": "/services/mobile-applications/" },
+      { "title": "Desktop Applications", "href": "/services/desktop-applications/" }
+    ],
+    "financialLinks": [
+      { "title": "Accounting & Bookkeeping", "href": "/services/accounting/" },
+      { "title": "Tax Planning & Filing", "href": "/services/tax/" },
+      { "title": "Financial Audit & Assurance", "href": "/services/audit/" },
+      { "title": "Forensic Investigation", "href": "/services/investigation/" },
+      { "title": "Litigation Support", "href": "/services/litigation/" },
+      { "title": "Corporate Liquidator", "href": "/services/liquidator/" },
+      { "title": "Digital Financial Platform", "href": "/services/digital-platform/" },
+      { "title": "Asset Appraisal & Valuation", "href": "/services/appraisal/" },
+      { "title": "Actuarial (PSAK 24)", "href": "/services/actuarial/" },
+      { "title": "Merger & Acquisition", "href": "/services/merger/" }
+    ],
+    "companyLinks": [
+      { "title": "Tentang Perusahaan", "href": "/about/" },
+      { "title": "Portofolio & Studi Kasus", "href": "/portfolio/" },
+      { "title": "Hubungi Tim Ahli", "href": "/contact/" }
+    ]
+  }
+}

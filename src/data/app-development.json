@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Website & Web Application",
+    "description": "Pengembangan web company profile, portal web interaktif, dan SaaS modern dengan performa ultra cepat dan SEO-friendly.",
+    "icon": "Globe",
+    "technologies": ["React", "Next.js", "Vue.js", "Tailwind CSS", "Node.js"]
+  },
+  {
+    "title": "Mobile Application (Android & iOS)",
+    "description": "Aplikasi mobile native maupun cross-platform berkinerja tinggi dengan antarmuka yang mulus dan responsif.",
+    "icon": "Smartphone",
+    "technologies": ["Flutter", "React Native", "Kotlin", "Swift", "Firebase"]
+  },
+  {
+    "title": "Desktop Application",
+    "description": "Aplikasi komputer desktop untuk operasional kasir (POS), warehouse offline-first, dan utilitas performa tinggi.",
+    "icon": "Monitor",
+    "technologies": ["Electron", "Tauri", "C# / .NET", "C++", "SQLite"]
+  },
+  {
+    "title": "Enterprise Application",
+    "description": "Sistem komprehensif berskala korporasi seperti ERP, SCM (Supply Chain), dan HRIS untuk mengelola ratusan cabang bisnis.",
+    "icon": "Building2",
+    "technologies": ["Microservices", "Java Spring Boot", "Golang", "PostgreSQL", "Docker"]
+  },
+  {
+    "title": "Business Information System",
+    "description": "Sistem informasi manajemen untuk pemrosesan data transaksi, pelaporan keuangan, dan inventori yang akurat.",
+    "icon": "Database",
+    "technologies": ["Laravel", "PostgreSQL", "MySQL", "Redis", "Elasticsearch"]
+  },
+  {
+    "title": "API & System Integration",
+    "description": "Integrasi middleware, payment gateway (Midtrans, Xendit), sistem logistik, SMS/WA notification, dan third-party APIs.",
+    "icon": "Network",
+    "technologies": ["RESTful API", "GraphQL", "gRPC", "Webhook", "Kafka"]
+  },
+  {
+    "title": "Custom Software Development",
+    "description": "Pengembangan perangkat lunak khusus yang dirancang dari nol sesuai spesifikasi dan alur kerja unik perusahaan Anda.",
+    "icon": "Wrench",
+    "technologies": ["Modular Architecture", "Clean Code", "CI/CD", "Automated Testing"]
+  }
+]

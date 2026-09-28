@@ -1,0 +1,50 @@
+{
+  "name": "Limoria Tech",
+  "legalName": "PT Limoria Teknologi Indonesia",
+  "tagline": "Konsultan IT untuk Mengembangkan Bisnis Anda",
+  "heroHeadline": "Konsultan IT Terpercaya untuk Mengembangkan Bisnis Anda",
+  "heroSubheadline": "Kami menyediakan layanan konsultasi dan solusi teknologi informasi secara menyeluruh untuk membantu perusahaan mengidentifikasi, memahami, dan menyelesaikan berbagai tantangan di era digital.",
+  "description": "Limoria Tech adalah partner teknologi terpercaya yang siap mendampingi Anda dalam perencanaan, pemilihan teknologi, pengembangan, implementasi, hingga pemeliharaan solusi IT yang tepat dan berkelanjutan.",
+  "url": "https://limoriatech.com",
+  "ogImage": "/assets/og-image.jpg",
+  "contact": {
+    "email": "limoriatech@gmail.com",
+    "phone": "+62 852-1412-0235",
+    "whatsapp": "6285214120235",
+    "address": "Ruko Kebayoran Centre, Jalan Raya Kebayoran Baru, Kebayoran Lama (Blok A4 Ruang 301), Kota Jakarta Selatan, DKI Jakarta 12240",
+    "workingHours": "Senin - Jumat: 08:30 - 17:30 WIB"
+  },
+  "socials": [
+    { "name": "LinkedIn", "url": "https://linkedin.com/company/limoriatech", "icon": "Linkedin" },
+    { "name": "Instagram", "url": "https://instagram.com/limoriatech", "icon": "Instagram" },
+    { "name": "GitHub", "url": "https://github.com/limoriatech", "icon": "Github" }
+  ],
+  "stats": [
+    { "value": "50+", "label": "Solusi Sukses Diterapkan", "description": "Di berbagai industri nasional & multinasional" },
+    { "value": "99.9%", "label": "Reliability & Uptime", "description": "Infrastruktur & aplikasi berstandar tinggi" },
+    { "value": "100%", "label": "Dukungan End-to-End", "description": "Dari ideasi hingga pemeliharaan rutin" },
+    { "value": "8+", "label": "Tahun Pengalaman Kolektif", "description": "Didukung engineer & konsultan tersertifikasi" }
+  ],
+  "values": [
+    {
+      "title": "Inovatif & Relevan",
+      "description": "Kami terus mengembangkan solusi IT modern yang adaptif terhadap dinamika kebutuhan industri.",
+      "icon": "Lightbulb"
+    },
+    {
+      "title": "Aman & Andal",
+      "description": "Keamanan data, stabilitas, dan performa tinggi menjadi prioritas utama pada setiap solusi yang kami bangun.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Orientasi Pengguna & Bisnis",
+      "description": "Setiap arsitektur dirancang agar memberikan dampak efisiensi nyata dan ROI jangka panjang bagi perusahaan Anda.",
+      "icon": "Target"
+    },
+    {
+      "title": "Kemitraan Jangka Panjang",
+      "description": "Bukan sekadar vendor, kami hadir sebagai Technology Partner yang mendampingi pertumbuhan bisnis Anda berkelanjutan.",
+      "icon": "Handshake"
+    }
+  ]
+}
