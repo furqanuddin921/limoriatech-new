@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { getAllServiceSlugs } from "@/lib/data/services";
+import { getAllPortfolioSlugs } from "@/lib/data/portfolio";
 import { getSiteConfig } from "@/lib/data/site";
 
 export const dynamic = "force-static";
@@ -7,12 +8,20 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteConfig = getSiteConfig();
   const baseUrl = siteConfig.url;
-  const slugs = getAllServiceSlugs();
+  const serviceSlugs = getAllServiceSlugs();
+  const portfolioSlugs = getAllPortfolioSlugs();
 
-  const serviceUrls = slugs.map((slug) => ({
+  const serviceUrls = serviceSlugs.map((slug) => ({
     url: `${baseUrl}/services/${slug}/`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  const portfolioUrls = portfolioSlugs.map((slug) => ({
+    url: `${baseUrl}/portfolio/${slug}/`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
@@ -48,5 +57,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     ...serviceUrls,
+    ...portfolioUrls,
   ];
 }

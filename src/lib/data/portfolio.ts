@@ -12,3 +12,7 @@ export function getProjectBySlug(slug: string): ProjectItem | undefined {
 export function getFeaturedProjects(limit = 3): ProjectItem[] {
   return (portfolioData as ProjectItem[]).slice(0, limit);
 }
+
+export function getAllPortfolioSlugs(): string[] {
+  return (portfolioData as ProjectItem[]).map((project) => project.slug);
+}

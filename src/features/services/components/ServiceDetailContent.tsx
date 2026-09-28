@@ -48,28 +48,28 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
   );
 
   return (
-    <div className="py-12 lg:py-20 bg-gradient-to-b from-slate-50 via-white to-slate-50/50">
+    <div className="pt-5 sm:pt-6 lg:pt-8 pb-16 lg:pb-24 bg-gradient-to-b from-slate-50 via-white to-slate-50/50">
       <Container>
         {/* Breadcrumb Navigation */}
-        <nav className="flex items-center gap-2 text-xs text-slate-500 mb-8 overflow-x-auto whitespace-nowrap pb-2">
+        <nav className="flex items-center gap-1.5 text-xs text-slate-500 mb-3.5 overflow-x-auto whitespace-nowrap">
           <Link href="/" className="hover:text-blue-600 transition-colors">
             {t("nav.home", "Beranda")}
           </Link>
-          <ChevronRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+          <ChevronRight className="w-3.5 h-3.5 text-slate-300 shrink-0" />
           <Link href="/services/" className="hover:text-blue-600 transition-colors">
             {t("nav.services", "Layanan")}
           </Link>
-          <ChevronRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+          <ChevronRight className="w-3.5 h-3.5 text-slate-300 shrink-0" />
           <span className="text-slate-900 font-semibold truncate max-w-xs">{title}</span>
         </nav>
 
         {/* Back Link */}
-        <div className="mb-8">
+        <div className="mb-6">
           <Link
             href="/services/"
-            className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-sm"
+            className="group inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-600 hover:text-blue-600 transition-all bg-white hover:bg-slate-50/80 px-3.5 py-1.5 rounded-lg border border-slate-200/90 hover:border-blue-300 shadow-2xs hover:shadow-xs w-fit"
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-4 h-4 text-slate-400 group-hover:text-blue-600 group-hover:-translate-x-0.5 transition-all" />
             <span>{t("services.backToServices", "Kembali ke Seluruh Layanan")}</span>
           </Link>
         </div>

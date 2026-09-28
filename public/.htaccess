@@ -2,7 +2,9 @@
 # Limoria Tech - cPanel / LiteSpeed Apache Configuration (.htaccess)
 # ----------------------------------------------------------------------
 
-# 1. Enable Rewrite Engine
+# 1. Enable Rewrite Engine & Options
+Options -Indexes
+Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /
 
@@ -10,11 +12,27 @@ RewriteBase /
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# 3. Trailing Slash Handling & Clean URLs
+# 3. Direct access for existing static files and assets (Next.js chunks, media, images)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 4. Trailing Slash Handling & Clean URLs
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
+
+# 5. Explicitly allow public access to static asset extensions (including RSC .txt payloads)
+<FilesMatch "\.(css|js|woff2?|ttf|eot|svg|png|jpe?g|webp|ico|json|txt)$">
+  <IfModule mod_authz_core.c>
+    Require all granted
+  </IfModule>
+</FilesMatch>
+
+# 6. Fallback rewrite for Next.js 16 RSC segment payloads
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)/__next\.([^\.]+)\.__PAGE__\.txt$ $1/__next.$2/__PAGE__.txt [L]
 
 # 4. LiteSpeed & Browser Caching for Performance
 <IfModule mod_expires.c>

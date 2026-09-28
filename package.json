@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "bundle:cpanel": "npm run build && powershell Compress-Archive -Path out\\* -DestinationPath deploy-cpanel.zip -Force"
+    "bundle:cpanel": "npm run build && python scripts/bundle-cpanel.py"
   },
   "dependencies": {
     "clsx": "^2.1.1",

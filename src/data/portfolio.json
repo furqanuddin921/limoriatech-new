@@ -153,7 +153,7 @@
       ]
     },
     "techStack": ["Next.js", "Golang", "PostgreSQL", "Docker", "Redis"],
-    "image": "/assets/portfolio/project-1.jpg"
+    "image": "/assets/portfolio/enterprise-resource-planning.png"
   },
   {
     "id": "2",
@@ -196,7 +196,7 @@
       ]
     },
     "techStack": ["Flutter", "Dart", "Node.js", "PostgreSQL", "Google Maps API"],
-    "image": "/assets/portfolio/project-2.jpg"
+    "image": "/assets/portfolio/mobile-field-operations.png"
   },
   {
     "id": "3",
@@ -239,6 +239,281 @@
       ]
     },
     "techStack": ["Java Spring Boot", "Kafka", "Redis", "Kubernetes", "PostgreSQL"],
-    "image": "/assets/portfolio/project-3.jpg"
+    "image": "/assets/portfolio/banking-integration-gateway.png"
+  },
+  {
+    "id": "aplikasi-kasir-ai",
+    "slug": "aplikasi-kasir-ai",
+    "title": {
+      "id": "Aplikasi Kasir AI — Point of Sale Cerdas Berbasis Kecerdasan Buatan",
+      "en": "Kasir AI — AI-Powered Smart Point of Sale Application"
+    },
+    "client": {
+      "id": "Industri Ritel Modern & F&B",
+      "en": "Modern Retail & F&B Industry"
+    },
+    "category": {
+      "id": "Aplikasi Web & Sistem Enterprise",
+      "en": "Web Application & Enterprise System"
+    },
+    "year": "2026",
+    "summary": {
+      "id": "Platform Point of Sale (POS) berbasis AI terintegrasi dengan modul kasir mobile, admin dashboard analitik penjualan real-time, manajemen produk, laporan shift, dan terminal POS multi-pembayaran (Cash, QRIS, EDC) yang dirancang untuk bisnis ritel dan F&B modern.",
+      "en": "AI-integrated Point of Sale (POS) platform featuring mobile cashier module, real-time sales analytics admin dashboard, product management, shift reports, and multi-payment terminal (Cash, QRIS, EDC) designed for modern retail and F&B businesses."
+    },
+    "challenge": {
+      "id": "Bisnis ritel dan F&B skala kecil-menengah kesulitan mendapatkan sistem kasir yang cerdas, terjangkau, dan mampu memberikan insight penjualan real-time tanpa memerlukan keahlian teknis untuk operasionalnya.",
+      "en": "Small to mid-sized retail and F&B businesses struggled to find smart, affordable POS systems that deliver real-time sales insights without requiring technical expertise to operate."
+    },
+    "solution": {
+      "id": "Membangun ekosistem POS terpadu dengan antarmuka kasir mobile (React + Vite), backend FastAPI berkinerja tinggi, caching Redis untuk transaksi concurrent, serta modul AI analytics yang memberikan rekomendasi stok dan tren penjualan otomatis.",
+      "en": "Built an integrated POS ecosystem with mobile cashier UI (React + Vite), high-performance FastAPI backend, Redis caching for concurrent transactions, and an AI analytics module providing automated stock recommendations and sales trend insights."
+    },
+    "impact": {
+      "id": [
+        "Autentikasi JWT HTTP-only Cookie yang kebal terhadap serangan XSS",
+        "Manajemen role & permission granular berbasis resource & action (RBAC)",
+        "Audit trail otomatis setiap aktivitas mutasi data transaksi",
+        "Modul master data dengan pola Split-Pane responsif untuk efisiensi operasional",
+        "Dukungan multi-metode pembayaran: Cash, QRIS Dinamis, dan EDC"
+      ],
+      "en": [
+        "JWT HTTP-only Cookie authentication immune to XSS attacks",
+        "Granular role & permission management per resource & action (RBAC)",
+        "Automatic audit trail for every transaction data mutation",
+        "Master data module with responsive Split-Pane pattern for operational efficiency",
+        "Multi-payment method support: Cash, Dynamic QRIS, and EDC"
+      ]
+    },
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "FastAPI",
+      "Python",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "TailwindCSS"
+    ],
+    "image": "/assets/portfolio/aplikasi-kasir-ai.png"
+  },
+  {
+    "id": "event-eo-ai",
+    "slug": "event-eo-ai",
+    "title": {
+      "id": "Platform EO Digital — Manajemen Event Organizer Terpadu",
+      "en": "EO Digital Platform — Integrated Event Organizer Management System"
+    },
+    "client": {
+      "id": "Event Organizer & Industri Hiburan",
+      "en": "Event Organizer & Entertainment Industry"
+    },
+    "category": {
+      "id": "Aplikasi Web & Sistem Enterprise",
+      "en": "Web Application & Enterprise System"
+    },
+    "year": "2026",
+    "summary": {
+      "id": "Platform terpadu Event Organizer (EO) modern yang mencakup Website Publik interaktif untuk calon klien serta CMS Backoffice Admin Panel yang komprehensif untuk mengelola pemesanan acara, paket layanan, portofolio event, artikel blog, master data, RBAC, dan audit trail.",
+      "en": "Modern integrated Event Organizer (EO) platform featuring an interactive public website for potential clients and a comprehensive CMS backoffice admin panel for managing event bookings, service packages, event portfolio, blog articles, master data, RBAC, and audit trails."
+    },
+    "challenge": {
+      "id": "Tim EO mengelola pemesanan acara, paket layanan, dan portofolio event secara terpisah menggunakan spreadsheet dan WhatsApp, menyebabkan lambatnya respons klien, kehilangan prospek, dan tidak adanya visibilitas pipeline bisnis secara real-time.",
+      "en": "EO teams managed event bookings, service packages, and event portfolios separately using spreadsheets and WhatsApp, causing slow client responses, lost leads, and no real-time business pipeline visibility."
+    },
+    "solution": {
+      "id": "Membangun platform dua sisi: Website Publik responsif untuk prospek klien dengan fitur booking online, katalog paket, galeri portofolio, dan artikel blog; serta CMS Backoffice lengkap dengan manajemen booking pipeline, kelola paket event bertingkat (Draft/Final), audit trail, dan dukungan multi-tema (Light/Dark Mode + 5 warna aksen).",
+      "en": "Engineered a dual-sided platform: a responsive Public Website for client prospects with online booking, package catalog, portfolio gallery, and blog; and a full CMS Backoffice with booking pipeline management, tiered event package management (Draft/Final validation), audit trail, and multi-theme support (Light/Dark Mode + 5 accent colors)."
+    },
+    "impact": {
+      "id": [
+        "Website publik lengkap dengan katalog layanan, paket harga, galeri portofolio, dan formulir booking online",
+        "Manajemen booking pipeline 4-status: Baru, Dihubungi, Deal, Batal — dengan follow-up WhatsApp otomatis",
+        "Validasi formulir bertingkat Draft vs Final dengan auto-switch tab dan Sticky Bottom Action Bar",
+        "Audit trail real-time: setiap mutasi data tercatat dengan stempel waktu, pengguna, dan IP address",
+        "Dukungan penuh Light Mode, Dark Mode, dan 5 pilihan warna aksen kustomisasi"
+      ],
+      "en": [
+        "Complete public website with service catalog, pricing packages, portfolio gallery, and online booking form",
+        "4-status booking pipeline: New, Contacted, Deal, Cancelled — with automated WhatsApp follow-up",
+        "Tiered form validation Draft vs Final with auto-switch tab and Sticky Bottom Action Bar",
+        "Real-time audit trail: every data mutation recorded with timestamp, user, and IP address",
+        "Full Light Mode, Dark Mode, and 5 accent color customization options"
+      ]
+    },
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "FastAPI",
+      "Python",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "TailwindCSS",
+      "Celery"
+    ],
+    "image": "/assets/portfolio/event-eo-ai.png"
+  },
+  {
+    "id": "kasir-ai-mobile",
+    "slug": "kasir-ai-mobile",
+    "title": {
+      "id": "Kasir AI Mobile — Aplikasi POS Lengkap untuk Android & iOS",
+      "en": "Kasir AI Mobile — Full-Featured POS App for Android & iOS"
+    },
+    "client": {
+      "id": "Industri Ritel Modern & F&B",
+      "en": "Modern Retail & F&B Industry"
+    },
+    "category": {
+      "id": "Aplikasi Mobile",
+      "en": "Mobile App"
+    },
+    "year": "2026",
+    "summary": {
+      "id": "Aplikasi kasir mobile cross-platform (Android & iOS) berbasis Flutter dengan 20+ layar fungsional, mencakup transaksi penjualan & pembelian, scan barcode, manajemen stok, laporan bisnis real-time, cetak struk Bluetooth, sinkronisasi data, serta dukungan multi-metode pembayaran (Cash, QRIS, Transfer, Debit, Kredit, E-Wallet).",
+      "en": "Cross-platform Flutter POS mobile application (Android & iOS) with 20+ functional screens covering sales & purchase transactions, barcode scanning, inventory management, real-time business reports, Bluetooth receipt printing, data synchronization, and multi-payment method support (Cash, QRIS, Transfer, Debit, Credit, E-Wallet)."
+    },
+    "challenge": {
+      "id": "Pelaku usaha ritel dan F&B skala kecil-menengah membutuhkan solusi kasir mobile yang handal, dapat beroperasi secara offline, mudah digunakan tanpa pelatihan teknis, dan mampu memberikan laporan bisnis yang akurat kapan saja — tanpa bergantung pada perangkat PC atau laptop.",
+      "en": "Small to mid-sized retail and F&B businesses needed a reliable mobile POS that works offline, is easy to operate without technical training, and delivers accurate business reports on the go — without depending on a PC or laptop."
+    },
+    "solution": {
+      "id": "Membangun aplikasi Flutter cross-platform dengan arsitektur clean MVVM + Provider, database lokal SQLite (sqflite) untuk operasi offline-first, sinkronisasi data ke server via Dio, scanner barcode terintegrasi (mobile_scanner), cetak struk via Bluetooth printer ESC/POS, serta sistem laporan lengkap: Penjualan, Pembelian, Produk Terlaris, Stok, dan Laba Rugi.",
+      "en": "Built a cross-platform Flutter app using clean MVVM + Provider architecture, local SQLite database (sqflite) for offline-first operations, server data sync via Dio, integrated barcode scanning (mobile_scanner), Bluetooth ESC/POS thermal receipt printing, and comprehensive reporting: Sales, Purchase, Top Products, Inventory, and Profit & Loss."
+    },
+    "impact": {
+      "id": [
+        "20+ layar fungsional mencakup seluruh alur bisnis: Login, Dashboard, Penjualan, Pembelian, Riwayat, Retur, Stok Mutasi, hingga Laporan",
+        "Operasi offline-first dengan SQLite lokal — transaksi tetap berjalan tanpa koneksi internet",
+        "Scan barcode produk langsung dari kamera untuk kecepatan input transaksi",
+        "Dukungan multi-metode pembayaran: Cash, QRIS, Transfer Bank, Debit, Kredit, dan E-Wallet",
+        "Cetak struk termal via Bluetooth printer ESC/POS 58mm/80mm — tanpa kabel",
+        "Laporan bisnis komprehensif: Penjualan, Pembelian, Produk Terlaris, Stok, dan Laba Rugi",
+        "Multi-tema tampilan: Light Mode, Dark Mode, dan 5 pilihan warna aksen kustomisasi"
+      ],
+      "en": [
+        "20+ functional screens covering the full business flow: Login, Dashboard, Sales, Purchases, History, Returns, Stock Mutation, and Reports",
+        "Offline-first operation with local SQLite — transactions run without internet connectivity",
+        "Barcode product scanning directly from the camera for fast transaction input",
+        "Multi-payment method support: Cash, QRIS, Bank Transfer, Debit, Credit, and E-Wallet",
+        "Thermal receipt printing via Bluetooth printer ESC/POS 58mm/80mm — cable-free",
+        "Comprehensive business reports: Sales, Purchases, Top Products, Inventory, and Profit & Loss",
+        "Multi-theme UI: Light Mode, Dark Mode, and 5 customizable accent color options"
+      ]
+    },
+    "techStack": [
+      "Flutter",
+      "Dart",
+      "Provider",
+      "SQLite",
+      "Dio",
+      "Go Router",
+      "Bluetooth ESC/POS",
+      "Barcode Scanner"
+    ],
+    "image": "/assets/portfolio/kasir-ai-mobile.png"
+  },
+  {
+    "id": "black-auto-rental",
+    "slug": "black-auto-rental",
+    "title": {
+      "id": "Black Auto Rental — Platform Reservasi Armada & Sewa Mobil Wisata Terpadu",
+      "en": "Black Auto Rental — Integrated Car Rental & Fleet Booking Platform"
+    },
+    "client": {
+      "id": "CV. Black Auto Rental / Industri Transportasi & Pariwisata",
+      "en": "CV. Black Auto Rental / Transportation & Tourism"
+    },
+    "category": {
+      "id": "Aplikasi Web & Sistem Enterprise",
+      "en": "Web Application & Enterprise System"
+    },
+    "year": "2025",
+    "summary": {
+      "id": "Platform web Single Page Application (SPA) komprehensif untuk operasional rental mobil, penjemputan bandara, kos putri, dan penginapan harian terpadu. Dilengkapi katalog armada interaktif (Avanza, Innova Reborn, Brio, Jazz, Hiace, Xpander), integrasi reservasi instan via direct WhatsApp booking, galeri dokumentasi operasional, slider ulasan testimoni pelanggan, serta peta lokasi pool armada multi-cabang (Pariaman, Bandara BIM, dan Kota Padang).",
+      "en": "Comprehensive Single Page Application (SPA) web platform for car rental fleet operations, airport transfers, and guest lodging services. Features an interactive vehicle catalog (Avanza, Innova Reborn, Brio, Jazz, Hiace, Xpander), one-click direct WhatsApp booking integration, operational service gallery, customer review testimonial carousel, and multi-branch fleet pool location mapping (Pariaman, Minangkabau Airport, and Padang)."
+    },
+    "challenge": {
+      "id": "Penyedia jasa rental mobil lokal menghadapi tantangan dalam menampilkan ketersediaan dan spesifikasi teknis armada secara transparan kepada calon penyewa dari luar kota yang membutuhkan penjemputan cepat di Bandara Internasional Minangkabau (BIM), koordinasi pemesanan manual lewat telepon yang rentan miskomunikasi, serta kebutuhan katalog mobile-first yang sangat ringan dan cepat diakses wisatawan.",
+      "en": "Local car rental operators faced challenges in presenting fleet transparency, vehicle specs, and instant pricing to out-of-town travelers needing rapid airport pickups at Minangkabau International Airport (BIM), manual reservation handling via telephone, and the urgent need for a lightweight mobile-first catalog accessible on the go."
+    },
+    "solution": {
+      "id": "Merancang aplikasi web SPA berbasis AngularJS dengan routing HTML5 mode yang bersih, arsitektur data JSON dinamis yang memisahkan spesifikasi kapasitas mesin (cc), jumlah kursi, transmisi, dan tarif sewa per hari, sistem pemesanan direct WhatsApp dengan auto-filled template pesan, galeri dokumentasi armada, serta integrasi Google Maps interaktif untuk navigasi pool kendaraan.",
+      "en": "Architected an AngularJS SPA web platform featuring clean HTML5 mode URL routing, dynamic JSON data layer separating vehicle specs (engine cc, seating capacity, transmission, and daily rates), one-click direct WhatsApp booking with auto-populated booking templates, high-resolution fleet service gallery, and interactive Google Maps integration for fleet pool navigation."
+    },
+    "impact": {
+      "id": [
+        "Katalog armada interaktif memuat 10+ varian kendaraan lengkap dengan spesifikasi teknis dan transparansi harga",
+        "Integrasi direct WhatsApp booking memangkas alur pemesanan pelanggan menjadi kurang dari 1 menit",
+        "Dukungan multi-lokasi penjemputan strategis: Bandara Internasional Minangkabau (BIM), Kota Padang, dan Pariaman",
+        "Arsitektur SPA yang ringan dan cepat dibuka di perangkat mobile dengan performa responsif",
+        "Modul galeri dokumentasi armada dan ulasan bintang pelanggan meningkatkan tingkat kepercayaan calon penyewa hingga 80%"
+      ],
+      "en": [
+        "Interactive fleet catalog showcasing 10+ vehicle variants complete with technical specs and transparent pricing",
+        "Direct WhatsApp booking integration streamlining customer reservation flow to under 1 minute",
+        "Strategic multi-location pickup support: Minangkabau International Airport (BIM), Padang City, and Pariaman",
+        "Lightweight, mobile-responsive SPA architecture optimized for travelers on mobile devices",
+        "Visual fleet service gallery and 5-star customer testimonials boosting booking conversion confidence by 80%"
+      ]
+    },
+    "techStack": [
+      "AngularJS",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "Owl Carousel",
+      "JSON API",
+      "WhatsApp Business API",
+      "Google Maps"
+    ],
+    "image": "/assets/portfolio/black-auto-rental.png",
+    "liveUrl": "https://blackautorental.com",
+    "modules": [
+      {
+        "title": {
+          "id": "Katalog Armada & Spesifikasi Kendaraan",
+          "en": "Fleet Catalog & Vehicle Specifications"
+        },
+        "description": {
+          "id": "Menampilkan varian armada mobil (Avanza MT/FWD, Innova Reborn Solar AT/MT, Brio, Jazz, Hiace, Xpander) dengan detail kapasitas mesin, kapasitas penumpang, tahun produksi, dan tarif sewa transparan.",
+          "en": "Showcases full fleet variants (Avanza MT/FWD, Innova Reborn Diesel AT/MT, Brio, Jazz, Hiace, Xpander) with detailed engine capacity, passenger seats, production year, and transparent daily rates."
+        }
+      },
+      {
+        "title": {
+          "id": "Integrasi Pemesanan Instan WhatsApp",
+          "en": "Instant WhatsApp Booking Integration"
+        },
+        "description": {
+          "id": "Tombol aksi 'Pesan Sekarang' yang langsung membuka percakapan WhatsApp Business dengan template pesan otomatis memuat tipe mobil dan kebutuhan sewa yang dipilih.",
+          "en": "'Book Now' action button directly opening WhatsApp Business with auto-populated booking details including selected car type and rental requirements."
+        }
+      },
+      {
+        "title": {
+          "id": "Layanan Antar Jemput Bandara & Pariwisata",
+          "en": "Airport Transfer & Tourism Routes"
+        },
+        "description": {
+          "id": "Paket khusus penjemputan Bandara Internasional Minangkabau (BIM), drop-off hotel, sewa mobil plus driver profesional, serta paket wisata Sumatera Barat.",
+          "en": "Dedicated packages for Minangkabau International Airport (BIM) transfers, hotel drop-offs, car rental with professional drivers, and West Sumatra tour routes."
+        }
+      },
+      {
+        "title": {
+          "id": "Galeri Dokumentasi & Ulasan Pelanggan",
+          "en": "Service Gallery & Customer Testimonials"
+        },
+        "description": {
+          "id": "Dokumentasi visual serah terima armada dan pelayanan pelanggan serta slider testimoni interaktif dengan sistem penilaian rating kepuasan.",
+          "en": "Visual documentation of fleet handovers and customer service alongside an interactive testimonial carousel with satisfaction rating system."
+        }
+      }
+    ]
   }
 ]

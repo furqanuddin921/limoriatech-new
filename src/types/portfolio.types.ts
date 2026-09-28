@@ -1,5 +1,10 @@
 import type { Localized } from "./service.types";
 
+export interface ProjectModule {
+  title: Localized<string>;
+  description: Localized<string>;
+}
+
 export interface ProjectItem {
   id: string;
   slug: string;
@@ -14,6 +19,10 @@ export interface ProjectItem {
   techStack: string[];
   image: string;
   liveUrl?: string;
+  /** Optional: key modules / fitur utama untuk ditampilkan di halaman detail */
+  modules?: ProjectModule[];
+  /** Optional: URL gambar tambahan untuk gallery di halaman detail */
+  gallery?: string[];
 }
 
 export interface ClientItem {

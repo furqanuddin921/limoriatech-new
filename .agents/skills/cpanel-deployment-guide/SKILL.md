@@ -13,73 +13,90 @@ Prosedur standar untuk melakukan build, packaging, dan deployment website Limori
 
 ---
 
-## 1. Otomasi Build & Bundling
+## 1. Stack & Konfigurasi Build
 
-Project ini dilengkapi dengan perintah satu pintu untuk menghasilkan file ZIP siap upload:
+| Properti | Nilai |
+| :--- | :--- |
+| Framework | Next.js 16.3.6 (Turbopack) |
+| Output Mode | `output: "export"` — 100% Static HTML |
+| Direktori Output | `out/` |
+| Bundle Deploy | `deploy-cpanel.zip` |
+| Jumlah Rute Statis | ~40 rute (termasuk semua slug portfolio & services) |
+
+---
+
+## 2. Otomasi Build & Bundling (Satu Perintah)
 
 ```bash
 npm run bundle:cpanel
 ```
 
-**Alur Kerja Perintah Ini:**
-1. Menjalankan `next build` dengan konfigurasi `output: "export"`.
-2. Menghasilkan file HTML murni di direktori `out/` untuk semua rute.
-3. Otomatis menyalin konfigurasi server dari `public/.htaccess` dan `public/api/contact.php`.
-4. Mengompres seluruh isi `out/` menjadi arsip **`deploy-cpanel.zip`** di root direktori project.
+**Alur kerja:**
+1. Menjalankan `next build` → menghasilkan HTML statis di `out/`.
+2. Menyalin `.htaccess` dan `api/contact.php` dari `public/` ke `out/` secara otomatis.
+3. Mengompres seluruh isi `out/` menjadi `deploy-cpanel.zip` di root project.
+
+**Catatan penting:**
+- Harus dijalankan di **Windows PowerShell** (perintah `Compress-Archive` adalah PowerShell).
+- Jika dev server sedang berjalan di port 3000, Next.js otomatis mencoba port 3001 — tidak mempengaruhi build.
 
 ---
 
-## 2. Checklist Pemeriksaan Sebelum Deploy
+## 3. Checklist Verifikasi Bundle (Wajib Sebelum Upload)
 
-Sebelum mengunggah ke cPanel, pastikan integritas file bundle:
-- [ ] File `deploy-cpanel.zip` telah terbuat dan ukurannya wajar (~700KB - 2MB).
-- [ ] Folder `out/` memiliki file `.htaccess` (tersembunyi secara default).
-- [ ] Folder `out/api/contact.php` tersedia untuk menerima pesan formulir kontak.
-- [ ] File `out/sitemap.xml` dan `out/robots.txt` berhasil dibuat.
+Jalankan script verifikasi otomatis:
 
----
+```powershell
+.\.agents\skills\cpanel-deployment-guide\scripts\verify-bundle.ps1
+```
 
-## 3. Langkah Upload ke cPanel Rumahweb
+Atau verifikasi manual:
 
-1. **Buka cPanel:** Login ke panel hosting Rumahweb Anda (`https://namadomain.com:2083` atau melalui client area Rumahweb).
-2. **Masuk ke File Manager:**
-   - Masuk ke direktori **`public_html`**.
-   - Jika ini adalah update website: backup atau hapus file versi lama (kecuali folder sistem cPanel seperti `cgi-bin` atau sertifikat SSL jika ada).
-3. **Upload Bundle:**
-   - Klik tombol **Upload** di toolbar atas.
-   - Pilih file `deploy-cpanel.zip`.
-4. **Ekstrak File:**
-   - Setelah upload selesai (indikator hijau 100%), kembali ke File Manager.
-   - Klik kanan pada `deploy-cpanel.zip`, pilih **Extract** &rarr; ekstrak ke `/public_html`.
-   - Hapus file `deploy-cpanel.zip` dari server setelah diekstrak untuk menghemat ruang disk.
-5. **Verifikasi Izin File (Permissions):**
-   - File `.html`, `.css`, `.js`, `.htaccess` &rarr; permission **644**.
-   - Folder / direktori &rarr; permission **755**.
-   - Script PHP (`api/contact.php`) &rarr; permission **644**.
+- [ ] `deploy-cpanel.zip` ada di root, ukuran wajar (5–15 MB dengan gambar portfolio PNG).
+- [ ] `out/.htaccess` ada (gunakan perintah: `Test-Path out\.htaccess`).
+- [ ] `out/api/contact.php` ada.
+- [ ] `out/sitemap.xml` dan `out/robots.txt` ada.
+- [ ] Semua slug portfolio baru ter-generate: `out/portfolio/<slug>/index.html`.
+- [ ] Semua slug services ter-generate: `out/services/<slug>/index.html`.
 
 ---
 
-## 4. Konfigurasi Form Kontak Email (Webmail cPanel)
+## 4. Langkah Upload ke cPanel Rumahweb
 
-Formulir kontak di frontend mengirim data via POST ke `/api/contact.php`.
-Untuk memastikan email terkirim dengan lancar tanpa masuk folder spam:
-1. Buka file `public_html/api/contact.php` di File Manager cPanel.
-2. Pastikan variabel `$to` diisi dengan email domain aktif:
-   ```php
-   $to = 'info@limoriatech.com';
-   ```
-3. Pastikan header `From` menggunakan alamat email dari domain yang sama:
-   ```php
-   $headers .= "From: Limoria Tech Webmail <noreply@limoriatech.com>\r\n";
-   ```
-4. Pastikan fitur **SPF**, **DKIM**, dan **DMARC** sudah aktif di menu **Email Deliverability** pada cPanel Rumahweb.
+1. **Login cPanel** → `https://namadomain.com:2083` atau via client area Rumahweb.
+2. **File Manager** → masuk ke direktori `public_html`.
+3. Jika **update** (bukan install baru): backup atau hapus file lama kecuali folder sistem cPanel (`cgi-bin`, SSL cert, dll).
+4. **Upload** → pilih file `deploy-cpanel.zip`.
+5. Setelah upload 100%, **klik kanan** ZIP → **Extract** → ekstrak ke `/public_html`.
+6. **Hapus** `deploy-cpanel.zip` dari server setelah diekstrak.
+7. Verifikasi permission:
+   - File `.html`, `.css`, `.js`, `.htaccess` → **644**
+   - Folder / direktori → **755**
+   - `api/contact.php` → **644**
 
 ---
 
-## 5. Troubleshooting Masalah Umum di Shared Hosting
+## 5. Konfigurasi Form Kontak Email (Webmail cPanel)
 
-| Gejala | Penyebab Umum | Solusi |
+Formulir kontak mengirim POST ke `/api/contact.php`. Pastikan:
+
+```php
+$to = 'info@limoriatech.com';
+$headers .= "From: Limoria Tech Webmail <noreply@limoriatech.com>\r\n";
+```
+
+Aktifkan **SPF**, **DKIM**, dan **DMARC** di menu **Email Deliverability** cPanel Rumahweb agar email tidak masuk spam.
+
+---
+
+## 6. Troubleshooting Masalah Umum
+
+| Gejala | Penyebab | Solusi |
 | :--- | :--- | :--- |
-| **Error 404 saat refresh halaman sub-route** | File `.htaccess` tidak ter-upload ke `public_html`. | Pastikan fitur *Show Hidden Files (dotfiles)* diaktifkan di File Manager cPanel, lalu pastikan file `.htaccess` ada di `public_html`. |
-| **Email kontak tidak masuk** | Fungsi `mail()` bawaan PHP dibatasi oleh firewall hosting. | Periksa kuota email cPanel atau gunakan email forwarder di menu *Forwarders* cPanel Rumahweb. |
-| **Tampilan CSS/JS tidak terupdate setelah deploy** | LiteSpeed Cache atau Browser Cache masih menyimpan aset lama. | Buka cPanel &rarr; klik **Flush LiteSpeed Cache**, atau buka website via mode *Incognito* (`Ctrl + Shift + N`). |
+| **404 saat refresh sub-route** | `.htaccess` tidak ter-upload | Aktifkan *Show Hidden Files* di File Manager, pastikan `.htaccess` ada di `public_html` |
+| **403 Forbidden pada `_next/static` (CSS/JS tidak load)** | Permission folder `_next` atau subfoldernya bukan 755 (misal 700/644 sehingga Apache tidak bisa membaca file) | Ubah permission folder `_next`, `_next/static`, `chunks`, `media` menjadi **755** dan file di dalamnya menjadi **644**. Atau gunakan `npm run bundle:cpanel` versi baru yang otomatis mengatur POSIX permissions. |
+| **404 pada `__next...__PAGE__.txt` (RSC prefetch)** | Bug Next.js 16 di Windows: path separator segment cache menggunakan backslash sehingga membuat subfolder bukannya file ber-titik | Skrip `bundle:cpanel` otomatis menduplikasi file nested menjadi flat file (`__next.route.__PAGE__.txt`) dan `.htaccess` memiliki fallback rewrite. Cukup jalankan `npm run bundle:cpanel` dan upload ulang. |
+| **Gambar portfolio tidak muncul** | File PNG besar (1–2 MB per gambar) tidak ter-upload sempurna | Cek ukuran tiap file di `public_html/assets/portfolio/`, re-upload jika perlu |
+| **CSS/JS tidak update setelah deploy** | LiteSpeed Cache atau browser cache lama | cPanel → **Flush LiteSpeed Cache**, atau buka via Incognito |
+| **Email kontak tidak masuk** | `mail()` PHP dibatasi hosting | Periksa kuota email atau gunakan *Forwarders* cPanel |
+| **Build error: TypeScript** | Error tipe data JSON baru | Jalankan `npx tsc --noEmit` dan perbaiki error sebelum build |

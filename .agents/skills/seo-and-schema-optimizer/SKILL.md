@@ -15,39 +15,50 @@ Prosedur standar optimasi SEO, metadata OpenGraph, dan Schema.org JSON-LD untuk 
 
 ## 1. Arsitektur Metadata Next.js
 
-Seluruh metadata halaman dikelola melalui API metadata Next.js:
+### Global Metadata (`src/app/layout.tsx`)
+- Judul default dan template: `%s | Limoria Tech`
+- Meta deskripsi, keywords, author, OpenGraph umum
+- Locale: `id_ID`, `<html lang="id">`
+- `metadataBase` — **wajib diset ke domain produksi** agar OG image tidak menggunakan `localhost:3000`:
 
-1. **Global Metadata (`src/app/layout.tsx`):**
-   - Menentukan judul default dan template (`%s | Limoria Tech`).
-   - Meta deskripsi, kata kunci (keywords), author, dan OpenGraph umum.
-   - Locale bahasa (`id_ID`) dan language tag (`<html lang="id">`).
+```typescript
+export const metadata: Metadata = {
+  metadataBase: new URL("https://limoriatech.com"),
+  // ...
+};
+```
 
-2. **Per-Page Metadata (`src/app/<route>/page.tsx`):**
-   - Setiap halaman statis mengekspor objek `metadata`:
-     ```typescript
-     export const metadata: Metadata = {
-       title: "Judul Halaman",
-       description: "Deskripsi khusus halaman...",
-     };
-     ```
+> ⚠️ Saat build, ada warning `metadataBase is not set` jika ini belum dikonfigurasi — update sebelum deploy ke production.
 
-3. **Dynamic Route Metadata (`src/app/services/[slug]/page.tsx`):**
-   - Menggunakan fungsi `generateMetadata({ params })` untuk menarik data langsung dari `src/data/services.json`.
+### Per-Page Metadata (`src/app/<route>/page.tsx`)
+```typescript
+export const metadata: Metadata = {
+  title: "Judul Halaman",
+  description: "Deskripsi khusus halaman ini...",
+};
+```
+
+### Dynamic Route Metadata (`src/app/portfolio/[slug]/page.tsx` & `src/app/services/[slug]/page.tsx`)
+- Menggunakan `generateMetadata({ params })` untuk menarik data langsung dari JSON data layer.
+- Judul dan deskripsi otomatis per slug proyek/layanan.
 
 ---
 
-## 2. Dynamic Sitemap & Robots Configuration
+## 2. Dynamic Sitemap & Robots
 
-- **Sitemap XML (`src/app/sitemap.ts`):**
-  Menggunakan `export const dynamic = "force-static"` untuk menyusun daftar seluruh URL statis dan dynamic slug layanan secara otomatis saat `npm run build`.
-- **Robots Directives (`src/app/robots.ts`):**
-  Mengizinkan semua crawler untuk mengindeks halaman publik, dan mengecualikan `/api/` (script internal).
+**`src/app/sitemap.ts`** — menggunakan `export const dynamic = "force-static"`:
+- Secara otomatis mencantumkan semua rute statis **dan** semua slug portfolio & services.
+- Setiap kali portfolio/services baru ditambahkan ke JSON, URL sitemap ter-update otomatis saat `npm run build`.
+
+**`src/app/robots.ts`** — konfigurasi saat ini:
+- Allow: semua crawler ke semua halaman publik.
+- Disallow: `/api/` (PHP contact script).
 
 ---
 
-## 3. Schema.org (JSON-LD Structured Data)
+## 3. Schema.org JSON-LD (Structured Data)
 
-Untuk memaksimalkan kehadiran perusahaan di Google Knowledge Graph dan Google Maps, struktur data `Organization` dan `ProfessionalService` dapat disematkan pada `<head>`:
+Untuk rich snippet Google Knowledge Graph, sematkan di `src/app/layout.tsx`:
 
 ```json
 {
@@ -57,7 +68,7 @@ Untuk memaksimalkan kehadiran perusahaan di Google Knowledge Graph dan Google Ma
   "legalName": "PT Limoria Teknologi Indonesia",
   "url": "https://limoriatech.com",
   "logo": "https://limoriatech.com/assets/logo.png",
-  "description": "Konsultan IT untuk Mengembangkan Bisnis Anda.",
+  "description": "Konsultan IT & Solusi Digital untuk Mengembangkan Bisnis Anda.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Gedung Cyber 2 Tower, Jl. H. R. Rasuna Said",
@@ -73,11 +84,24 @@ Untuk memaksimalkan kehadiran perusahaan di Google Knowledge Graph dan Google Ma
 }
 ```
 
+Untuk halaman detail portfolio, tambahkan schema `CreativeWork` di `PortfolioDetailContent.tsx`.
+
 ---
 
-## 4. Checklist Uji Kelayakan SEO Sebelum Rilis
+## 4. OpenGraph & Social Cards
 
-- [ ] Jalankan `npm run build` dan periksa `out/sitemap.xml` & `out/robots.txt`.
-- [ ] Uji OpenGraph preview menggunakan simulator (misal: Facebook Sharing Debugger atau LinkedIn Post Inspector).
-- [ ] Pastikan seluruh gambar memiliki atribut `alt` yang deskriptif.
-- [ ] Pastikan heading hierarki berjalan teratur (`h1` unik per halaman, diikuti `h2` dan `h3`).
+Setiap gambar portfolio di `public/assets/portfolio/*.png` secara otomatis bisa digunakan sebagai OG image jika `metadataBase` sudah dikonfigurasi dengan benar.
+
+Ukuran ideal OG image: **1200×630px** (rasio 16:9 yang digunakan saat ini sudah kompatibel).
+
+---
+
+## 5. Checklist SEO Sebelum Deploy
+
+- [ ] `metadataBase` di `layout.tsx` sudah diset ke `https://limoriatech.com`.
+- [ ] Jalankan `npm run build`, periksa `out/sitemap.xml` — pastikan semua slug portfolio & services tercantum.
+- [ ] Periksa `out/robots.txt` — pastikan `Disallow: /api/` ada.
+- [ ] Semua gambar `<Image>` punya atribut `alt` yang deskriptif.
+- [ ] Heading hierarki benar: satu `h1` per halaman, diikuti `h2`, `h3`.
+- [ ] Uji OG preview: [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) atau [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/).
+- [ ] Submit sitemap ke [Google Search Console](https://search.google.com/search-console): `https://limoriatech.com/sitemap.xml`.

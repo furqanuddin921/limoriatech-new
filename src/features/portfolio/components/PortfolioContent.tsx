@@ -1,20 +1,21 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
-  CheckCircle,
-  ExternalLink,
-  Layers,
-  Globe,
   Sparkles,
   SearchX,
-  MessageCircle,
+  Layers,
+  Smartphone,
+  Cpu,
+  Globe,
+  Database,
+  Car,
 } from "lucide-react";
 import Container from "@/components/ui/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
-import Card from "@/components/ui/Card";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import { useLanguage } from "@/context/LanguageContext";
@@ -28,10 +29,10 @@ export default function PortfolioContent() {
 
   const categories = useMemo(() => {
     return [
-      { id: "all", label: language === "id" ? "Semua Proyek" : "All Projects" },
-      { id: "enterprise", label: language === "id" ? "Web & Enterprise" : "Web & Enterprise" },
-      { id: "mobile", label: language === "id" ? "Aplikasi Mobile" : "Mobile Apps" },
-      { id: "api", label: language === "id" ? "API & Integrasi" : "API & Integration" },
+      { id: "all", label: language === "id" ? "🗂️ Semua Proyek" : "🗂️ All Projects" },
+      { id: "enterprise", label: language === "id" ? "🌐 Web & Enterprise" : "🌐 Web & Enterprise" },
+      { id: "mobile", label: language === "id" ? "📱 Aplikasi Mobile" : "📱 Mobile Apps" },
+      { id: "api", label: language === "id" ? "⚡ API & Integrasi" : "⚡ API & Integration" },
     ];
   }, [language]);
 
@@ -42,11 +43,18 @@ export default function PortfolioContent() {
         (p) =>
           p.slug === "lms-sekolah" ||
           p.slug === "restoqr" ||
-          p.slug === "enterprise-resource-planning"
+          p.slug === "enterprise-resource-planning" ||
+          p.slug === "aplikasi-kasir-ai" ||
+          p.slug === "event-eo-ai" ||
+          p.slug === "black-auto-rental"
       );
     }
     if (filterCategory === "mobile") {
-      return projects.filter((p) => p.slug === "mobile-field-operations");
+      return projects.filter(
+        (p) =>
+          p.slug === "mobile-field-operations" ||
+          p.slug === "kasir-ai-mobile"
+      );
     }
     if (filterCategory === "api") {
       return projects.filter((p) => p.slug === "banking-integration-gateway");
@@ -61,11 +69,11 @@ export default function PortfolioContent() {
 
       <Container className="relative z-10">
         <SectionHeader
-          badge={t("portfolio.badge", "Portofolio & Studi Kasus")}
-          title={t("portfolio.title", "Solusi Nyata yang Memberikan Dampak Positif")}
+          badge={t("portfolio.badge", "✦ Portofolio & Studi Kasus")}
+          title={t("portfolio.title", "Karya Nyata, Dampak Terukur")}
           subtitle={t(
             "portfolio.subtitle",
-            "Kumpulan studi kasus keberhasilan implementasi solusi teknologi informasi dan transformasi digital bersama mitra kami."
+            "Setiap proyek adalah bukti komitmen kami — dari tantangan bisnis yang kompleks hingga solusi digital yang bekerja nyata di lapangan."
           )}
         />
 
@@ -87,224 +95,170 @@ export default function PortfolioContent() {
           ))}
         </div>
 
-        {/* Project Case Studies List */}
-        <div className="space-y-12 mb-20">
-          {filteredProjects.map((project) => {
-            const title = getLocalized(project.title, language);
-            const client = getLocalized(project.client, language);
-            const category = getLocalized(project.category, language);
-            const summary = getLocalized(project.summary, language);
-            const challenge = getLocalized(project.challenge, language);
-            const solution = getLocalized(project.solution, language);
-            const impactList = getLocalized(project.impact, language) || [];
+        {/* Project Card Grid */}
+        {filteredProjects.length === 0 ? (
+          <div className="flex flex-col items-center justify-center py-24 text-slate-400 gap-4">
+            <SearchX className="w-12 h-12 opacity-40" />
+            <p className="text-sm font-medium">
+              {language === "id" ? "Tidak ada proyek ditemukan." : "No projects found."}
+            </p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+            {filteredProjects.map((project) => {
+              const title = getLocalized(project.title, language);
+              const category = getLocalized(project.category, language);
+              const summary = getLocalized(project.summary, language);
+              const client = getLocalized(project.client, language);
+              const isPng = project.image?.endsWith(".png");
 
-            return (
-              <Card
-                key={project.id}
-                className="p-8 sm:p-12 hover:border-blue-300 hover:shadow-xl transition-all duration-300 border-slate-200/90 bg-white"
-              >
-                {/* Optional Top Browser Mockup for Live Apps like LMS Sekolah */}
-                {project.image && project.image.endsWith(".png") && (
-                  <div className="mb-8 rounded-2xl overflow-hidden border border-slate-200 bg-slate-900 shadow-lg">
-                    {/* Mockup Top Window Bar */}
-                    <div className="flex items-center justify-between px-4 py-3 bg-slate-800 border-b border-slate-700">
-                      <div className="flex items-center gap-2">
-                        <span className="w-3 h-3 rounded-full bg-rose-500 inline-block" />
-                        <span className="w-3 h-3 rounded-full bg-amber-500 inline-block" />
-                        <span className="w-3 h-3 rounded-full bg-emerald-500 inline-block" />
-                      </div>
-                      <div className="text-[11px] font-mono text-slate-400 bg-slate-900/80 px-4 py-1 rounded-md border border-slate-700">
-                        {project.liveUrl || (project.slug === "restoqr" ? "restoqr.limoriatech.com" : "https://limoriatech.com")}
-                      </div>
-                      <div className="w-12" />
-                    </div>
-                    {/* Image Preview Container */}
-                    <div className="relative aspect-video max-h-80 w-full overflow-hidden bg-slate-950 flex items-center justify-center">
-                      <img
+              // Pick placeholder gradient & icon based on slug/category
+              const placeholderConfig: Record<string, { gradient: string; icon: React.ReactNode; accent: string }> = {
+                "enterprise-resource-planning": {
+                  gradient: "from-violet-600 via-purple-700 to-indigo-800",
+                  icon: <Database className="w-12 h-12 text-white/80" />,
+                  accent: "ERP System",
+                },
+                "mobile-field-operations": {
+                  gradient: "from-emerald-500 via-teal-600 to-cyan-700",
+                  icon: <Smartphone className="w-12 h-12 text-white/80" />,
+                  accent: "Mobile App",
+                },
+                "kasir-ai-mobile": {
+                  gradient: "from-green-500 via-emerald-600 to-teal-700",
+                  icon: <Smartphone className="w-12 h-12 text-white/80" />,
+                  accent: "Flutter POS App",
+                },
+                "banking-integration-gateway": {
+                  gradient: "from-orange-500 via-amber-600 to-yellow-700",
+                  icon: <Cpu className="w-12 h-12 text-white/80" />,
+                  accent: "API Gateway",
+                },
+                "black-auto-rental": {
+                  gradient: "from-amber-600 via-orange-600 to-slate-900",
+                  icon: <Car className="w-12 h-12 text-white/80" />,
+                  accent: "Car Rental Platform",
+                },
+              };
+
+              const placeholder = placeholderConfig[project.slug] ?? {
+                gradient: "from-blue-600 via-indigo-700 to-slate-800",
+                icon: <Layers className="w-12 h-12 text-white/80" />,
+                accent: "Enterprise Solution",
+              };
+
+              return (
+                <Link
+                  key={project.id}
+                  href={`/portfolio/${project.slug}/`}
+                  className="group flex flex-col bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+                >
+                  {/* Image Area */}
+                  {isPng ? (
+                    <div className="relative w-full aspect-video overflow-hidden bg-slate-100 shrink-0">
+                      <Image
                         src={project.image}
                         alt={title}
-                        className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
+                        fill
+                        className="object-cover object-top group-hover:scale-[1.04] transition-transform duration-500"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         loading="lazy"
                       />
                     </div>
-                  </div>
-                )}
+                  ) : (
+                    /* Default Placeholder — gradient + icon + label */
+                    <div className={`relative w-full aspect-video overflow-hidden shrink-0 bg-gradient-to-br ${placeholder.gradient} flex flex-col items-center justify-center gap-3 group-hover:opacity-90 transition-opacity`}>
+                      {/* Decorative circles */}
+                      <div className="absolute -top-6 -right-6 w-32 h-32 rounded-full bg-white/5" />
+                      <div className="absolute -bottom-8 -left-8 w-40 h-40 rounded-full bg-white/5" />
+                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-52 h-52 rounded-full bg-white/5 blur-2xl" />
+                      {/* Grid dots pattern */}
+                      <div className="absolute inset-0 opacity-10"
+                        style={{
+                          backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)",
+                          backgroundSize: "24px 24px",
+                        }}
+                      />
+                      {/* Content */}
+                      <div className="relative z-10 flex flex-col items-center gap-2 text-center px-4">
+                        <div className="w-16 h-16 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                          {placeholder.icon}
+                        </div>
+                        <div>
+                          <p className="text-white font-extrabold text-base tracking-tight leading-tight">
+                            {project.techStack.slice(0, 2).join(" · ")}
+                          </p>
+                          <p className="text-white/60 text-xs font-medium mt-0.5">
+                            {placeholder.accent}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                  <div className="lg:col-span-8 space-y-6">
-                    <div className="flex flex-wrap items-center gap-3">
-                      <Badge variant="primary" className="py-1 px-3 text-xs font-bold">
+                  {/* Card Content */}
+                  <div className="flex flex-col flex-1 p-6 gap-3">
+                    {/* Category Badge + Live badge */}
+                    <div className="flex flex-wrap items-center gap-2">
+                      <Badge variant="primary" className="text-xs font-semibold uppercase tracking-wide px-3 py-1">
                         {category}
                       </Badge>
-                      <span className="text-xs font-semibold text-slate-400">
-                        {t("portfolio.yearLabel", "Tahun:")} {project.year}
-                      </span>
-                      <span className="text-xs font-semibold text-slate-700 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
-                        {t("portfolio.clientLabel", "Klien:")} {client}
-                      </span>
-                      {project.liveUrl ? (
-                        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
+                      {project.liveUrl && (
+                        <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">
                           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                          Live Production
+                          Live
                         </span>
-                      ) : project.slug === "restoqr" ? (
-                        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">
-                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
-                          Enterprise Ready Solution
-                        </span>
-                      ) : null}
+                      )}
                     </div>
 
-                    <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                      {title}
-                    </h2>
+                    {/* Client + Year meta */}
+                    <div className="flex items-center gap-1.5 text-[11px] text-slate-400 font-medium">
+                      <Globe className="w-3 h-3 shrink-0" />
+                      <span className="truncate">{client}</span>
+                      <span className="text-slate-300">·</span>
+                      <span>{project.year}</span>
+                    </div>
 
-                    <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
+                    {/* Title */}
+                    <h3 className="text-lg font-extrabold text-slate-900 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+                      {title}
+                    </h3>
+
+                    {/* Summary */}
+                    <p className="text-sm text-slate-500 leading-relaxed line-clamp-3 flex-1">
                       {summary}
                     </p>
 
-                    {/* Challenge & Solution Side-by-Side */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-                      <div className="p-5 rounded-2xl bg-rose-50/50 border border-rose-100/80 space-y-1.5">
-                        <h4 className="text-xs font-bold uppercase tracking-wider text-rose-700">
-                          {t("portfolio.challenge", "Tantangan")}
-                        </h4>
-                        <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                          {challenge}
-                        </p>
-                      </div>
-
-                      <div className="p-5 rounded-2xl bg-blue-50/60 border border-blue-100 space-y-1.5">
-                        <h4 className="text-xs font-bold uppercase tracking-wider text-blue-700">
-                          {t("portfolio.solution", "Solusi Kami")}
-                        </h4>
-                        <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                          {solution}
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Impact / Results */}
-                    <div className="space-y-2.5">
-                      <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                        {t("portfolio.impact", "Dampak & Hasil Nyata:")}
-                      </h4>
-                      <div className="space-y-2">
-                        {impactList.map((imp, idx) => (
-                          <div
-                            key={idx}
-                            className="flex items-start gap-3 text-xs sm:text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100"
-                          >
-                            <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                            <span className="font-medium">{imp}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Tech Stack & Direct Visit Button */}
-                    <div className="pt-2 flex flex-wrap items-center justify-between gap-4">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="text-xs font-semibold text-slate-400 mr-1">
-                          {t("portfolio.techStackLabel", "Tech Stack:")}
+                    {/* Tech Stack pills — compact, max 3 */}
+                    <div className="flex flex-wrap gap-1.5 pt-1">
+                      {project.techStack.slice(0, 3).map((tech, idx) => (
+                        <span
+                          key={idx}
+                          className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 text-[11px] font-medium"
+                        >
+                          {tech}
                         </span>
-                        {project.techStack.map((tech, idx) => (
-                          <span
-                            key={idx}
-                            className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 text-xs font-medium"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-
-                      {project.liveUrl && (
-                        <a
-                          href={project.liveUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 text-white font-bold text-xs hover:bg-blue-700 transition-colors shadow-md shadow-blue-500/25"
-                        >
-                          <Globe className="w-3.5 h-3.5" />
-                          <span>{t("portfolio.visitLive", "Kunjungi Aplikasi (Live)")}</span>
-                          <ExternalLink className="w-3.5 h-3.5" />
-                        </a>
+                      ))}
+                      {project.techStack.length > 3 && (
+                        <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-400 text-[11px] font-medium">
+                          +{project.techStack.length - 3} lainnya
+                        </span>
                       )}
                     </div>
-                  </div>
 
-                  {/* Right Sidebar Outcome Card */}
-                  <div className="lg:col-span-4 bg-gradient-to-b from-slate-900 to-slate-950 text-white rounded-3xl p-6 sm:p-8 flex flex-col justify-between space-y-6 shadow-xl">
-                    <div>
-                      <span className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-400 uppercase tracking-wider mb-2">
-                        <Layers className="w-4 h-4" /> Enterprise Outcome
+                    {/* CTA Link */}
+                    <div className="pt-3 border-t border-slate-100 mt-auto">
+                      <span className="inline-flex items-center gap-1.5 text-sm font-bold text-blue-600 group-hover:gap-3 transition-all duration-200">
+                        {language === "id" ? "Baca Studi Kasus →" : "Read Case Study →"}
+                        <ArrowRight className="w-4 h-4" />
                       </span>
-                      <h3 className="text-xl font-bold leading-snug">
-                        {t("portfolio.outcomeTitle", "Solusi Andal & Berkelanjutan")}
-                      </h3>
-                      <p className="text-xs text-slate-300 mt-2.5 leading-relaxed">
-                        {t(
-                          "portfolio.outcomeDesc",
-                          "Sistem dirancang modular dengan pemantauan uptime dan kepatuhan standar keamanan data perusahaan."
-                        )}
-                      </p>
-                    </div>
-
-                    <div className="space-y-3">
-                      {project.liveUrl && (
-                        <a
-                          href={project.liveUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block"
-                        >
-                          <Button
-                            size="md"
-                            variant="white"
-                            className="w-full justify-center text-blue-950 font-bold shadow-md cursor-pointer"
-                          >
-                            <ExternalLink className="w-4 h-4 text-blue-950" />
-                            {t("portfolio.visitLive", "Kunjungi Aplikasi (Live)")}
-                          </Button>
-                        </a>
-                      )}
-                      {project.slug === "restoqr" && (
-                        <a
-                          href="https://wa.me/6282375371268?text=Halo%20Limoria%20Tech,%20saya%20tertarik%20dengan%20sistem%20pemesanan%20RestoQR"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block"
-                        >
-                          <Button
-                            size="md"
-                            className="w-full justify-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold shadow-md cursor-pointer border-0"
-                          >
-                            <MessageCircle className="w-4 h-4" />
-                            <span>Konsultasi RestoQR via WA</span>
-                          </Button>
-                        </a>
-                      )}
-                      <Link href="/contact/" className="block">
-                        <Button
-                          size="md"
-                          variant={project.liveUrl || project.slug === "restoqr" ? "outline" : "white"}
-                          className={`w-full justify-center font-bold cursor-pointer ${
-                            project.liveUrl || project.slug === "restoqr"
-                              ? "border-slate-700 text-slate-200 hover:bg-slate-800"
-                              : "text-blue-950"
-                          }`}
-                        >
-                          {t("portfolio.btnBuild", "Bangun Solusi Serupa")}
-                          <ArrowRight className="w-4 h-4" />
-                        </Button>
-                      </Link>
                     </div>
                   </div>
-                </div>
-              </Card>
-            );
-          })}
-        </div>
+                </Link>
+              );
+            })}
+          </div>
+        )}
 
         {/* Bottom CTA */}
         <div className="rounded-3xl bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-950 text-white p-8 sm:p-12 text-center max-w-3xl mx-auto space-y-5 shadow-2xl relative overflow-hidden">
@@ -312,27 +266,28 @@ export default function PortfolioContent() {
           <div className="relative z-10 space-y-4">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-200 border border-blue-400/30">
               <Sparkles className="w-3.5 h-3.5 text-blue-300" />
-              Custom Architecture Presentation
+              Konsultasi Portofolio Privat
             </span>
             <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-              {t("portfolio.ctaTitle", "Ingin Melihat Studi Kasus di Industri Spesifik Anda?")}
+              {t("portfolio.ctaTitle", "Ada Tantangan Bisnis yang Belum Terpecahkan?")}
             </h3>
             <p className="text-sm text-blue-100/90 max-w-xl mx-auto leading-relaxed">
               {t(
                 "portfolio.ctaDesc",
-                "Kami memiliki rekam jejak di bidang edukasi, logistik, manufaktur, fintech, dan healthcare. Hubungi konsultan kami untuk presentasi portofolio privat."
+                "Kami berpengalaman di berbagai industri — edukasi, logistik, manufaktur, fintech, hingga F&B. Ceritakan kebutuhan Anda, dan kami akan siapkan studi kasus yang relevan khusus untuk bisnis Anda."
               )}
             </p>
             <div className="pt-2">
               <Link href="/contact/">
                 <Button size="lg" variant="white" className="font-bold text-blue-950 shadow-lg">
-                  {t("portfolio.ctaBtn", "Jadwalkan Presentasi Portofolio")}
+                  {t("portfolio.ctaBtn", "Diskusikan Proyek Anda Sekarang")}
                   <ArrowRight className="w-4 h-4 text-blue-950" />
                 </Button>
               </Link>
             </div>
           </div>
         </div>
+
       </Container>
     </div>
   );
