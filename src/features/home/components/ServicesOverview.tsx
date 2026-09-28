@@ -32,7 +32,7 @@ import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import { useLanguage } from "@/context/LanguageContext";
 import { getTechServices, getFinancialServices } from "@/lib/data/services";
-import { cn } from "@/lib/utils";
+import { cn, getLocalized } from "@/lib/utils";
 
 const iconMap: Record<string, any> = {
   Cpu,
@@ -59,7 +59,7 @@ const iconMap: Record<string, any> = {
 
 export default function ServicesOverview() {
   const [activeTab, setActiveTab] = useState<"tech" | "financial">("tech");
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const techServices = getTechServices();
   const financialServices = getFinancialServices();
 
@@ -160,23 +160,23 @@ export default function ServicesOverview() {
                     </div>
                     {service.badge && (
                       <Badge variant={activeTab === "financial" ? "success" : "primary"}>
-                        {service.badge}
+                        {getLocalized(service.badge, language)}
                       </Badge>
                     )}
                   </div>
 
                   <h3 className="text-lg font-bold text-slate-900 mb-2">
-                    {service.title}
+                    {getLocalized(service.title, language)}
                   </h3>
 
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    {service.shortDescription}
+                    {getLocalized(service.shortDescription, language)}
                   </p>
                 </div>
 
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
                   <span className="text-xs font-semibold text-slate-400">
-                    {service.categoryName}
+                    {getLocalized(service.categoryName, language)}
                   </span>
                   <Link
                     href={`/services/${service.slug}/`}

@@ -1,6 +1,8 @@
+export type Localized<T> = T | { id: T; en: T };
+
 export interface ServiceFeature {
-  title: string;
-  description: string;
+  title: Localized<string>;
+  description: Localized<string>;
 }
 
 export type ServiceCategory = "tech" | "financial";
@@ -8,21 +10,21 @@ export type ServiceCategory = "tech" | "financial";
 export interface ServiceItem {
   id: string;
   slug: string;
-  title: string;
+  title: Localized<string>;
   category: ServiceCategory;
-  categoryName: string;
-  shortDescription: string;
-  fullDescription: string;
+  categoryName: Localized<string>;
+  shortDescription: Localized<string>;
+  fullDescription: Localized<string>;
   icon: string;
-  badge?: string;
+  badge?: Localized<string>;
   features: ServiceFeature[];
-  benefits: string[];
-  deliverables: string[];
+  benefits: Localized<string[]>;
+  deliverables: Localized<string[]>;
 }
 
 export interface AppDevService {
-  title: string;
-  description: string;
+  title: Localized<string>;
+  description: Localized<string>;
   icon: string;
   technologies: string[];
 }

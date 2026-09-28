@@ -37,37 +37,84 @@
   {
     "id": "strategic-planning",
     "slug": "strategic-planning",
-    "title": "Strategic Planning",
+    "title": {
+      "id": "Perencanaan Strategis",
+      "en": "Strategic Planning"
+    },
     "category": "tech",
-    "categoryName": "Tech Service",
-    "badge": "Core Strategy",
+    "categoryName": {
+      "id": "Layanan Teknologi",
+      "en": "Tech Service"
+    },
+    "badge": {
+      "id": "Strategi Inti",
+      "en": "Core Strategy"
+    },
     "icon": "PieChart",
-    "shortDescription": "Strategic planning is at the core of our services, where we collaborate with your team to define goals, allocate resources efficiently, and create a roadmap for sustainable growth.",
-    "fullDescription": "Perencanaan strategis merupakan fondasi utama dari seluruh layanan kami. Kami berkolaborasi erat dengan tim Anda untuk merumuskan tujuan jangka pendek dan jangka panjang, mengoptimalkan alokasi sumber daya teknologi, dan menyusun peta jalan (roadmap) terukur untuk pertumbuhan bisnis yang berkelanjutan.",
+    "shortDescription": {
+      "id": "Perencanaan strategis merupakan inti dari layanan kami, di mana kami berkolaborasi dengan tim Anda untuk menentukan tujuan, mengalokasikan sumber daya secara efisien, dan menciptakan peta jalan untuk pertumbuhan yang berkelanjutan.",
+      "en": "Strategic planning is at the core of our services, where we collaborate with your team to define goals, allocate resources efficiently, and create a roadmap for sustainable growth."
+    },
+    "fullDescription": {
+      "id": "Perencanaan strategis merupakan fondasi utama dari seluruh layanan kami, di mana kami berkolaborasi dengan tim Anda untuk merumuskan tujuan, mengalokasikan sumber daya secara efisien, dan menyusun peta jalan (roadmap) terukur untuk pertumbuhan bisnis yang berkelanjutan. Kami memastikan inisiatif teknologi selaras dengan target bisnis Anda.",
+      "en": "Strategic planning is at the core of our services, where we collaborate with your team to define goals, allocate resources efficiently, and create a roadmap for sustainable growth. We ensure all technology initiatives strictly align with your corporate revenue and operational targets."
+    },
     "features": [
       {
-        "title": "Technology Roadmap Formulation",
-        "description": "Penyusunan peta jalan adopsi teknologi 1-5 tahun yang selaras dengan target revenue dan efisiensi perusahaan."
+        "title": {
+          "id": "Formulasi Roadmap Teknologi",
+          "en": "Technology Roadmap Formulation"
+        },
+        "description": {
+          "id": "Penyusunan peta jalan adopsi teknologi 1-5 tahun yang selaras dengan target pendapatan dan efisiensi perusahaan.",
+          "en": "Formulating 1-5 year tech adoption roadmaps strictly aligned with enterprise revenue and efficiency goals."
+        }
       },
       {
-        "title": "Resource Allocation Optimization",
-        "description": "Evaluasi dan penataan sumber daya tim IT serta anggaran infrastruktur agar bekerja optimal."
+        "title": {
+          "id": "Optimalisasi Alokasi Sumber Daya",
+          "en": "Resource Allocation Optimization"
+        },
+        "description": {
+          "id": "Evaluasi dan penataan sumber daya tim IT serta anggaran infrastruktur agar bekerja optimal.",
+          "en": "Auditing and optimizing IT human capital and infrastructure expenditure for peak operational efficiency."
+        }
       },
       {
-        "title": "KPI & Milestone Tracking",
-        "description": "Penetapan indikator kinerja utama (KPI) berbasis metodologi OKR/Balanced Scorecard."
+        "title": {
+          "id": "Pelacakan KPI & Milestone",
+          "en": "KPI & Milestone Tracking"
+        },
+        "description": {
+          "id": "Penetapan indikator kinerja utama (KPI) berbasis metodologi OKR / Balanced Scorecard.",
+          "en": "Establishing key performance indicators (KPIs) through structured OKRs and balanced scorecard methodologies."
+        }
       }
     ],
-    "benefits": [
-      "Arah pengembangan teknologi perusahaan menjadi jelas dan terukur",
-      "Efisiensi belanja modal (CAPEX) dan operasional (OPEX) teknologi",
-      "Keselarasan visi antara divisi bisnis dan tim engineer"
-    ],
-    "deliverables": [
-      "Master Plan Teknologi & IT Roadmap",
-      "Model Alokasi Sumber Daya & Budgeting Plan",
-      "Framework Evaluasi Kinerja Sistem"
-    ]
+    "benefits": {
+      "id": [
+        "Arah pengembangan teknologi perusahaan menjadi jelas dan terukur",
+        "Efisiensi belanja modal (CAPEX) dan operasional (OPEX) teknologi",
+        "Keselarasan visi antara divisi bisnis dan tim engineer"
+      ],
+      "en": [
+        "Crystal clear and measurable technology development trajectory",
+        "Optimized capital (CAPEX) and operational (OPEX) technology spending",
+        "Seamless alignment between business leadership and engineering teams"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Master Plan Teknologi & IT Roadmap",
+        "Model Alokasi Sumber Daya & Budgeting Plan",
+        "Framework Evaluasi Kinerja Sistem"
+      ],
+      "en": [
+        "Enterprise IT Master Plan & Technology Roadmap",
+        "Resource Allocation & Budgeting Framework",
+        "System Performance & KPI Monitoring Model"
+      ]
+    }
   },
   {
     "id": "market-analysis",

@@ -18,6 +18,7 @@ import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import { useLanguage } from "@/context/LanguageContext";
 import { getAppDevServices } from "@/lib/data/services";
+import { getLocalized } from "@/lib/utils";
 
 const appIconMap: Record<string, any> = {
   Globe,
@@ -31,7 +32,7 @@ const appIconMap: Record<string, any> = {
 
 export default function AppDevSection() {
   const appServices = getAppDevServices();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section className="py-20 lg:py-28 bg-white relative">
@@ -62,11 +63,11 @@ export default function AppDevSection() {
                   </div>
 
                   <h3 className="text-lg font-bold text-slate-900 mb-2">
-                    {item.title}
+                    {getLocalized(item.title, language)}
                   </h3>
 
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    {item.description}
+                    {getLocalized(item.description, language)}
                   </p>
                 </div>
 
