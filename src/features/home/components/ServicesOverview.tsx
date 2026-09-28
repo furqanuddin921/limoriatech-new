@@ -68,8 +68,11 @@ export default function ServicesOverview() {
   const isFinancial = activeTab === "financial";
 
   return (
-    <section id="services-overview" className="py-20 lg:py-28 bg-gradient-to-b from-slate-50 via-white to-slate-50/50 border-y border-slate-200/60">
-      <Container>
+    <section id="services-overview" className="py-20 lg:py-28 bg-gradient-to-b from-slate-50 via-white to-slate-50/50 border-y border-slate-200/60 relative overflow-hidden">
+      {/* Background Subtle Tech Grid */}
+      <div className="absolute inset-0 bg-tech-grid opacity-20 pointer-events-none" />
+
+      <Container className="relative z-10">
         <SectionHeader
           badge={t("services.badge", "Layanan & Solusi Terintegrasi")}
           title={t("services.title", "Solusi Teknologi & Layanan Pelaporan Keuangan")}

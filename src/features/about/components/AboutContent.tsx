@@ -66,8 +66,11 @@ export default function AboutContent() {
   ];
 
   return (
-    <div className="py-16 lg:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50/50">
-      <Container>
+    <div className="py-16 lg:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50/50 relative overflow-hidden">
+      {/* Background Tech Grid */}
+      <div className="absolute inset-0 bg-tech-grid opacity-20 pointer-events-none" />
+
+      <Container className="relative z-10">
         {/* Page Hero */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <SectionHeader

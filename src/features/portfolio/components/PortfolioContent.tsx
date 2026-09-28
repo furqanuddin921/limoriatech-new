@@ -49,8 +49,11 @@ export default function PortfolioContent() {
   }, [projects, filterCategory]);
 
   return (
-    <div className="py-16 lg:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50/50">
-      <Container>
+    <div className="py-16 lg:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50/50 relative overflow-hidden">
+      {/* Background Tech Grid */}
+      <div className="absolute inset-0 bg-tech-grid opacity-20 pointer-events-none" />
+
+      <Container className="relative z-10">
         <SectionHeader
           badge={t("portfolio.badge", "Portofolio & Studi Kasus")}
           title={t("portfolio.title", "Solusi Nyata yang Memberikan Dampak Positif")}

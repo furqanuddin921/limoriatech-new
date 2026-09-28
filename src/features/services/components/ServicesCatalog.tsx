@@ -108,8 +108,11 @@ export default function ServicesCatalog() {
     (activeTab === "all" || activeTab === "appdev" ? filteredAppDev.length : 0);
 
   return (
-    <div className="py-16 lg:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50/50">
-      <Container>
+    <div className="py-16 lg:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50/50 relative overflow-hidden">
+      {/* Background Tech Grid */}
+      <div className="absolute inset-0 bg-tech-grid opacity-20 pointer-events-none" />
+
+      <Container className="relative z-10">
         {/* Main Header with Visual Accents */}
         <div className="relative mb-14 text-center max-w-4xl mx-auto">
           <SectionHeader

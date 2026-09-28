@@ -36,8 +36,11 @@ export default function AppDevSection() {
   const { t, language } = useLanguage();
 
   return (
-    <section className="py-20 lg:py-28 bg-white relative">
-      <Container>
+    <section className="py-20 lg:py-28 bg-white relative overflow-hidden">
+      {/* Background Tech Grid */}
+      <div className="absolute inset-0 bg-tech-grid opacity-20 pointer-events-none" />
+
+      <Container className="relative z-10">
         <SectionHeader
           badge={t("appDev.badge", "Solusi Pengembangan Aplikasi")}
           title={t("appDev.title", "Pengembangan Aplikasi Berkualitas Tinggi & Skalabel")}
