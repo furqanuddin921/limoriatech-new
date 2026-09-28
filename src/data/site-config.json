@@ -20,30 +20,94 @@
     { "name": "GitHub", "url": "https://github.com/limoriatech", "icon": "Github" }
   ],
   "stats": [
-    { "value": "50+", "label": "Solusi Sukses Diterapkan", "description": "Di berbagai industri nasional & multinasional" },
-    { "value": "99.9%", "label": "Reliability & Uptime", "description": "Infrastruktur & aplikasi berstandar tinggi" },
-    { "value": "100%", "label": "Dukungan End-to-End", "description": "Dari ideasi hingga pemeliharaan rutin" },
-    { "value": "8+", "label": "Tahun Pengalaman Kolektif", "description": "Didukung engineer & konsultan tersertifikasi" }
+    {
+      "value": "50+",
+      "label": {
+        "id": "Solusi Sukses Diterapkan",
+        "en": "Solutions Deployed"
+      },
+      "description": {
+        "id": "Di berbagai industri nasional & multinasional",
+        "en": "Across national & multinational industries"
+      }
+    },
+    {
+      "value": "99.9%",
+      "label": {
+        "id": "Reliability & Uptime",
+        "en": "Reliability & Uptime"
+      },
+      "description": {
+        "id": "Infrastruktur & aplikasi berstandar tinggi",
+        "en": "High-standard infrastructure & systems"
+      }
+    },
+    {
+      "value": "100%",
+      "label": {
+        "id": "Dukungan End-to-End",
+        "en": "End-to-End Delivery"
+      },
+      "description": {
+        "id": "Dari ideasi hingga pemeliharaan rutin",
+        "en": "From ideation to continuous maintenance"
+      }
+    },
+    {
+      "value": "8+",
+      "label": {
+        "id": "Tahun Pengalaman Kolektif",
+        "en": "Years Collective Experience"
+      },
+      "description": {
+        "id": "Didukung engineer & konsultan tersertifikasi",
+        "en": "Backed by certified engineers & consultants"
+      }
+    }
   ],
   "values": [
     {
-      "title": "Inovatif & Relevan",
-      "description": "Kami terus mengembangkan solusi IT modern yang adaptif terhadap dinamika kebutuhan industri.",
+      "title": {
+        "id": "Inovatif & Relevan",
+        "en": "Innovative & Relevant"
+      },
+      "description": {
+        "id": "Kami terus mengembangkan solusi IT modern yang adaptif terhadap dinamika kebutuhan industri.",
+        "en": "We continuously develop modern IT architectures adaptive to evolving industrial demands."
+      },
       "icon": "Lightbulb"
     },
     {
-      "title": "Aman & Andal",
-      "description": "Keamanan data, stabilitas, dan performa tinggi menjadi prioritas utama pada setiap solusi yang kami bangun.",
+      "title": {
+        "id": "Aman & Andal",
+        "en": "Secure & Dependable"
+      },
+      "description": {
+        "id": "Keamanan data, stabilitas, dan performa tinggi menjadi prioritas utama pada setiap solusi yang kami bangun.",
+        "en": "Data security, system stability, and high performance are paramount in every system we engineer."
+      },
       "icon": "ShieldCheck"
     },
     {
-      "title": "Orientasi Pengguna & Bisnis",
-      "description": "Setiap arsitektur dirancang agar memberikan dampak efisiensi nyata dan ROI jangka panjang bagi perusahaan Anda.",
+      "title": {
+        "id": "Orientasi Pengguna & Bisnis",
+        "en": "User & Business Centric"
+      },
+      "description": {
+        "id": "Setiap arsitektur dirancang agar memberikan dampak efisiensi nyata dan ROI jangka panjang bagi perusahaan Anda.",
+        "en": "Every architecture is crafted to unlock measurable efficiency and lasting enterprise ROI."
+      },
       "icon": "Target"
     },
     {
-      "title": "Kemitraan Jangka Panjang",
-      "description": "Bukan sekadar vendor, kami hadir sebagai Technology Partner yang mendampingi pertumbuhan bisnis Anda berkelanjutan.",
+      "title": {
+        "id": "Kemitraan Jangka Panjang",
+        "en": "Long-Term Partnership"
+      },
+      "description": {
+        "id": "Bukan sekadar vendor, kami hadir sebagai Technology Partner yang mendampingi pertumbuhan bisnis Anda berkelanjutan.",
+        "en": "More than just a vendor, we serve as your Technology Partner guiding sustainable corporate growth."
+      },
       "icon": "Handshake"
     }
   ]

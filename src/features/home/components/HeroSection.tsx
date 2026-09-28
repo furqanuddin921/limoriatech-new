@@ -7,10 +7,11 @@ import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import { useLanguage } from "@/context/LanguageContext";
 import { getSiteConfig } from "@/lib/data/site";
+import { getLocalized } from "@/lib/utils";
 
 export default function HeroSection() {
   const siteConfig = getSiteConfig();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section className="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-blue-50/50 via-white to-white">
@@ -104,7 +105,7 @@ export default function HeroSection() {
                       {stat.value}
                     </span>
                     <span className="text-xs font-semibold text-slate-700 leading-tight block mt-1">
-                      {stat.label}
+                      {getLocalized(stat.label, language)}
                     </span>
                   </div>
                 ))}

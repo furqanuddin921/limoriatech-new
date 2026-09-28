@@ -12,16 +12,18 @@ export interface ContactInfo {
   workingHours: string;
 }
 
+import type { Localized } from "./service.types";
+
 export interface CompanyValue {
-  title: string;
-  description: string;
+  title: Localized<string>;
+  description: Localized<string>;
   icon: string;
 }
 
 export interface StatItem {
   value: string;
-  label: string;
-  description?: string;
+  label: Localized<string>;
+  description?: Localized<string>;
 }
 
 export interface SiteConfig {

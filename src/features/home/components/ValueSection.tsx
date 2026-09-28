@@ -6,6 +6,7 @@ import SectionHeader from "@/components/ui/SectionHeader";
 import Card from "@/components/ui/Card";
 import { useLanguage } from "@/context/LanguageContext";
 import { getSiteConfig } from "@/lib/data/site";
+import { getLocalized } from "@/lib/utils";
 
 const valueIconMap: Record<string, any> = {
   Lightbulb,
@@ -16,7 +17,7 @@ const valueIconMap: Record<string, any> = {
 
 export default function ValueSection() {
   const siteConfig = getSiteConfig();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section className="py-20 bg-slate-50 border-t border-slate-200/60">
@@ -40,10 +41,10 @@ export default function ValueSection() {
                   <Icon className="w-7 h-7" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2">
-                  {value.title}
+                  {getLocalized(value.title, language)}
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
-                  {value.description}
+                  {getLocalized(value.description, language)}
                 </p>
               </Card>
             );

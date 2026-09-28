@@ -133,7 +133,14 @@
     "partnerSub": "Kemitraan Jangka Panjang",
     "partnerDesc": "Kami percaya bahwa teknologi bukan hanya sekadar alat, tetapi merupakan bagian penting dari strategi pertumbuhan bisnis. Kami hadir mendampingi Anda dari merancang strategi hingga memastikan teknologi dapat terus berkembang mengikuti kebutuhan bisnis.",
     "ctaTitle": "Ingin Berdiskusi dengan Konsultan Kami?",
-    "ctaDesc": "Jadwalkan sesi konsultasi untuk memetakan arsitektur dan kebutuhan IT bisnis Anda."
+    "ctaDesc": "Jadwalkan sesi konsultasi untuk memetakan arsitektur dan kebutuhan IT bisnis Anda.",
+    "check1Title": "Inovatif & Berkualitas:",
+    "check1Desc": "Pendekatan berorientasi pada kebutuhan pengguna dan tujuan bisnis jangka panjang.",
+    "check2Title": "Terukur & Terintegrasi:",
+    "check2Desc": "Menghubungkan proses bisnis, pengelolaan data, dan sistem platform digital.",
+    "check3Title": "Strategic Technology Partner:",
+    "check3Desc": "Memastikan teknologi terus berkembang mengikuti ekspansi bisnis Anda.",
+    "ctaBtn": "Hubungi Kami Sekarang"
   },
   "portfolio": {
     "badge": "Portofolio & Studi Kasus",

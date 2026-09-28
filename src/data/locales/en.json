@@ -133,7 +133,14 @@
     "partnerSub": "Long-Term Strategic Partnership",
     "partnerDesc": "We believe technology is not just an operational tool, but an integral pillar of strategic business expansion. We accompany you from ideation and strategy design to ensuring your systems scale seamlessly with business demands.",
     "ctaTitle": "Looking to Consult with Our Team?",
-    "ctaDesc": "Schedule a discovery session to map out your enterprise IT architecture and financial reporting roadmap."
+    "ctaDesc": "Schedule a discovery session to map out your enterprise IT architecture and financial reporting roadmap.",
+    "check1Title": "Innovative & High-Caliber:",
+    "check1Desc": "Calibrated for user-centric experience and long-term enterprise goals.",
+    "check2Title": "Measurable & Integrated:",
+    "check2Desc": "Unifying operational workflows, centralized data lakes, and modern digital platforms.",
+    "check3Title": "Strategic Technology Partner:",
+    "check3Desc": "Ensuring your technology infrastructure continually evolves with organizational expansion.",
+    "ctaBtn": "Contact Us Now"
   },
   "portfolio": {
     "badge": "Portfolio & Case Studies",
