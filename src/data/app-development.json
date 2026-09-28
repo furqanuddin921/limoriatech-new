@@ -1,44 +1,127 @@
 [
   {
-    "title": "Website & Web Application",
-    "description": "Pengembangan web company profile, portal web interaktif, dan SaaS modern dengan performa ultra cepat dan SEO-friendly.",
+    "title": {
+      "id": "Website & Aplikasi Web",
+      "en": "Website & Web Application"
+    },
+    "description": {
+      "id": "Pengembangan web company profile, portal web interaktif, dan SaaS modern dengan performa ultra cepat dan SEO-friendly.",
+      "en": "Enterprise company profile websites, dynamic portals, and modern cloud SaaS engineered for ultra-fast performance and SEO excellence."
+    },
     "icon": "Globe",
-    "technologies": ["React", "Next.js", "Vue.js", "Tailwind CSS", "Node.js"]
+    "technologies": [
+      "React",
+      "Next.js",
+      "Vue.js",
+      "Tailwind CSS",
+      "Node.js"
+    ]
   },
   {
-    "title": "Mobile Application (Android & iOS)",
-    "description": "Aplikasi mobile native maupun cross-platform berkinerja tinggi dengan antarmuka yang mulus dan responsif.",
+    "title": {
+      "id": "Aplikasi Mobile (Android & iOS)",
+      "en": "Mobile Application (Android & iOS)"
+    },
+    "description": {
+      "id": "Aplikasi mobile native maupun cross-platform berkinerja tinggi dengan antarmuka yang mulus dan responsif.",
+      "en": "High-performance native and cross-platform mobile applications with fluid 60 FPS interfaces and offline-first capabilities."
+    },
     "icon": "Smartphone",
-    "technologies": ["Flutter", "React Native", "Kotlin", "Swift", "Firebase"]
+    "technologies": [
+      "Flutter",
+      "React Native",
+      "Kotlin",
+      "Swift",
+      "Firebase"
+    ]
   },
   {
-    "title": "Desktop Application",
-    "description": "Aplikasi komputer desktop untuk operasional kasir (POS), warehouse offline-first, dan utilitas performa tinggi.",
+    "title": {
+      "id": "Aplikasi Desktop",
+      "en": "Desktop Application"
+    },
+    "description": {
+      "id": "Aplikasi komputer desktop untuk operasional kasir (POS), warehouse offline-first, dan utilitas performa tinggi.",
+      "en": "Robust desktop software for retail POS counters, offline warehouse management, and compute-heavy local data utilities."
+    },
     "icon": "Monitor",
-    "technologies": ["Electron", "Tauri", "C# / .NET", "C++", "SQLite"]
+    "technologies": [
+      "Electron",
+      "Tauri",
+      "C# / .NET",
+      "C++",
+      "SQLite"
+    ]
   },
   {
-    "title": "Enterprise Application",
-    "description": "Sistem komprehensif berskala korporasi seperti ERP, SCM (Supply Chain), dan HRIS untuk mengelola ratusan cabang bisnis.",
+    "title": {
+      "id": "Aplikasi Enterprise",
+      "en": "Enterprise Application"
+    },
+    "description": {
+      "id": "Sistem komprehensif berskala korporasi seperti ERP, SCM (Supply Chain), dan HRIS untuk mengelola ratusan cabang bisnis.",
+      "en": "Comprehensive enterprise-grade platforms including ERP, Supply Chain Management (SCM), and HRIS for multi-branch organizations."
+    },
     "icon": "Building2",
-    "technologies": ["Microservices", "Java Spring Boot", "Golang", "PostgreSQL", "Docker"]
+    "technologies": [
+      "Microservices",
+      "Java Spring Boot",
+      "Golang",
+      "PostgreSQL",
+      "Docker"
+    ]
   },
   {
-    "title": "Business Information System",
-    "description": "Sistem informasi manajemen untuk pemrosesan data transaksi, pelaporan keuangan, dan inventori yang akurat.",
+    "title": {
+      "id": "Sistem Informasi Bisnis",
+      "en": "Business Information System"
+    },
+    "description": {
+      "id": "Sistem informasi manajemen untuk pemrosesan data transaksi, pelaporan keuangan, dan inventori yang akurat.",
+      "en": "Integrated management information systems for transactional processing, real-time inventory tracking, and managerial reporting."
+    },
     "icon": "Database",
-    "technologies": ["Laravel", "PostgreSQL", "MySQL", "Redis", "Elasticsearch"]
+    "technologies": [
+      "Laravel",
+      "PostgreSQL",
+      "MySQL",
+      "Redis",
+      "Elasticsearch"
+    ]
   },
   {
-    "title": "API & System Integration",
-    "description": "Integrasi middleware, payment gateway (Midtrans, Xendit), sistem logistik, SMS/WA notification, dan third-party APIs.",
+    "title": {
+      "id": "Integrasi API & Sistem",
+      "en": "API & System Integration"
+    },
+    "description": {
+      "id": "Integrasi middleware, payment gateway (Midtrans, Xendit), sistem logistik, SMS/WA notification, dan third-party APIs.",
+      "en": "Custom middleware connectors, payment gateways (Midtrans, Xendit), logistics tracking, messaging APIs, and third-party webhooks."
+    },
     "icon": "Network",
-    "technologies": ["RESTful API", "GraphQL", "gRPC", "Webhook", "Kafka"]
+    "technologies": [
+      "RESTful API",
+      "GraphQL",
+      "gRPC",
+      "Webhook",
+      "Kafka"
+    ]
   },
   {
-    "title": "Custom Software Development",
-    "description": "Pengembangan perangkat lunak khusus yang dirancang dari nol sesuai spesifikasi dan alur kerja unik perusahaan Anda.",
+    "title": {
+      "id": "Pengembangan Software Khusus",
+      "en": "Custom Software Development"
+    },
+    "description": {
+      "id": "Pengembangan perangkat lunak khusus yang dirancang dari nol sesuai spesifikasi dan alur kerja unik perusahaan Anda.",
+      "en": "Bespoke software engineered from scratch to match your enterprise's distinct operational logic and competitive edge."
+    },
     "icon": "Wrench",
-    "technologies": ["Modular Architecture", "Clean Code", "CI/CD", "Automated Testing"]
+    "technologies": [
+      "Modular Architecture",
+      "Clean Code",
+      "CI/CD",
+      "Automated Testing"
+    ]
   }
 ]

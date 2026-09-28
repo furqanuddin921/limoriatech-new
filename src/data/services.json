@@ -2,37 +2,84 @@
   {
     "id": "business-research",
     "slug": "business-research",
-    "title": "Business Research",
+    "title": {
+      "id": "Riset Bisnis",
+      "en": "Business Research"
+    },
     "category": "tech",
-    "categoryName": "Tech Service",
-    "badge": "Insight & Strategy",
+    "categoryName": {
+      "id": "Layanan Teknologi",
+      "en": "Tech Service"
+    },
+    "badge": {
+      "id": "Wawasan & Strategi",
+      "en": "Insight & Strategy"
+    },
     "icon": "Briefcase",
-    "shortDescription": "We provide comprehensive insights to empower your strategic decision-making, identify opportunities, and mitigate risks.",
-    "fullDescription": "Layanan riset bisnis komprehensif kami dirancang untuk membantu jajaran pimpinan perusahaan mengambil keputusan strategis berbasis data valid. Kami mengidentifikasi tren industri, mengevaluasi lanskap kompetitif, dan memetakan peluang pertumbuhan baru guna memitigasi risiko bisnis di era transformasi digital.",
+    "shortDescription": {
+      "id": "Kami menyediakan wawasan komprehensif untuk memberdayakan pengambilan keputusan strategis Anda, mengidentifikasi peluang pasar baru, dan memitigasi risiko bisnis.",
+      "en": "We provide comprehensive insights to empower your strategic decision-making, identify opportunities, and mitigate risks."
+    },
+    "fullDescription": {
+      "id": "Layanan riset bisnis komprehensif kami dirancang untuk membantu jajaran pimpinan perusahaan mengambil keputusan strategis berbasis data valid. Kami mengidentifikasi tren industri, mengevaluasi lanskap kompetitif, dan memetakan peluang pertumbuhan baru guna memitigasi risiko bisnis di era transformasi digital.",
+      "en": "Our comprehensive business research services empower executive leadership to make data-backed strategic decisions. We uncover industry trends, evaluate competitive landscapes, and map out growth opportunities to mitigate business risk in the digital era."
+    },
     "features": [
       {
-        "title": "Comprehensive Market Intelligence",
-        "description": "Pengumpulan data mendalam mengenai tren pasar, perilaku konsumen, dan pergerakan kompetitor."
+        "title": {
+          "id": "Intelijen Pasar Komprehensif",
+          "en": "Comprehensive Market Intelligence"
+        },
+        "description": {
+          "id": "Pengumpulan data mendalam mengenai tren pasar, perilaku konsumen, dan pergerakan kompetitor.",
+          "en": "In-depth data gathering on industry trends, evolving customer behaviors, and competitor movements."
+        }
       },
       {
-        "title": "Risk Assessment & Mitigation",
-        "description": "Analisis potensi risiko operasional, teknologi, dan regulasi sebelum peluncuran produk atau ekspansi."
+        "title": {
+          "id": "Penilaian & Mitigasi Risiko",
+          "en": "Risk Assessment & Mitigation"
+        },
+        "description": {
+          "id": "Analisis potensi risiko operasional, teknologi, dan regulasi sebelum peluncuran produk atau ekspansi bisnis.",
+          "en": "Evaluating operational, technological, and regulatory risks before major product launches or expansions."
+        }
       },
       {
-        "title": "Feasibility & Opportunity Studies",
-        "description": "Studi kelayakan teknis dan finansial untuk inisiatif proyek baru perusahaan."
+        "title": {
+          "id": "Studi Kelayakan & Peluang",
+          "en": "Feasibility & Opportunity Studies"
+        },
+        "description": {
+          "id": "Studi kelayakan teknis dan finansial untuk inisiatif proyek baru perusahaan.",
+          "en": "Technical and financial viability assessments for new corporate initiatives and ventures."
+        }
       }
     ],
-    "benefits": [
-      "Keputusan bisnis berbasis data akurat dan terverifikasi",
-      "Meminimalkan potensi kerugian investasi teknologi",
-      "Mempercepat waktu penetrasi pasar (time-to-market)"
-    ],
-    "deliverables": [
-      "Laporan Riset Pasar & Lanskap Industri Lengkap",
-      "Dokumen Matriks Analisis Risiko & Mitigasi",
-      "Rekomendasi Strategis Eksekutif"
-    ]
+    "benefits": {
+      "id": [
+        "Keputusan bisnis berbasis data akurat dan terverifikasi",
+        "Meminimalkan potensi kerugian investasi teknologi",
+        "Mempercepat waktu penetrasi pasar (time-to-market)"
+      ],
+      "en": [
+        "Data-driven strategic decisions verified by rigorous market research",
+        "Minimizes capital risks and prevents unprofitable tech investments",
+        "Accelerates your product's go-to-market timeline with precision"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Laporan Riset Pasar & Lanskap Industri Lengkap",
+        "Dokumen Matriks Analisis Risiko & Mitigasi",
+        "Rekomendasi Strategis Eksekutif"
+      ],
+      "en": [
+        "Comprehensive Market Research & Industry Landscape Report",
+        "Risk Assessment & Mitigation Action Matrix",
+        "Executive Strategic Roadmap & Recommendations"
+      ]
+    }
   },
   {
     "id": "strategic-planning",
@@ -119,505 +166,1477 @@
   {
     "id": "market-analysis",
     "slug": "market-analysis",
-    "title": "Market Analysis",
+    "title": {
+      "id": "Analisis Pasar",
+      "en": "Market Analysis"
+    },
     "category": "tech",
-    "categoryName": "Tech Service",
-    "badge": "Growth & Analytics",
+    "categoryName": {
+      "id": "Layanan Teknologi",
+      "en": "Tech Service"
+    },
+    "badge": {
+      "id": "Pertumbuhan & Analitik",
+      "en": "Growth & Analytics"
+    },
     "icon": "TrendingUp",
-    "shortDescription": "We provide actionable insights to optimize your marketing strategies, enhance brand visibility, and maximize the impact of your promotional efforts.",
-    "fullDescription": "Analisis pasar berorientasi aksi untuk mengoptimalkan strategi go-to-market, memperkuat visibilitas merek di kanal digital, serta memaksimalkan ROI dari setiap aktivitas promosi dan kampanye bisnis Anda.",
+    "shortDescription": {
+      "id": "Kami memberikan wawasan berbasis aksi untuk mengoptimalkan strategi pemasaran Anda, meningkatkan visibilitas merek, dan memaksimalkan dampak upaya promosi Anda.",
+      "en": "We provide actionable insights to optimize your marketing strategies, enhance brand visibility, and maximize the impact of your promotional efforts."
+    },
+    "fullDescription": {
+      "id": "Analisis pasar berorientasi aksi untuk mengoptimalkan strategi go-to-market, memperkuat visibilitas merek di kanal digital, serta memaksimalkan ROI dari setiap aktivitas promosi dan kampanye bisnis Anda.",
+      "en": "Actionable market intelligence designed to optimize your go-to-market strategy, elevate digital brand visibility, and maximize returns on every promotional campaign."
+    },
     "features": [
       {
-        "title": "Customer Segmentation & Persona",
-        "description": "Pemetaan demografi, preferensi digital, dan pola pembelian pelanggan target."
+        "title": {
+          "id": "Segmentasi Pelanggan & Persona",
+          "en": "Customer Segmentation & Persona"
+        },
+        "description": {
+          "id": "Pemetaan demografi, preferensi digital, dan pola pembelian pelanggan target.",
+          "en": "Mapping customer demographics, digital behavior patterns, and purchasing triggers."
+        }
       },
       {
-        "title": "Competitive Benchmarking",
-        "description": "Komparasi keunggulan fitur, strategi harga, dan pangsa pasar kompetitor utama."
+        "title": {
+          "id": "Benchmarking Kompetitor",
+          "en": "Competitive Benchmarking"
+        },
+        "description": {
+          "id": "Komparasi keunggulan fitur, strategi harga, dan pangsa pasar kompetitor utama.",
+          "en": "Comparative analysis of competitor features, pricing dynamics, and market shares."
+        }
       },
       {
-        "title": "Channel Effectiveness Audit",
-        "description": "Audit performa saluran penjualan digital dan efisiensi konversi corong pemasaran (marketing funnel)."
+        "title": {
+          "id": "Audit Efektivitas Saluran",
+          "en": "Channel Effectiveness Audit"
+        },
+        "description": {
+          "id": "Audit performa saluran penjualan digital dan efisiensi konversi corong pemasaran.",
+          "en": "Auditing conversion efficiency across digital sales channels and marketing funnels."
+        }
       }
     ],
-    "benefits": [
-      "Peningkatan tingkat konversi penjualan dan retensi pelanggan",
-      "Penargetan audiens yang jauh lebih presisi dan hemat biaya",
-      "Diferensiasi positioning produk yang lebih kuat di pasar"
-    ],
-    "deliverables": [
-      "Dashboard Analisis Pasar & Tren Konsumen",
-      "Profil Segmen Pelanggan & User Journey Map",
-      "Rencana Aksi Optimalisasi Saluran Digital"
-    ]
+    "benefits": {
+      "id": [
+        "Peningkatan tingkat konversi penjualan dan retensi pelanggan",
+        "Penargetan audiens yang jauh lebih presisi dan hemat biaya",
+        "Diferensiasi positioning produk yang lebih kuat di pasar"
+      ],
+      "en": [
+        "Higher conversion rates and sustained customer lifetime value",
+        "Laser-targeted audience acquisition with lower cost per acquisition",
+        "Distinct market differentiation and authoritative brand positioning"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Dashboard Analisis Pasar & Tren Konsumen",
+        "Profil Segmen Pelanggan & User Journey Map",
+        "Rencana Aksi Optimalisasi Saluran Digital"
+      ],
+      "en": [
+        "Market Intelligence & Consumer Trends Dashboard",
+        "Customer Persona Profiles & Comprehensive Journey Maps",
+        "Channel Optimization Blueprint & Action Plan"
+      ]
+    }
   },
   {
     "id": "website-applications",
     "slug": "website-applications",
-    "title": "Website Applications",
+    "title": {
+      "id": "Aplikasi Website",
+      "en": "Website Applications"
+    },
     "category": "tech",
-    "categoryName": "Tech Service",
-    "badge": "High Performance",
+    "categoryName": {
+      "id": "Layanan Teknologi",
+      "en": "Tech Service"
+    },
+    "badge": {
+      "id": "Performa Tinggi",
+      "en": "High Performance"
+    },
     "icon": "Globe",
-    "shortDescription": "Engaging e-commerce platform or dynamic web portal, our solutions are crafted for optimal user experience, responsiveness, and scalability.",
-    "fullDescription": "Mulai dari platform e-commerce interaktif, portal web dinamis korporasi, hingga SaaS modern berbasis cloud, solusi web application kami dirancang khusus dengan memperhatikan performa ultra-cepat, keamanan ketat, SEO-friendly, dan fleksibilitas skalabilitas tinggi.",
+    "shortDescription": {
+      "id": "Platform e-commerce interaktif maupun portal web dinamis, solusi kami dirancang untuk pengalaman pengguna yang optimal, responsif, dan berskala tinggi.",
+      "en": "Engaging e-commerce platform or a dynamic web portal, our solutions are crafted for optimal user experience, responsiveness, and scalability."
+    },
+    "fullDescription": {
+      "id": "Mulai dari platform e-commerce interaktif, portal web dinamis korporasi, hingga SaaS modern berbasis cloud, solusi web application kami dirancang khusus dengan memperhatikan performa ultra-cepat, keamanan ketat, SEO-friendly, dan fleksibilitas skalabilitas tinggi.",
+      "en": "From engaging e-commerce engines to dynamic enterprise web portals and modern cloud SaaS, our custom web solutions are built with blazing speed, rigorous security, SEO excellence, and cloud-ready scalability."
+    },
     "features": [
       {
-        "title": "Modern Frontend & Responsive UI",
-        "description": "Desain antarmuka mulus berbasis Next.js, React, dan Tailwind CSS yang responsif di seluruh layar perangkat."
+        "title": {
+          "id": "Frontend Modern & UI Responsif",
+          "en": "Modern Frontend & Responsive UI"
+        },
+        "description": {
+          "id": "Desain antarmuka mulus berbasis Next.js, React, dan Tailwind CSS yang responsif di seluruh layar.",
+          "en": "Seamless UI engineered with Next.js, React, and Tailwind CSS responsive across all screen sizes."
+        }
       },
       {
-        "title": "High Scalability Backend",
-        "description": "Arsitektur serverless atau microservices yang tangguh melayani lonjakan jutaan pengunjung."
+        "title": {
+          "id": "Backend Berskala Tinggi",
+          "en": "High Scalability Backend"
+        },
+        "description": {
+          "id": "Arsitektur serverless atau microservices yang tangguh melayani lonjakan jutaan pengunjung.",
+          "en": "Resilient serverless and microservices backend capable of supporting high traffic surges."
+        }
       },
       {
-        "title": "Enterprise Security & SEO",
-        "description": "Perlindungan terhadap ancaman siber (OWASP Top 10) serta optimasi Core Web Vitals untuk ranking Google tertinggi."
+        "title": {
+          "id": "Keamanan Enterprise & Optimasi SEO",
+          "en": "Enterprise Security & SEO"
+        },
+        "description": {
+          "id": "Perlindungan terhadap ancaman siber (OWASP Top 10) serta optimasi Core Web Vitals.",
+          "en": "OWASP Top 10 vulnerability mitigation and Core Web Vitals optimization for top search visibility."
+        }
       }
     ],
-    "benefits": [
-      "Kecepatan loading instan meningkatkan kenyamanan pengguna",
-      "Tampilan modern yang memperkuat kredibilitas perusahaan",
-      "Dapat diintegrasikan langsung dengan CRM, ERP, atau payment gateway"
-    ],
-    "deliverables": [
-      "Full Source Code & Dokumentasi Arsitektur",
-      "Aplikasi Web Siap Produksi",
-      "Setup CI/CD Pipeline & Panduan Maintenance"
-    ]
+    "benefits": {
+      "id": [
+        "Kecepatan loading instan meningkatkan kenyamanan pengguna",
+        "Tampilan modern yang memperkuat kredibilitas perusahaan",
+        "Dapat diintegrasikan langsung dengan CRM, ERP, atau payment gateway"
+      ],
+      "en": [
+        "Sub-second load times improving user retention and engagement",
+        "Elevated corporate authority through sophisticated digital branding",
+        "Seamless connectivity with existing ERP, CRM, and payment systems"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Full Source Code & Dokumentasi Arsitektur",
+        "Aplikasi Web Siap Produksi",
+        "Setup CI/CD Pipeline & Panduan Maintenance"
+      ],
+      "en": [
+        "Clean Source Code & Architecture Specification",
+        "Production-Grade Web Application Deployment",
+        "Automated CI/CD Pipeline Setup & Maintenance Handbook"
+      ]
+    }
   },
   {
     "id": "mobile-applications",
     "slug": "mobile-applications",
-    "title": "Mobile Applications",
+    "title": {
+      "id": "Aplikasi Mobile",
+      "en": "Mobile Applications"
+    },
     "category": "tech",
-    "categoryName": "Tech Service",
-    "badge": "iOS & Android",
+    "categoryName": {
+      "id": "Layanan Teknologi",
+      "en": "Tech Service"
+    },
+    "badge": {
+      "id": "iOS & Android",
+      "en": "iOS & Android"
+    },
     "icon": "Smartphone",
-    "shortDescription": "Intuitive and feature-rich apps for iOS and Android platforms, ensuring your business stays connected with users on the go while delivering a compelling user experience.",
-    "fullDescription": "Pengembangan aplikasi mobile native maupun cross-platform berkinerja tinggi untuk sistem operasi Android dan iOS. Kami menghadirkan antarmuka pengguna yang memikat, navigasi yang intuitif, serta kemampuan offline-first yang andal untuk menjaga konektivitas bisnis dengan pengguna kapan saja.",
+    "shortDescription": {
+      "id": "Aplikasi intuitif dan kaya fitur untuk platform iOS dan Android, memastikan bisnis Anda tetap terhubung dengan pengguna di mana pun dengan pengalaman pengguna terbaik.",
+      "en": "Intuitive and feature-rich apps for iOS and Android platforms, ensuring your business stays connected with users on the go while delivering a compelling user experience."
+    },
+    "fullDescription": {
+      "id": "Pengembangan aplikasi mobile native maupun cross-platform berkinerja tinggi untuk sistem operasi Android dan iOS. Kami menghadirkan antarmuka pengguna yang memikat, navigasi yang intuitif, serta kemampuan offline-first yang andal untuk menjaga konektivitas bisnis dengan pengguna kapan saja.",
+      "en": "Native and cross-platform mobile apps for Android and iOS engineered for top-tier speed and intuitive touch flows. We combine captivating design with offline-first capabilities to keep your business accessible everywhere."
+    },
     "features": [
       {
-        "title": "Cross-Platform & Native Performance",
-        "description": "Pengembangan efisien menggunakan Flutter atau React Native dengan performa setara aplikasi native."
+        "title": {
+          "id": "Performa Cross-Platform & Native",
+          "en": "Cross-Platform & Native Performance"
+        },
+        "description": {
+          "id": "Pengembangan efisien menggunakan Flutter atau React Native dengan performa setara native.",
+          "en": "Efficient multi-platform builds using Flutter and React Native delivering 60 FPS fluidity."
+        }
       },
       {
-        "title": "Push Notification & Real-time Sync",
-        "description": "Pengiriman pesan instan, notifikasi transaksi, dan sinkronisasi data seketika dengan server."
+        "title": {
+          "id": "Push Notifikasi & Sinkronisasi Real-time",
+          "en": "Push Notification & Real-time Sync"
+        },
+        "description": {
+          "id": "Pengiriman pesan instan, notifikasi transaksi, dan sinkronisasi data seketika dengan server.",
+          "en": "Instant transactional alerts and low-latency real-time bidirectional data synchronization."
+        }
       },
       {
-        "title": "Offline-First Architecture",
-        "description": "Aplikasi tetap dapat digunakan mencatat data di daerah minim sinyal, otomatis sinkronisasi saat terhubung internet."
+        "title": {
+          "id": "Arsitektur Offline-First",
+          "en": "Offline-First Architecture"
+        },
+        "description": {
+          "id": "Aplikasi tetap dapat digunakan di daerah minim sinyal, otomatis sinkronisasi saat terhubung internet.",
+          "en": "Local-first caching allowing field operation in poor connectivity with automatic cloud sync."
+        }
       }
     ],
-    "benefits": [
-      "Jangkauan pasar maksimal ke seluruh pengguna smartphone Android & iOS",
-      "Meningkatkan loyalitas pelanggan melalui akses langsung dalam genggaman",
-      "Kemudahan proses approval dan operasional bagi tim internal di lapangan"
-    ],
-    "deliverables": [
-      "Build Aplikasi Produksi (APK / AAB & IPA)",
-      "Bantuan Penerbitan ke Google Play Store & Apple App Store",
-      "Dokumentasi API Service & Source Code Lengkap"
-    ]
+    "benefits": {
+      "id": [
+        "Jangkauan pasar maksimal ke seluruh pengguna smartphone Android & iOS",
+        "Meningkatkan loyalitas pelanggan melalui akses langsung dalam genggaman",
+        "Kemudahan proses approval dan operasional bagi tim internal di lapangan"
+      ],
+      "en": [
+        "Maximized customer reach across global Android and iOS ecosystems",
+        "Direct-to-consumer loyalty through push engagement and personal UX",
+        "Streamlined mobile approvals and operational speed for field teams"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Build Aplikasi Produksi (APK / AAB & IPA)",
+        "Bantuan Penerbitan ke Google Play Store & Apple App Store",
+        "Dokumentasi API Service & Source Code Lengkap"
+      ],
+      "en": [
+        "Production Application Builds (APK / AAB & IPA)",
+        "End-to-End Google Play Store & Apple App Store Publishing",
+        "Full Backend API Specification & Modular Source Code"
+      ]
+    }
   },
   {
     "id": "desktop-applications",
     "slug": "desktop-applications",
-    "title": "Desktop Applications",
+    "title": {
+      "id": "Aplikasi Desktop",
+      "en": "Desktop Applications"
+    },
     "category": "tech",
-    "categoryName": "Tech Service",
-    "badge": "Robust & Offline-First",
+    "categoryName": {
+      "id": "Layanan Teknologi",
+      "en": "Tech Service"
+    },
+    "badge": {
+      "id": "Tangguh & Offline-First",
+      "en": "Robust & Offline-First"
+    },
     "icon": "Monitor",
-    "shortDescription": "We specialize in developing robust and user-friendly desktop applications tailored to meet your specific business needs.",
-    "fullDescription": "Spesialisasi dalam membangun aplikasi komputer desktop yang tangguh, aman, dan mudah digunakan. Sangat ideal untuk sistem point-of-sale (POS) kasir kasir ritel, manajemen gudang offline, sistem manufaktur pabrik, hingga pengolahan data lokal berkapasitas besar tanpa ketergantungan koneksi internet konstan.",
+    "shortDescription": {
+      "id": "Kami berspesialisasi dalam mengembangkan aplikasi desktop yang tangguh dan mudah digunakan yang disesuaikan dengan kebutuhan spesifik bisnis Anda.",
+      "en": "We specialize in developing robust and user-friendly desktop applications tailored to meet your specific business needs."
+    },
+    "fullDescription": {
+      "id": "Spesialisasi dalam membangun aplikasi komputer desktop yang tangguh, aman, dan mudah digunakan. Sangat ideal untuk sistem point-of-sale (POS) kasir ritel, manajemen gudang offline, sistem manufaktur pabrik, hingga pengolahan data lokal berkapasitas besar tanpa ketergantungan koneksi internet konstan.",
+      "en": "Robust, secure, and user-centric desktop software designed for mission-critical operations such as retail POS counters, offline warehouse logistics, factory manufacturing controls, and heavy data computations independent of internet stability."
+    },
     "features": [
       {
-        "title": "Hardware Device Integration",
-        "description": "Integrasi langsung dengan perangkat keras seperti thermal printer, barcode/QR scanner, scale sensor, dan card reader."
+        "title": {
+          "id": "Integrasi Perangkat Keras",
+          "en": "Hardware Device Integration"
+        },
+        "description": {
+          "id": "Integrasi langsung dengan printer thermal, barcode/QR scanner, timbangan digital, dan EDC.",
+          "en": "Direct serial/USB interfacing with thermal printers, barcode scanners, digital scales, and smart terminals."
+        }
       },
       {
-        "title": "Local Database & Fast Processing",
-        "description": "Pemrosesan data lokal berkecepatan tinggi dengan SQLite atau PostgreSQL Embedded."
+        "title": {
+          "id": "Database Lokal & Pemrosesan Cepat",
+          "en": "Local Database & Fast Processing"
+        },
+        "description": {
+          "id": "Pemrosesan data lokal berkecepatan tinggi dengan SQLite atau PostgreSQL Embedded.",
+          "en": "Sub-millisecond data query processing powered by embedded local relational databases."
+        }
       },
       {
-        "title": "Cross-OS Compatibility",
-        "description": "Kompatibilitas di sistem operasi Windows, macOS, dan Linux berbasis Electron, Tauri, atau .NET."
+        "title": {
+          "id": "Kompatibilitas Multi-OS",
+          "en": "Cross-OS Compatibility"
+        },
+        "description": {
+          "id": "Kompatibilitas di sistem operasi Windows, macOS, dan Linux berbasis Electron, Tauri, atau .NET.",
+          "en": "Flawless compilation across Windows, macOS, and Linux using modern Tauri, Electron, or .NET."
+        }
       }
     ],
-    "benefits": [
-      "Operasional bisnis kasir dan gudang 100% tidak pernah berhenti saat internet mati",
-      "Akses penuh ke performa komputasi dan memori lokal komputer",
-      "Keamanan data transaksi lokal terlindungi enkripsi tingkat tinggi"
-    ],
-    "deliverables": [
-      "Installer Package (.exe / .msi / .dmg)",
-      "Source Code & Dokumentasi Driver Perangkat Keras",
-      "Manual Penggunaan Operator & Panduan Instalasi"
-    ]
+    "benefits": {
+      "id": [
+        "Operasional bisnis kasir dan gudang 100% tidak pernah berhenti saat internet mati",
+        "Akses penuh ke performa komputasi dan memori lokal komputer",
+        "Keamanan data transaksi lokal terlindungi enkripsi tingkat tinggi"
+      ],
+      "en": [
+        "Zero downtime for cashiers and warehouse floors even during total internet blackouts",
+        "Direct access to computer GPU/CPU resources for compute-heavy workflows",
+        "Air-gapped transaction security with AES-256 local database encryption"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Installer Package (.exe / .msi / .dmg)",
+        "Source Code & Dokumentasi Driver Perangkat Keras",
+        "Manual Penggunaan Operator & Panduan Instalasi"
+      ],
+      "en": [
+        "Cross-Platform Installers (.exe, .msi, .dmg, .deb)",
+        "Complete Hardware Driver Integration Documentation & Source Code",
+        "Operator Training Handbook & IT Administration Guide"
+      ]
+    }
   },
   {
     "id": "solusi-it-inovatif",
     "slug": "solusi-it-inovatif",
-    "title": "Solusi IT yang Inovatif",
+    "title": {
+      "id": "Solusi IT Inovatif",
+      "en": "Innovative IT Solutions"
+    },
     "category": "tech",
-    "categoryName": "Tech Service",
-    "badge": "Inovasi & Kualitas",
+    "categoryName": {
+      "id": "Layanan Teknologi",
+      "en": "Tech Service"
+    },
+    "badge": {
+      "id": "Inovasi & Kualitas",
+      "en": "Innovation & Quality"
+    },
     "icon": "Cpu",
-    "shortDescription": "Solusi IT yang inovatif, berkualitas, aman, dan relevan dengan kebutuhan bisnis yang terus berkembang.",
-    "fullDescription": "Kami berkomitmen untuk terus mengembangkan solusi IT yang inovatif, berkualitas, aman, dan relevan dengan kebutuhan bisnis yang dinamis. Pendekatan kami berorientasi pada kebutuhan pengguna dan tujuan bisnis, memastikan setiap arsitektur memberikan manfaat jangka panjang.",
+    "shortDescription": {
+      "id": "Solusi IT yang inovatif, berkualitas, aman, dan relevan dengan kebutuhan bisnis yang terus berkembang.",
+      "en": "Innovative, high-quality, secure, and relevant IT solutions designed to address evolving business needs."
+    },
+    "fullDescription": {
+      "id": "Kami berkomitmen untuk terus mengembangkan solusi IT yang inovatif, berkualitas, aman, dan relevan dengan kebutuhan bisnis yang dinamis. Pendekatan kami berorientasi pada kebutuhan pengguna dan tujuan bisnis, memastikan setiap arsitektur memberikan manfaat jangka panjang.",
+      "en": "We develop innovative, high-caliber, and enterprise-secure IT architectures engineered to solve nuanced business challenges. Our design approach balances human user empathy with long-term technological resilience."
+    },
     "features": [
-      { "title": "Human-Centered Design", "description": "Solusi yang berorientasi pada kenyamanan pengguna dan pencapaian target bisnis." },
-      { "title": "Standar Keamanan Tinggi", "description": "Protokol enkripsi dan best-practice keamanan informasi korporasi." },
-      { "title": "Arsitektur Skalabel", "description": "Sistem yang siap tumbuh seiring peningkatan transaksi dan pengguna." }
+      {
+        "title": {
+          "id": "Desain Berpusat pada Pengguna",
+          "en": "Human-Centered Design"
+        },
+        "description": {
+          "id": "Solusi yang berorientasi pada kenyamanan pengguna dan pencapaian target bisnis nyata.",
+          "en": "Architectures calibrated for user simplicity and measurable business KPIs."
+        }
+      },
+      {
+        "title": {
+          "id": "Standar Keamanan Tinggi",
+          "en": "Rigorous Security Standards"
+        },
+        "description": {
+          "id": "Protokol enkripsi modern dan best-practice keamanan informasi korporasi.",
+          "en": "Enterprise cryptography, least-privilege RBAC, and SOC-ready information security."
+        }
+      },
+      {
+        "title": {
+          "id": "Arsitektur Skalabel",
+          "en": "Scalable Architecture"
+        },
+        "description": {
+          "id": "Sistem yang siap tumbuh seiring peningkatan transaksi dan volume operasional perusahaan.",
+          "en": "Cloud-native microservices engineered to scale effortlessly with transaction surges."
+        }
+      }
     ],
-    "benefits": [
-      "Meningkatkan keunggulan kompetitif di industri Anda",
-      "Solusi teknologi yang tahan lama dan mudah dikembangkan",
-      "Perlindungan data dan aset informasi perusahaan"
-    ],
-    "deliverables": [
-      "Arsitektur Cetak Biru (IT Blueprint)",
-      "Dokumentasi Teknis & Spesifikasi Solusi",
-      "Implementasi & Pelatihan Tim Internal"
-    ]
+    "benefits": {
+      "id": [
+        "Meningkatkan keunggulan kompetitif di industri Anda",
+        "Solusi teknologi yang tahan lama dan mudah dikembangkan",
+        "Perlindungan data dan aset informasi perusahaan"
+      ],
+      "en": [
+        "Decisive competitive advantage through proprietary technology leverage",
+        "Future-proof software architecture that adapts as your organization expands",
+        "Bulletproof defense of enterprise intellectual property and financial data"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Arsitektur Cetak Biru (IT Blueprint)",
+        "Dokumentasi Teknis & Spesifikasi Solusi",
+        "Implementasi & Pelatihan Tim Internal"
+      ],
+      "en": [
+        "Enterprise IT Blueprint & Solution Architecture Spec",
+        "Comprehensive Technical Documentation & API Manuals",
+        "System Implementation, Staff Training, & Knowledge Transfer"
+      ]
+    }
   },
   {
     "id": "transformasi-digital",
     "slug": "transformasi-digital",
-    "title": "Solusi Informasi & Transformasi Digital",
+    "title": {
+      "id": "Transformasi Digital",
+      "en": "Digital Transformation"
+    },
     "category": "tech",
-    "categoryName": "Tech Service",
-    "badge": "Terukur & Terintegrasi",
+    "categoryName": {
+      "id": "Layanan Teknologi",
+      "en": "Tech Service"
+    },
+    "badge": {
+      "id": "Terukur & Terintegrasi",
+      "en": "Measurable & Integrated"
+    },
     "icon": "Layers",
-    "shortDescription": "Digitalisasi proses bisnis, integrasi sistem, dan pengelolaan data agar bisnis bekerja lebih efektif.",
-    "fullDescription": "Membantu perusahaan dalam mendigitalkan alur kerja konvensional, mengintegrasikan sistem yang terfragmentasi, dan mengelola data agar operasional bisnis berjalan terukur, transparan, dan terintegrasi secara menyeluruh.",
+    "shortDescription": {
+      "id": "Digitalisasi proses bisnis, integrasi sistem, dan pengelolaan data agar bisnis bekerja lebih efektif dan terukur.",
+      "en": "Digitalization of business processes, seamless system integration, and data management to make operations faster and more effective."
+    },
+    "fullDescription": {
+      "id": "Membantu perusahaan dalam mendigitalkan alur kerja konvensional, mengintegrasikan sistem yang terfragmentasi, dan mengelola data agar operasional bisnis berjalan terukur, transparan, dan terintegrasi secara menyeluruh.",
+      "en": "We guide enterprises in digitizing legacy operational bottlenecks, uniting fragmented siloed applications, and engineering centralized data lakes for complete business transparency and velocity."
+    },
     "features": [
-      { "title": "Digitalisasi Proses Bisnis", "description": "Migrasi dokumen dan alur kerja manual ke sistem otomatisasi terpusat." },
-      { "title": "Integrasi Antar-Sistem (APIs)", "description": "Menghubungkan software internal dengan vendor eksternal secara mulus." },
-      { "title": "Manajemen & Analisis Data", "description": "Dashboard analitik real-time untuk pemantauan performa bisnis." }
+      {
+        "title": {
+          "id": "Digitalisasi Proses Bisnis",
+          "en": "Business Process Digitalization"
+        },
+        "description": {
+          "id": "Migrasi dokumen dan alur kerja manual ke sistem otomatisasi terpusat.",
+          "en": "Transitioning manual paper trails into automated, traceable digital workflows."
+        }
+      },
+      {
+        "title": {
+          "id": "Integrasi Antar-Sistem (APIs)",
+          "en": "System-to-System API Integration"
+        },
+        "description": {
+          "id": "Menghubungkan software internal dengan vendor eksternal secara mulus.",
+          "en": "Connecting internal databases with third-party SaaS and partner APIs seamlessly."
+        }
+      },
+      {
+        "title": {
+          "id": "Manajemen & Analisis Data",
+          "en": "Data Management & Analytics"
+        },
+        "description": {
+          "id": "Dashboard analitik real-time untuk pemantauan performa bisnis lintas divisi.",
+          "en": "Unified executive business intelligence dashboards for cross-divisional insights."
+        }
+      }
     ],
-    "benefits": [
-      "Alur koordinasi lintas divisi menjadi lebih transparan",
-      "Visibilitas performa bisnis secara real-time",
-      "Mengurangi risiko human-error dalam input data"
-    ],
-    "deliverables": [
-      "Middleware & API Integrator",
-      "Dashboard Eksekutif & Pelaporan",
-      "Prosedur Operasional Standar (SOP) Digital"
-    ]
+    "benefits": {
+      "id": [
+        "Alur koordinasi lintas divisi menjadi lebih transparan",
+        "Visibilitas performa bisnis secara real-time",
+        "Mengurangi risiko human-error dalam input data"
+      ],
+      "en": [
+        "Unprecedented operational transparency and cross-departmental alignment",
+        "Live visibility into key operating performance indicators and inventory",
+        "Drastic reduction of manual clerical errors and duplicate entries"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Middleware & API Integrator",
+        "Dashboard Eksekutif & Pelaporan",
+        "Prosedur Operasional Standar (SOP) Digital"
+      ],
+      "en": [
+        "Production Middleware & Enterprise API Connectors",
+        "Executive Analytics Dashboard & Reporting Engine",
+        "Standard Operating Procedures (SOP) for Digital Operations"
+      ]
+    }
   },
   {
     "id": "accounting",
     "slug": "accounting",
-    "title": "Accounting",
+    "title": {
+      "id": "Akuntansi",
+      "en": "Accounting"
+    },
     "category": "financial",
-    "categoryName": "Digital Financial Service",
-    "badge": "Financial Reporting",
+    "categoryName": {
+      "id": "Layanan Keuangan Digital",
+      "en": "Digital Financial Service"
+    },
+    "badge": {
+      "id": "Pelaporan Finansial",
+      "en": "Financial Reporting"
+    },
     "icon": "Calculator",
-    "shortDescription": "Meticulous record-keeping, financial statement preparation, and compliance to ensure your books are accurate and insightful.",
-    "fullDescription": "Layanan pembukuan dan akuntansi menyeluruh dengan pencatatan teliti, penyusunan laporan keuangan berkala (Neraca, Laba Rugi, Arus Kas), serta penegakan kepatuhan standar akuntansi keuangan (PSAK / IFRS) untuk memastikan kondisi finansial perusahaan Anda selalu akurat dan terpercaya.",
+    "shortDescription": {
+      "id": "Pencatatan pembukuan yang teliti, penyusunan laporan keuangan berkala, dan kepatuhan standar akuntansi untuk memastikan pembukuan Anda akurat dan kredibel.",
+      "en": "Meticulous record-keeping, financial statement preparation, and compliance to ensure your books are accurate and insightful."
+    },
+    "fullDescription": {
+      "id": "Layanan pembukuan dan akuntansi menyeluruh dengan pencatatan teliti, penyusunan laporan keuangan berkala (Neraca, Laba Rugi, Arus Kas), serta penegakan kepatuhan standar akuntansi keuangan (PSAK / IFRS) untuk memastikan kondisi finansial perusahaan Anda selalu akurat dan terpercaya.",
+      "en": "End-to-end corporate bookkeeping and accounting services adhering strictly to PSAK and IFRS standards. We prepare meticulous monthly and annual financial statements—including Balance Sheet, Income Statement, and Cash Flow—empowering stakeholders with dependable data."
+    },
     "features": [
-      { "title": "Meticulous Bookkeeping", "description": "Pencatatan harian seluruh transaksi jurnal, piutang, dan utang usaha secara rapi." },
-      { "title": "Financial Statement Preparation", "description": "Penyusunan laporan laba rugi, neraca, perubahan modal, dan arus kas bulanan/tahunan." },
-      { "title": "Compliance & Standardization", "description": "Penyesuaian pencatatan terhadap standar akuntansi yang berlaku (PSAK/SAK ETAP)." }
+      {
+        "title": {
+          "id": "Pembukuan Komprehensif",
+          "en": "Meticulous Bookkeeping"
+        },
+        "description": {
+          "id": "Pencatatan harian seluruh transaksi jurnal, piutang, dan utang usaha secara rapi.",
+          "en": "Daily reconciliation and orderly recording of journal entries, AR, and AP ledgers."
+        }
+      },
+      {
+        "title": {
+          "id": "Penyusunan Laporan Keuangan",
+          "en": "Financial Statement Preparation"
+        },
+        "description": {
+          "id": "Penyusunan laporan laba rugi, neraca, perubahan modal, dan arus kas bulanan/tahunan.",
+          "en": "Preparing verified monthly/quarterly Balance Sheets, P&L, and Cash Flow statements."
+        }
+      },
+      {
+        "title": {
+          "id": "Kepatuhan & Standarisasi PSAK",
+          "en": "Compliance & Standardization"
+        },
+        "description": {
+          "id": "Penyesuaian pencatatan terhadap standar akuntansi yang berlaku (PSAK/SAK ETAP).",
+          "en": "Standardizing accounting policies in full compliance with Indonesian and global accounting frameworks."
+        }
+      }
     ],
-    "benefits": [
-      "Laporan keuangan valid siap disajikan ke investor, bank, atau pemegang saham",
-      "Memudahkan evaluasi arus kas dan kesehatan keuangan perusahaan",
-      "Menghindari sanksi ketidakpatuhan pencatatan keuangan"
-    ],
-    "deliverables": [
-      "Laporan Keuangan Lengkap Bulanan & Tahunan",
-      "Buku Besar (General Ledger) & Rekonsiliasi Bank",
-      "Analisis Rasio Keuangan & Catatan Manajemen"
-    ]
+    "benefits": {
+      "id": [
+        "Laporan keuangan valid siap disajikan ke investor, bank, atau pemegang saham",
+        "Memudahkan evaluasi arus kas dan kesehatan keuangan perusahaan",
+        "Menghindari sanksi ketidakpatuhan pencatatan keuangan"
+      ],
+      "en": [
+        "Audit-ready financial statements ready for banks, investors, and regulators",
+        "Actionable cash flow intelligence for confident managerial budgeting",
+        "Zero exposure to statutory penalties and reporting non-compliance"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Laporan Keuangan Lengkap Bulanan & Tahunan",
+        "Buku Besar (General Ledger) & Rekonsiliasi Bank",
+        "Analisis Rasio Keuangan & Catatan Manajemen"
+      ],
+      "en": [
+        "Complete Monthly & Annual Audited Financial Statements",
+        "General Ledger Summaries & Monthly Bank Reconciliations",
+        "Financial Ratio Analysis & Executive Management Notes"
+      ]
+    }
   },
   {
     "id": "tax",
     "slug": "tax",
-    "title": "Tax",
+    "title": {
+      "id": "Perpajakan",
+      "en": "Tax"
+    },
     "category": "financial",
-    "categoryName": "Digital Financial Service",
-    "badge": "Tax Optimization",
+    "categoryName": {
+      "id": "Layanan Keuangan Digital",
+      "en": "Digital Financial Service"
+    },
+    "badge": {
+      "id": "Optimalisasi Pajak",
+      "en": "Tax Optimization"
+    },
     "icon": "Landmark",
-    "shortDescription": "Strategic tax planning, preparation, and advisory services to optimize your tax position and ensure full compliance.",
-    "fullDescription": "Perencanaan pajak strategis (Tax Planning), penghitungan dan pelaporan SPT Masa & Tahunan (PPh Badan, PPh 21, PPh 23, PPN), serta asistensi pemeriksaan pajak untuk mengoptimalkan posisi perpajakan perusahaan Anda sesuai koridor hukum yang sah.",
+    "shortDescription": {
+      "id": "Perencanaan pajak strategis, penyiapan pelaporan SPT, dan layanan konsultasi untuk mengoptimalkan posisi pajak serta memastikan kepatuhan penuh.",
+      "en": "Strategic tax planning, preparation, and advisory services to optimize your tax position and ensure full compliance."
+    },
+    "fullDescription": {
+      "id": "Perencanaan pajak strategis (Tax Planning), penghitungan dan pelaporan SPT Masa & Tahunan (PPh Badan, PPh 21, PPh 23, PPN), serta asistensi pemeriksaan pajak untuk mengoptimalkan posisi perpajakan perusahaan Anda sesuai koridor hukum yang sah.",
+      "en": "Strategic corporate tax advisory, tax optimization planning, and automated SPT filing for Corporate Income Tax, WHT 21/23, and VAT. We provide full audit assistance to ensure legal tax efficiency and minimize exposure to penalties."
+    },
     "features": [
-      { "title": "Strategic Tax Planning", "description": "Optimalisasi beban pajak secara legal dan efisien sesuai peraturan perpajakan terbaru." },
-      { "title": "Tax Compliance & Filing", "description": "Penyiapan dan pelaporan SPT Masa (bulanan) serta SPT Tahunan PPh Badan & Pribadi." },
-      { "title": "Tax Audit Support", "description": "Pendampingan dan penyusunan dokumen sanggahan saat proses pemeriksaan pajak (SP2DK)." }
+      {
+        "title": {
+          "id": "Perencanaan Pajak Strategis",
+          "en": "Strategic Tax Planning"
+        },
+        "description": {
+          "id": "Optimalisasi beban pajak secara legal dan efisien sesuai peraturan perpajakan terbaru.",
+          "en": "Maximizing tax deductions and optimizing corporate tax structure strictly within statutory limits."
+        }
+      },
+      {
+        "title": {
+          "id": "Kepatuhan & Pelaporan SPT",
+          "en": "Tax Compliance & Filing"
+        },
+        "description": {
+          "id": "Penyiapan dan pelaporan SPT Masa (bulanan) serta SPT Tahunan PPh Badan & Pribadi.",
+          "en": "Timely computation and digital submission of monthly and annual corporate tax returns."
+        }
+      },
+      {
+        "title": {
+          "id": "Pendampingan Pemeriksaan Pajak",
+          "en": "Tax Audit Support"
+        },
+        "description": {
+          "id": "Pendampingan dan penyusunan dokumen sanggahan saat proses pemeriksaan pajak (SP2DK).",
+          "en": "Expert assistance, documentation preparation, and representation during tax inquiries and audits."
+        }
+      }
     ],
-    "benefits": [
-      "Efisiensi beban pajak tanpa melanggar regulasi perundang-undangan",
-      "Bebas denda keterlambatan pelaporan atau kesalahan penghitungan pajak",
-      "Ketenangan operasional bisnis berkat kepatuhan pajak 100%"
-    ],
-    "deliverables": [
-      "Dokumen SPT Masa & SPT Tahunan Lengkap Bukti Penerimaan Elektronik (BPE)",
-      "Kertas Kerja Rekonsiliasi Fiskal",
-      "Laporan Evaluasi Perencanaan Pajak Strategis"
-    ]
+    "benefits": {
+      "id": [
+        "Efisiensi beban pajak tanpa melanggar regulasi perundang-undangan",
+        "Bebas denda keterlambatan pelaporan atau kesalahan penghitungan pajak",
+        "Ketenangan operasional bisnis berkat kepatuhan pajak 100%"
+      ],
+      "en": [
+        "Significant tax liability savings through legitimate statutory incentives",
+        "Zero exposure to late filing fines or inaccurate tax assessment penalties",
+        "Total operational peace of mind with 100% tax compliance assurance"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Dokumen SPT Masa & SPT Tahunan Lengkap Bukti Penerimaan Elektronik (BPE)",
+        "Kertas Kerja Rekonsiliasi Fiskal",
+        "Laporan Evaluasi Perencanaan Pajak Strategis"
+      ],
+      "en": [
+        "Official Monthly & Annual Tax Returns with Electronic Receipts (BPE)",
+        "Fiscal Reconciliation Working Papers & Detailed Calculations",
+        "Strategic Tax Advisory & Optimization Assessment Report"
+      ]
+    }
   },
   {
     "id": "investigation",
     "slug": "investigation",
-    "title": "Investigation",
+    "title": {
+      "id": "Investigasi Forensik",
+      "en": "Investigation"
+    },
     "category": "financial",
-    "categoryName": "Digital Financial Service",
-    "badge": "Forensic Accounting",
+    "categoryName": {
+      "id": "Layanan Keuangan Digital",
+      "en": "Digital Financial Service"
+    },
+    "badge": {
+      "id": "Akuntansi Forensik",
+      "en": "Forensic Accounting"
+    },
     "icon": "Search",
-    "shortDescription": "Forensic accounting and financial investigations to uncover fraud, misconduct, and financial irregularities.",
-    "fullDescription": "Layanan akuntansi forensik dan audit investigasi mendalam untuk mengidentifikasi indikasi fraud (kecurangan), penyalahgunaan aset, manipulasi laporan keuangan, dan ketidakberesan transaksi dalam operasional bisnis.",
+    "shortDescription": {
+      "id": "Akuntansi forensik dan investigasi keuangan untuk mengungkap indikasi fraud, penyalahgunaan aset, dan ketidakberesan transaksi.",
+      "en": "Forensic accounting and financial investigations to uncover fraud, misconduct, and financial irregularities."
+    },
+    "fullDescription": {
+      "id": "Layanan akuntansi forensik dan audit investigasi mendalam untuk mengidentifikasi indikasi fraud (kecurangan), penyalahgunaan aset, manipulasi laporan keuangan, dan ketidakberesan transaksi dalam operasional bisnis.",
+      "en": "Specialized forensic accounting and financial investigative audits designed to expose internal fraud, corporate asset misappropriation, creative accounting manipulations, and anomalous transactional leaks."
+    },
     "features": [
-      { "title": "Fraud Detection & Examination", "description": "Pelacakan transaksi janggal, penggelapan kas, dan rekayasa data pembukuan." },
-      { "title": "Asset Tracing & Recovery", "description": "Penelusuran aliran dana dan identifikasi aset yang disembunyikan atau disalahgunakan." },
-      { "title": "Internal Control Vulnerability Audit", "description": "Menemukan celah kelemahan dalam SOP internal yang memicu terjadinya kecurangan." }
+      {
+        "title": {
+          "id": "Deteksi Fraud & Investigasi",
+          "en": "Fraud Detection & Examination"
+        },
+        "description": {
+          "id": "Pelacakan transaksi janggal, penggelapan kas, dan rekayasa data pembukuan.",
+          "en": "Forensic data scraping to detect unauthorized disbursements, embezzlement, and ledger falsification."
+        }
+      },
+      {
+        "title": {
+          "id": "Penelusuran & Pemulihan Aset",
+          "en": "Asset Tracing & Recovery"
+        },
+        "description": {
+          "id": "Penelusuran aliran dana dan identifikasi aset yang disembunyikan atau disalahgunakan.",
+          "en": "Cross-account fund flow tracing to identify hidden or diverted corporate resources."
+        }
+      },
+      {
+        "title": {
+          "id": "Audit Kerentanan Kontrol Internal",
+          "en": "Internal Control Vulnerability Audit"
+        },
+        "description": {
+          "id": "Menemukan celah kelemahan dalam SOP internal yang memicu terjadinya kecurangan.",
+          "en": "Root-cause diagnostics of control gaps that permitted irregular activities."
+        }
+      }
     ],
-    "benefits": [
-      "Menyelamatkan aset perusahaan dari potensi kerugian akibat fraud",
-      "Menyediakan bukti formal yang dapat dipertanggungjawabkan secara hukum",
-      "Memperkuat integritas tata kelola perusahaan (Good Corporate Governance)"
-    ],
-    "deliverables": [
-      "Laporan Hasil Audit Investigatif Independen",
-      "Rekonstruksi Aliran Dana (Fund Flow Analysis)",
-      "Rekomendasi Pengetatan Pengendalian Internal"
-    ]
+    "benefits": {
+      "id": [
+        "Menyelamatkan aset perusahaan dari potensi kerugian akibat fraud",
+        "Menyediakan bukti formal yang dapat dipertanggungjawabkan secara hukum",
+        "Memperkuat integritas tata kelola perusahaan (Good Corporate Governance)"
+      ],
+      "en": [
+        "Substantial recovery and preservation of corporate funds and assets",
+        "Legally defensible forensic evidence suitable for court or arbitration",
+        "Strengthened corporate governance deterring future malpractice"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Laporan Hasil Audit Investigatif Independen",
+        "Rekonstruksi Aliran Dana (Fund Flow Analysis)",
+        "Rekomendasi Pengetatan Pengendalian Internal"
+      ],
+      "en": [
+        "Independent Forensic Audit Investigation Report",
+        "Visual Fund Flow Reconstruction & Asset Trail Evidence",
+        "Actionable Internal Control Hardening Recommendations"
+      ]
+    }
   },
   {
     "id": "litigation",
     "slug": "litigation",
-    "title": "Litigation",
+    "title": {
+      "id": "Litigasi Keuangan",
+      "en": "Litigation"
+    },
     "category": "financial",
-    "categoryName": "Digital Financial Service",
-    "badge": "Legal Support",
+    "categoryName": {
+      "id": "Layanan Keuangan Digital",
+      "en": "Digital Financial Service"
+    },
+    "badge": {
+      "id": "Dukungan Hukum",
+      "en": "Legal Support"
+    },
     "icon": "Gavel",
-    "shortDescription": "Expert witness testimony and financial analysis support for legal disputes, damages calculation, and settlements.",
-    "fullDescription": "Dukungan analisis keuangan dan kesaksian ahli (expert witness) independen untuk membantu penyelesaian sengketa komersial di pengadilan atau arbitrase, penghitungan kerugian finansial aktual, serta negosiasi perdamaian.",
+    "shortDescription": {
+      "id": "Keterangan saksi ahli dan dukungan analisis keuangan untuk penyelesaian sengketa hukum, perhitungan kerugian, dan kesepakatan damai.",
+      "en": "Expert witness testimony and financial analysis support for legal disputes, damages calculation, and settlements."
+    },
+    "fullDescription": {
+      "id": "Dukungan analisis keuangan dan kesaksian ahli (expert witness) independen untuk membantu penyelesaian sengketa komersial di pengadilan atau arbitrase, penghitungan kerugian finansial aktual, serta negosiasi perdamaian.",
+      "en": "Objective financial dispute analysis, commercial loss calculations, and qualified expert witness testimonies for court trials, arbitrations, and out-of-court settlement negotiations."
+    },
     "features": [
-      { "title": "Damages Calculation", "description": "Perhitungan kerugian finansial materiil dan imateriil secara metodologis dan akurat." },
-      { "title": "Expert Witness Testimony", "description": "Penyediaan keterangan ahli keuangan di muka persidangan atau majelis arbitrase." },
-      { "title": "Dispute Settlement Financial Advisory", "description": "Pendampingan penyusunan skema kompensasi dan restrukturisasi dalam proses mediasi." }
+      {
+        "title": {
+          "id": "Perhitungan Ganti Rugi",
+          "en": "Damages & Loss Calculation"
+        },
+        "description": {
+          "id": "Perhitungan kerugian finansial materiil dan imateriil secara metodologis dan akurat.",
+          "en": "Methodological quantification of material losses, lost profits, and contract damages."
+        }
+      },
+      {
+        "title": {
+          "id": "Kesaksian Ahli Pengadilan",
+          "en": "Expert Witness Testimony"
+        },
+        "description": {
+          "id": "Penyediaan keterangan ahli keuangan di muka persidangan atau majelis arbitrase.",
+          "en": "Certified forensic accountants testifying as sworn expert witnesses in court proceedings."
+        }
+      },
+      {
+        "title": {
+          "id": "Konsultasi Perdamaian Sengketa",
+          "en": "Dispute Settlement Advisory"
+        },
+        "description": {
+          "id": "Pendampingan penyusunan skema kompensasi dan restrukturisasi dalam proses mediasi.",
+          "en": "Financial restructuring models to structure realistic and mutually acceptable settlements."
+        }
+      }
     ],
-    "benefits": [
-      "Memperkuat posisi hukum klien dengan bukti kalkulasi keuangan yang solid",
-      "Memberikan objektivitas dalam menilai klaim ganti rugi",
-      "Mempercepat proses resolusi sengketa finansial"
-    ],
-    "deliverables": [
-      "Laporan Keterangan Ahli Perhitungan Kerugian",
-      "Kajian Finansial Kasus Sengketa Hukum",
-      "Dokumen Pendukung Pembuktian Pengadilan"
-    ]
+    "benefits": {
+      "id": [
+        "Memperkuat posisi hukum klien dengan bukti kalkulasi keuangan yang solid",
+        "Memberikan objektivitas dalam menilai klaim ganti rugi",
+        "Mempercepat proses resolusi sengketa finansial"
+      ],
+      "en": [
+        "Formidable legal posture backed by unassailable empirical financial data",
+        "Objective, third-party validation that commands respect from judges and arbitrators",
+        "Expedited dispute resolution saving substantial legal costs and time"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Laporan Keterangan Ahli Perhitungan Kerugian",
+        "Kajian Finansial Kasus Sengketa Hukum",
+        "Dokumen Pendukung Pembuktian Pengadilan"
+      ],
+      "en": [
+        "Formal Expert Witness Damages Evaluation Report",
+        "Commercial Dispute Economic Analysis Brief",
+        "Supporting Financial Exhibits & Evidentiary Documentation"
+      ]
+    }
   },
   {
     "id": "liquidator",
     "slug": "liquidator",
-    "title": "Liquidator",
+    "title": {
+      "id": "Likuidator",
+      "en": "Liquidator"
+    },
     "category": "financial",
-    "categoryName": "Digital Financial Service",
-    "badge": "Insolvency & Winding-Up",
+    "categoryName": {
+      "id": "Layanan Keuangan Digital",
+      "en": "Digital Financial Service"
+    },
+    "badge": {
+      "id": "Pemberesan Entitas",
+      "en": "Insolvency & Winding-Up"
+    },
     "icon": "Scale",
-    "shortDescription": "Professional management of corporate insolvency, asset realization, and winding-up procedures.",
-    "fullDescription": "Manajemen profesional untuk proses pembubaran dan likuidasi perusahaan, mulai dari pengumuman likuidasi, inventarisasi dan penilaian aset, penyelesaian kewajiban utang piutang kepada kreditur, hingga pembagian sisa hasil likuidasi kepada pemegang saham sesuai UU Perseroan Terbatas.",
+    "shortDescription": {
+      "id": "Manajemen profesional kepailitan perusahaan, pencairan aset (boedel), dan prosedur pemberesan atau pembubaran badan usaha.",
+      "en": "Professional management of corporate insolvency, asset realization, and winding-up procedures."
+    },
+    "fullDescription": {
+      "id": "Manajemen profesional untuk proses pembubaran dan likuidasi perusahaan, mulai dari pengumuman likuidasi, inventarisasi dan penilaian aset, penyelesaian kewajiban utang piutang kepada kreditur, hingga pembagian sisa hasil likuidasi kepada pemegang saham sesuai UU Perseroan Terbatas.",
+      "en": "Professional corporate liquidation and insolvency administration in strict accordance with corporate company law. We orchestrate public notices, asset appraisal, creditor claim settlements, tax deregistration, and distribution of residual value to shareholders."
+    },
     "features": [
-      { "title": "Asset Realization & Inventory", "description": "Inventarisasi menyeluruh dan pencairan aset perusahaan secara transparan." },
-      { "title": "Creditor Settlement Management", "description": "Verifikasi klaim kreditur dan penyelesaian kewajiban utang sesuai skala prioritas hukum." },
-      { "title": "Statutory Compliance", "description": "Pelaksanaan prosedur likuidasi formal sesuai regulasi kementerian dan pengadilan." }
+      {
+        "title": {
+          "id": "Realisasi & Inventarisasi Aset",
+          "en": "Asset Realization & Inventory"
+        },
+        "description": {
+          "id": "Inventarisasi menyeluruh dan pencairan aset perusahaan secara transparan.",
+          "en": "Complete inventorying, physical auditing, and transparent liquidation of corporate assets."
+        }
+      },
+      {
+        "title": {
+          "id": "Penyelesaian Klaim Kreditur",
+          "en": "Creditor Settlement Management"
+        },
+        "description": {
+          "id": "Verifikasi klaim kreditur dan penyelesaian kewajiban utang sesuai skala prioritas hukum.",
+          "en": "Rigorous verification of creditor debts and ranking payment distributions by law."
+        }
+      },
+      {
+        "title": {
+          "id": "Kepatuhan Regulasi Pembubaran",
+          "en": "Statutory Compliance"
+        },
+        "description": {
+          "id": "Pelaksanaan prosedur likuidasi formal sesuai regulasi kementerian dan pengadilan.",
+          "en": "Executing required gazette announcements, tax clearance, and ministry deregistration."
+        }
+      }
     ],
-    "benefits": [
-      "Proses pembubaran entitas bisnis berjalan tertib, sah, dan bebas sengketa di kemudian hari",
-      "Perlindungan hak para pemangku kepentingan secara proporsional",
-      "Penyelesaian kewajiban perpajakan dan pencabutan status badan hukum yang tuntas"
-    ],
-    "deliverables": [
-      "Neraca Likuidasi Awal & Akhir",
-      "Laporan Pertanggungjawaban Likuidator",
-      "Penerbitan Surat Keputusan Pengesahan Pembubaran Badan Usaha"
-    ]
+    "benefits": {
+      "id": [
+        "Proses pembubaran entitas bisnis berjalan tertib, sah, dan bebas sengketa di kemudian hari",
+        "Perlindungan hak para pemangku kepentingan secara proporsional",
+        "Penyelesaian kewajiban perpajakan dan pencabutan status badan hukum yang tuntas"
+      ],
+      "en": [
+        "Lawful and orderly corporate dissolution eliminating future legal exposures",
+        "Equitable and legally protected treatment of all creditor and shareholder classes",
+        "Final tax clearance and definitive revocation of company legal entity status"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Neraca Likuidasi Awal & Akhir",
+        "Laporan Pertanggungjawaban Likuidator",
+        "Penerbitan Surat Keputusan Pengesahan Pembubaran Badan Usaha"
+      ],
+      "en": [
+        "Opening & Final Verified Liquidation Balance Sheets",
+        "Comprehensive Liquidator Account & Accountability Report",
+        "Official Ministry Deregistration & Entity Dissolution Decree"
+      ]
+    }
   },
   {
     "id": "digital-platform",
     "slug": "digital-platform",
-    "title": "Digital Platform",
+    "title": {
+      "id": "Platform Keuangan Digital",
+      "en": "Digital Platform"
+    },
     "category": "financial",
-    "categoryName": "Digital Financial Service",
-    "badge": "Fintech & Automation",
+    "categoryName": {
+      "id": "Layanan Keuangan Digital",
+      "en": "Digital Financial Service"
+    },
+    "badge": {
+      "id": "Fintech & Otomasi",
+      "en": "Fintech & Automation"
+    },
     "icon": "Laptop",
-    "shortDescription": "Implementing and optimizing financial software and digital platforms for streamlined reporting and analysis.",
-    "fullDescription": "Implementasi, kustomisasi, dan integrasi software akuntansi digital, sistem informasi keuangan berbasis cloud, dan platform otomasi pelaporan untuk mempercepat siklus tutup buku serta meningkatkan akurasi data finansial bisnis Anda.",
+    "shortDescription": {
+      "id": "Implementasi dan optimalisasi perangkat lunak keuangan serta platform digital untuk efisiensi pelaporan dan analisis data finansial.",
+      "en": "Implementing and optimizing financial software and digital platforms for streamlined reporting and analysis."
+    },
+    "fullDescription": {
+      "id": "Implementasi, kustomisasi, dan integrasi software akuntansi digital, sistem informasi keuangan berbasis cloud, dan platform otomasi pelaporan untuk mempercepat siklus tutup buku serta meningkatkan akurasi data finansial bisnis Anda.",
+      "en": "Designing, deploying, and tailoring digital finance systems, cloud accounting engines, and automated closing pipelines to accelerate book closing, enforce internal controls, and empower live financial analytics."
+    },
     "features": [
-      { "title": "ERP & Financial Software Integration", "description": "Implementasi sistem keuangan modern (SAP, Odoo, Accurate, Jurnal, atau custom portal)." },
-      { "title": "Automated Reconciliation Engine", "description": "Otomatisasi pencocokan mutasi bank dan transaksi payment gateway secara real-time." },
-      { "title": "Executive Financial Dashboards", "description": "Dashboard visual interaktif untuk memonitor KPI profitabilitas, likuiditas, dan margin." }
+      {
+        "title": {
+          "id": "Integrasi ERP & Software Finansial",
+          "en": "ERP & Financial Software Integration"
+        },
+        "description": {
+          "id": "Implementasi sistem keuangan modern (SAP, Odoo, Accurate, Jurnal, atau custom portal).",
+          "en": "Seamless setup and customization of leading ERP platforms (SAP, Odoo, Accurate, or custom)."
+        }
+      },
+      {
+        "title": {
+          "id": "Mesin Rekonsiliasi Otomatis",
+          "en": "Automated Reconciliation Engine"
+        },
+        "description": {
+          "id": "Otomatisasi pencocokan mutasi bank dan transaksi payment gateway secara real-time.",
+          "en": "Algorithmic multi-bank statement and payment gateway matching eliminating human error."
+        }
+      },
+      {
+        "title": {
+          "id": "Dashboard Finansial Eksekutif",
+          "en": "Executive Financial Dashboards"
+        },
+        "description": {
+          "id": "Dashboard visual interaktif untuk memonitor KPI profitabilitas, likuiditas, dan margin.",
+          "en": "Dynamic data visualizations tracking real-time profitability, liquidity, and operational burn."
+        }
+      }
     ],
-    "benefits": [
-      "Mengurangi waktu tutup buku bulanan hingga 75%",
-      "Menghilangkan proses input manual yang rentan kesalahan data",
-      "Keputusan finansial eksekutif dapat diambil secara cepat berbasis data langsung"
-    ],
-    "deliverables": [
-      "Platform Sistem Keuangan Digital Siap Pakai",
-      "Konektor Integrasi API Keuangan & Bank",
-      "Pelatihan Staf Akuntansi & Manual Operasional"
-    ]
+    "benefits": {
+      "id": [
+        "Mengurangi waktu tutup buku bulanan hingga 75%",
+        "Menghilangkan proses input manual yang rentan kesalahan data",
+        "Keputusan finansial eksekutif dapat diambil secara cepat berbasis data langsung"
+      ],
+      "en": [
+        "Compresses monthly closing cycles by up to 75%",
+        "Eliminates vulnerable manual data entry and spreadsheet reliance",
+        "Empowers management with real-time financial transparency for fast maneuvers"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Platform Sistem Keuangan Digital Siap Pakai",
+        "Konektor Integrasi API Keuangan & Bank",
+        "Pelatihan Staf Akuntansi & Manual Operasional"
+      ],
+      "en": [
+        "Turnkey Digital Financial Platform & Configured Cloud Instance",
+        "Custom Bank & Payment Gateway Integration Connectors",
+        "Accounting Team Onboarding, Workflow SOPs, & Operational Handbooks"
+      ]
+    }
   },
   {
     "id": "curator",
     "slug": "curator",
-    "title": "Curator",
+    "title": {
+      "id": "Kurator & Pengurus",
+      "en": "Curator"
+    },
     "category": "financial",
-    "categoryName": "Digital Financial Service",
-    "badge": "Bankruptcy & PKPU",
+    "categoryName": {
+      "id": "Layanan Keuangan Digital",
+      "en": "Digital Financial Service"
+    },
+    "badge": {
+      "id": "Kepailitan & PKPU",
+      "en": "Bankruptcy & PKPU"
+    },
     "icon": "Archive",
-    "shortDescription": "Court-appointed services to manage and protect assets during legal proceedings or disputes.",
-    "fullDescription": "Layanan kurator dan pengurus bersertifikasi dalam perkara Kepailitan dan Penundaan Kewajiban Pembayaran Utang (PKPU). Kami bertugas mengurus dan membereskan harta pailit, melindungi nilai aset, serta memfasilitasi perundingan perdamaian (homologasi) antara debitur dan para kreditur.",
+    "shortDescription": {
+      "id": "Layanan kurator berizin pengadilan untuk mengurus, melindungi, dan membereskan aset debitur selama proses hukum PKPU dan kepailitan.",
+      "en": "Court-appointed services to manage and protect assets during legal proceedings or disputes."
+    },
+    "fullDescription": {
+      "id": "Layanan kurator dan pengurus bersertifikasi dalam perkara Kepailitan dan Penundaan Kewajiban Pembayaran Utang (PKPU). Kami bertugas mengurus dan membereskan harta pailit, melindungi nilai aset, serta memfasilitasi perundingan perdamaian (homologasi) antara debitur dan para kreditur.",
+      "en": "Certified Court-Appointed Receivers and Administrators managing Debt Suspension (PKPU) and Bankruptcy proceedings. We safeguard insolvency estates, chair creditor hearings, and negotiate legally binding peace agreements (homologation)."
+    },
     "features": [
-      { "title": "Insolvency Asset Preservation", "description": "Pengamanan fisik dan legal atas seluruh aset debitur sejak putusan dijatuhkan." },
-      { "title": "Debtor-Creditor Negotiations", "description": "Penyelenggaraan rapat kreditur dan penyusunan proposal restrukturisasi perdamaian." },
-      { "title": "Distribution of Proceeds", "description": "Pembagian hasil lelang/pemberesan boedel pailit kepada kreditur secara adil." }
+      {
+        "title": {
+          "id": "Pengamanan Harta Pailit",
+          "en": "Insolvency Asset Preservation"
+        },
+        "description": {
+          "id": "Pengamanan fisik dan legal atas seluruh aset debitur sejak putusan dijatuhkan.",
+          "en": "Immediate legal freeze and custodial safeguarding of all debtor tangible and intangible assets."
+        }
+      },
+      {
+        "title": {
+          "id": "Negosiasi Debitur-Kreditur",
+          "en": "Debtor-Creditor Negotiations"
+        },
+        "description": {
+          "id": "Penyelenggaraan rapat kreditur dan penyusunan proposal restrukturisasi perdamaian.",
+          "en": "Orchestrating creditor assemblies and structuring debt restructuring proposals."
+        }
+      },
+      {
+        "title": {
+          "id": "Distribusi Hasil Pemberesan",
+          "en": "Distribution of Proceeds"
+        },
+        "description": {
+          "id": "Pembagian hasil lelang/pemberesan boedel pailit kepada kreditur secara adil.",
+          "en": "Transparent pro-rata distribution of liquidated estate proceeds according to statutory seniority."
+        }
+      }
     ],
-    "benefits": [
-      "Pengelolaan harta pailit yang netral, independen, dan profesional",
-      "Peluang restrukturisasi bisnis melalui skema proposal perdamaian PKPU",
-      "Pencegahan tindakan sepihak dari pihak-pihak yang merugikan harta bersama"
-    ],
-    "deliverables": [
-      "Daftar Piutang Tetap & Inventaris Harta Pailit",
-      "Rencana Perdamaian Homologasi / Laporan Pemberesan",
-      "Laporan Berkala kepada Hakim Pengawas"
-    ]
+    "benefits": {
+      "id": [
+        "Pengelolaan harta pailit yang netral, independen, dan profesional",
+        "Peluang restrukturisasi bisnis melalui skema proposal perdamaian PKPU",
+        "Pencegahan tindakan sepihak dari pihak-pihak yang merugikan harta bersama"
+      ],
+      "en": [
+        "Unbiased, strictly independent administration upholding legal standards",
+        "Viable business survival pathway via structured PKPU debt restructuring",
+        "Protects the debtor estate from predatory unilateral creditor seizures"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Daftar Piutang Tetap & Inventaris Harta Pailit",
+        "Rencana Perdamaian Homologasi / Laporan Pemberesan",
+        "Laporan Berkala kepada Hakim Pengawas"
+      ],
+      "en": [
+        "Verified Creditor Claims Ledger & Detailed Insolvency Asset Inventory",
+        "Homologated Peace Composition Plan or Final Estate Settlement Report",
+        "Periodic Statutory Compliance Reports to the Supervisory Judge"
+      ]
+    }
   },
   {
     "id": "audit",
     "slug": "audit",
-    "title": "Audit",
+    "title": {
+      "id": "Audit Independen",
+      "en": "Audit"
+    },
     "category": "financial",
-    "categoryName": "Digital Financial Service",
-    "badge": "Assurance & Control",
+    "categoryName": {
+      "id": "Layanan Keuangan Digital",
+      "en": "Digital Financial Service"
+    },
+    "badge": {
+      "id": "Keyakinan & Kontrol",
+      "en": "Assurance & Control"
+    },
     "icon": "ClipboardCheck",
-    "shortDescription": "Independent examination of financial records to provide assurance, identify risks, and improve internal controls.",
-    "fullDescription": "Pemeriksaan independen terhadap catatan keuangan, kepatuhan operasional, dan efektivitas pengendalian internal untuk memberikan opini yang objektif, meningkatkan keandalan laporan, serta mendeteksi potensi risiko sebelum berkembang menjadi masalah besar.",
+    "shortDescription": {
+      "id": "Pemeriksaan independen atas laporan keuangan untuk memberikan keyakinan objektif, memitigasi risiko, dan memperkuat pengendalian internal.",
+      "en": "Independent examination of financial records to provide assurance, identify risks, and improve internal controls."
+    },
+    "fullDescription": {
+      "id": "Pemeriksaan independen terhadap catatan keuangan, kepatuhan operasional, dan efektivitas pengendalian internal untuk memberikan opini yang objektif, meningkatkan keandalan laporan, serta mendeteksi potensi risiko sebelum berkembang menjadi masalah besar.",
+      "en": "Rigorous independent examination of accounting books, financial systems, and internal controls to provide stakeholder assurance, uncover hidden fiscal risks, and reinforce institutional credibility."
+    },
     "features": [
-      { "title": "Financial Audit & Review", "description": "Pemeriksaan kesesuaian laporan keuangan dengan standar akuntansi yang berlaku." },
-      { "title": "Internal Control Evaluation", "description": "Pengujian efektivitas sistem otorisasi dan pemisahan tugas (segregation of duties)." },
-      { "title": "Compliance Audit", "description": "Audit kepatuhan terhadap regulasi industri, perpajakan, dan ketentuan perbankan." }
+      {
+        "title": {
+          "id": "Audit & Review Laporan Keuangan",
+          "en": "Financial Audit & Review"
+        },
+        "description": {
+          "id": "Pemeriksaan kesesuaian laporan keuangan dengan standar akuntansi yang berlaku.",
+          "en": "Methodical substantive testing to verify fair presentation under PSAK / IFRS."
+        }
+      },
+      {
+        "title": {
+          "id": "Evaluasi Pengendalian Internal",
+          "en": "Internal Control Evaluation"
+        },
+        "description": {
+          "id": "Pengujian efektivitas sistem otorisasi dan pemisahan tugas.",
+          "en": "Comprehensive assessment of approval hierarchies and segregation of duties."
+        }
+      },
+      {
+        "title": {
+          "id": "Audit Kepatuhan Regulasi",
+          "en": "Compliance Audit"
+        },
+        "description": {
+          "id": "Audit kepatuhan terhadap regulasi industri, perpajakan, dan perbankan.",
+          "en": "Reviewing organizational adherence to sector-specific laws, tax codes, and bank covenants."
+        }
+      }
     ],
-    "benefits": [
-      "Meningkatkan transparansi dan kredibilitas di mata investor serta perbankan",
-      "Mengidentifikasi inefisiensi dan celah kebocoran dana operasional",
-      "Memastikan kepatuhan terhadap regulasi pemerintah"
-    ],
-    "deliverables": [
-      "Laporan Auditor Independen",
-      "Management Letter (Rekomendasi Perbaikan Kontrol Internal)",
-      "Executive Summary Temuan Kunci"
-    ]
+    "benefits": {
+      "id": [
+        "Meningkatkan transparansi dan kredibilitas di mata investor serta perbankan",
+        "Mengidentifikasi inefisiensi dan celah kebocoran dana operasional",
+        "Memastikan kepatuhan terhadap regulasi pemerintah"
+      ],
+      "en": [
+        "Substantially elevates financial credibility in the eyes of lenders and investors",
+        "Pinpoints operational leakage, cost inefficiencies, and accounting weaknesses",
+        "Guarantees compliance with evolving corporate regulatory mandates"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Laporan Auditor Independen",
+        "Management Letter (Rekomendasi Perbaikan Kontrol Internal)",
+        "Executive Summary Temuan Kunci"
+      ],
+      "en": [
+        "Official Independent Auditor's Report & Opinion",
+        "Executive Management Letter with Actionable Control Recommendations",
+        "Audit Findings Presentation for the Board of Directors"
+      ]
+    }
   },
   {
     "id": "appraisal",
     "slug": "appraisal",
-    "title": "Appraisal",
+    "title": {
+      "id": "Penilaian & Valuasi Aset",
+      "en": "Appraisal"
+    },
     "category": "financial",
-    "categoryName": "Digital Financial Service",
-    "badge": "Valuation Services",
+    "categoryName": {
+      "id": "Layanan Keuangan Digital",
+      "en": "Digital Financial Service"
+    },
+    "badge": {
+      "id": "Valuasi Independen",
+      "en": "Valuation Services"
+    },
     "icon": "DollarSign",
-    "shortDescription": "Accurate and defensible valuation of businesses, assets, and intellectual property for transactions and reporting.",
-    "fullDescription": "Penilaian nilai wajar aset berwujud (properti, mesin, armada) maupun aset tak berwujud (brand, paten, software, valuasi ekuitas bisnis) secara akurat dan memiliki dasar hukum kuat untuk keperluan transaksi, penjaminan kredit, merger, maupun pelaporan keuangan.",
+    "shortDescription": {
+      "id": "Penilaian nilai wajar yang akurat dan memiliki dasar hukum atas bisnis, aset fisik, serta kekayaan intelektual untuk transaksi dan pelaporan.",
+      "en": "Accurate and defensible valuation of businesses, assets, and intellectual property for transactions and reporting."
+    },
+    "fullDescription": {
+      "id": "Penilaian nilai wajar aset berwujud (properti, mesin, armada) maupun aset tak berwujud (brand, paten, software, valuasi ekuitas bisnis) secara akurat dan memiliki dasar hukum kuat untuk keperluan transaksi, penjaminan kredit, merger, maupun pelaporan keuangan.",
+      "en": "Certified fair-market appraisals of tangible commercial assets (real estate, industrial machinery, vehicle fleets) and intangible intellectual property (proprietary software, brand trademarks, equity shares) for M&A, loan underwriting, and balance sheet reporting."
+    },
     "features": [
-      { "title": "Business & Equity Valuation", "description": "Penilaian nilai pasar perusahaan menggunakan metode DCF, market multiples, dan asset-based." },
-      { "title": "Tangible Asset Appraisal", "description": "Penilaian properti komersial, pabrik, mesin industri, dan infrastruktur." },
-      { "title": "Intangible Asset & IP Valuation", "description": "Valuasi hak kekayaan intelektual (HAKI), merek dagang, dan software berlisensi." }
+      {
+        "title": {
+          "id": "Valuasi Bisnis & Ekuitas",
+          "en": "Business & Equity Valuation"
+        },
+        "description": {
+          "id": "Penilaian nilai pasar perusahaan menggunakan metode DCF, market multiples, dan asset-based.",
+          "en": "Enterprise value quantification utilizing Discounted Cash Flow (DCF), market multiples, and NAV methods."
+        }
+      },
+      {
+        "title": {
+          "id": "Penilaian Aset Berwujud",
+          "en": "Tangible Asset Appraisal"
+        },
+        "description": {
+          "id": "Penilaian properti komersial, pabrik, mesin industri, dan infrastruktur.",
+          "en": "Physical valuation of factories, industrial machinery, land, and corporate real estate."
+        }
+      },
+      {
+        "title": {
+          "id": "Valuasi Aset Tak Berwujud & HAKI",
+          "en": "Intangible Asset & IP Valuation"
+        },
+        "description": {
+          "id": "Valuasi hak kekayaan intelektual (HAKI), merek dagang, dan software berlisensi.",
+          "en": "Economic appraisal of intellectual property, trademarks, patents, and proprietary software."
+        }
+      }
     ],
-    "benefits": [
-      "Memberikan dasar negosiasi yang kuat dalam transaksi jual-beli atau investasi",
-      "Memenuhi persyaratan perbankan untuk agunan kredit modal kerja",
-      "Dasar pengakuan nilai wajar aset dalam neraca keuangan"
-    ],
-    "deliverables": [
-      "Laporan Resmi Penilaian Aset & Valuasi Bisnis",
-      "Sertifikat Penilaian dari Penilai Publik Terdaftar",
-      "Model Perhitungan Finansial Proyeksi Nilai"
-    ]
+    "benefits": {
+      "id": [
+        "Memberikan dasar negosiasi yang kuat dalam transaksi jual-beli atau investasi",
+        "Memenuhi persyaratan perbankan untuk agunan kredit modal kerja",
+        "Dasar pengakuan nilai wajar aset dalam neraca keuangan"
+      ],
+      "en": [
+        "Authoritative leverage during buyout negotiations, divestitures, or venture funding rounds",
+        "Satisfies strict bank appraisal requirements for corporate credit and mortgages",
+        "Accurate fair-value recording on corporate balance sheets in compliance with GAAP"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Laporan Resmi Penilaian Aset & Valuasi Bisnis",
+        "Sertifikat Penilaian dari Penilai Publik Terdaftar",
+        "Model Perhitungan Finansial Proyeksi Nilai"
+      ],
+      "en": [
+        "Official Comprehensive Asset Appraisal & Valuation Report",
+        "Certified Valuation Certificate from Registered Public Appraisers",
+        "Detailed Financial Discount & Cash Flow Calculation Models"
+      ]
+    }
   },
   {
     "id": "actuarial",
     "slug": "actuarial",
-    "title": "Actuarial",
+    "title": {
+      "id": "Aktuaria",
+      "en": "Actuarial"
+    },
     "category": "financial",
-    "categoryName": "Digital Financial Service",
-    "badge": "Risk Modeling",
+    "categoryName": {
+      "id": "Layanan Keuangan Digital",
+      "en": "Digital Financial Service"
+    },
+    "badge": {
+      "id": "Pemodelan Risiko",
+      "en": "Risk Modeling"
+    },
     "icon": "LineChart",
-    "shortDescription": "Assessing and managing financial risks using mathematical and statistical models, especially for insurance and pensions.",
-    "fullDescription": "Layanan perhitungan aktuaris profesional untuk mengevaluasi dan mengelola risiko keuangan jangka panjang menggunakan model matematika dan statistik, termasuk penghitungan imbalan kerja (PSAK 24), dana pensiun, serta cadangan klaim asuransi.",
+    "shortDescription": {
+      "id": "Penilaian dan pengelolaan risiko keuangan jangka panjang berbasis model matematika dan statistik, khususnya untuk imbalan kerja dan dana pensiun.",
+      "en": "Assessing and managing financial risks using mathematical and statistical models, especially for insurance and pensions."
+    },
+    "fullDescription": {
+      "id": "Layanan perhitungan aktuaris profesional untuk mengevaluasi dan mengelola risiko keuangan jangka panjang menggunakan model matematika dan statistik, termasuk penghitungan imbalan kerja (PSAK 24), dana pensiun, serta cadangan klaim asuransi.",
+      "en": "Specialized actuarial advisory evaluating long-term financial liabilities and demographic probabilities. We provide exact statutory valuations for employee post-employment benefits (PSAK 24 / Labor Law), pension fund solvency, and reserve modeling."
+    },
     "features": [
-      { "title": "Employee Benefits Valuation (PSAK 24)", "description": "Penghitungan liabilitas imbalan pascakerja, pesangon, dan penghargaan masa kerja karyawan." },
-      { "title": "Pension Fund Actuarial Valuation", "description": "Evaluasi solvabilitas dan kecukupan dana pensiun pemberi kerja." },
-      { "title": "Risk Probability & Reserve Modeling", "description": "Model estimasi kemungkinan klaim dan penetapan cadangan premi risiko." }
+      {
+        "title": {
+          "id": "Valuasi Imbalan Kerja (PSAK 24)",
+          "en": "Employee Benefits Valuation (PSAK 24)"
+        },
+        "description": {
+          "id": "Penghitungan liabilitas imbalan pascakerja, pesangon, dan penghargaan masa kerja karyawan.",
+          "en": "Statutory calculation of severance, service awards, and post-employment obligations."
+        }
+      },
+      {
+        "title": {
+          "id": "Valuasi Aktuaria Dana Pensiun",
+          "en": "Pension Fund Actuarial Valuation"
+        },
+        "description": {
+          "id": "Evaluasi solvabilitas dan kecukupan dana pensiun pemberi kerja.",
+          "en": "Solvency assessments and contribution sufficiency calculations for enterprise pension funds."
+        }
+      },
+      {
+        "title": {
+          "id": "Model Probabilitas & Cadangan Risiko",
+          "en": "Risk Probability & Reserve Modeling"
+        },
+        "description": {
+          "id": "Model estimasi kemungkinan klaim dan penetapan cadangan premi risiko.",
+          "en": "Mathematical modeling of claims probabilities and prudential reserve setting."
+        }
+      }
     ],
-    "benefits": [
-      "Kepatuhan mutlak terhadap kewajiban pelaporan imbalan kerja PSAK 24 / UU Cipta Kerja",
-      "Perencanaan pendanaan jangka panjang yang terukur dan tidak membebani arus kas tiba-tiba",
-      "Mitigasi risiko ketidakmampuan pembayaran kewajiban masa depan"
-    ],
-    "deliverables": [
-      "Laporan Aktuaria Imbalan Kerja Resmi",
-      "Tabel Jurnal Akuntansi PSAK 24 untuk Laporan Keuangan",
-      "Kajian Sensitivitas Asumsi Aktuarial"
-    ]
+    "benefits": {
+      "id": [
+        "Kepatuhan mutlak terhadap kewajiban pelaporan imbalan kerja PSAK 24 / UU Cipta Kerja",
+        "Perencanaan pendanaan jangka panjang yang terukur dan tidak membebani arus kas tiba-tiba",
+        "Mitigasi risiko ketidakmampuan pembayaran kewajiban masa depan"
+      ],
+      "en": [
+        "100% compliance with statutory labor laws and PSAK 24 reporting requirements",
+        "Predictable long-term funding schedules preventing sudden cash flow shocks",
+        "Effective risk mitigation against future solvency liabilities"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Laporan Aktuaria Imbalan Kerja Resmi",
+        "Tabel Jurnal Akuntansi PSAK 24 untuk Laporan Keuangan",
+        "Kajian Sensitivitas Asumsi Aktuarial"
+      ],
+      "en": [
+        "Official Actuarial Valuation Report Signed by Appointed Actuary",
+        "Accounting Journal Entry Schedule (PSAK 24 / IFRS 19)",
+        "Sensitivity Analysis of Key Actuarial & Discount Assumptions"
+      ]
+    }
   },
   {
     "id": "merger",
     "slug": "merger",
-    "title": "Merger",
+    "title": {
+      "id": "Merger & Penggabungan",
+      "en": "Merger"
+    },
     "category": "financial",
-    "categoryName": "Digital Financial Service",
-    "badge": "M&A Advisory",
+    "categoryName": {
+      "id": "Layanan Keuangan Digital",
+      "en": "Digital Financial Service"
+    },
+    "badge": {
+      "id": "Penasihat M&A",
+      "en": "M&A Advisory"
+    },
     "icon": "Handshake",
-    "shortDescription": "Expert financial due diligence and integration support to ensure smooth and successful business mergers.",
-    "fullDescription": "Pendampingan komprehensif dalam proses penggabungan (merger) dua entitas bisnis atau lebih. Kami menangani uji tuntas finansial (financial due diligence), analisis sinergi bisnis, restrukturisasi neraca, hingga penyelarasan sistem akuntansi pasca-merger.",
+    "shortDescription": {
+      "id": "Uji tuntas keuangan ahli dan asistensi integrasi pasca-merger untuk memastikan penggabungan bisnis berjalan mulus dan sukses.",
+      "en": "Expert financial due diligence and integration support to ensure smooth and successful business mergers."
+    },
+    "fullDescription": {
+      "id": "Pendampingan komprehensif dalam proses penggabungan (merger) dua entitas bisnis atau lebih. Kami menangani uji tuntas finansial (financial due diligence), analisis sinergi bisnis, restrukturisasi neraca, hingga penyelarasan sistem akuntansi pasca-merger.",
+      "en": "Full-cycle M&A financial consultancy navigating the union of commercial corporate entities. We execute deep financial due diligence, synergy modeling, balance sheet restructuring, and post-merger accounting consolidation."
+    },
     "features": [
-      { "title": "Financial Due Diligence", "description": "Pemeriksaan mendalam atas kualitas pendapatan, liabilitas tersembunyi, dan kesehatan aset target." },
-      { "title": "Synergy & Valuation Modeling", "description": "Kalkulasi proyeksi penghematan biaya dan kenaikan omzet dari hasil penggabungan entitas." },
-      { "title": "Post-Merger Financial Integration", "description": "Harmonisasi bagan akun (Chart of Accounts), SOP keuangan, dan sistem pelaporan bersama." }
+      {
+        "title": {
+          "id": "Uji Tuntas Keuangan (Due Diligence)",
+          "en": "Financial Due Diligence"
+        },
+        "description": {
+          "id": "Pemeriksaan mendalam atas kualitas pendapatan, liabilitas tersembunyi, dan kesehatan aset target.",
+          "en": "Thorough auditing of historical earnings quality, undisclosed liabilities, and asset integrity."
+        }
+      },
+      {
+        "title": {
+          "id": "Pemodelan Sinergi & Valuasi",
+          "en": "Synergy & Valuation Modeling"
+        },
+        "description": {
+          "id": "Kalkulasi proyeksi penghematan biaya dan kenaikan omzet dari hasil penggabungan entitas.",
+          "en": "Forecasting operational cost synergies and revenue expansion of the combined balance sheet."
+        }
+      },
+      {
+        "title": {
+          "id": "Integrasi Keuangan Pasca-Merger",
+          "en": "Post-Merger Financial Integration"
+        },
+        "description": {
+          "id": "Harmonisasi bagan akun (Chart of Accounts), SOP keuangan, dan sistem pelaporan bersama.",
+          "en": "Consolidating Chart of Accounts, unifying internal controls, and standardizing shared ERP reporting."
+        }
+      }
     ],
-    "benefits": [
-      "Mengidentifikasi risiko dan liabilitas tersembunyi sebelum penandatanganan kesepakatan",
-      "Menentukan rasio konversi saham yang adil bagi seluruh pemegang saham",
-      "Mencegah friksi operasional pasca-merger agar sinergi bisnis segera terwujud"
-    ],
-    "deliverables": [
-      "Laporan Financial & Tax Due Diligence Komprehensif",
-      "Model Valuasi Gabungan & Pro-Forma Financial Statements",
-      "Rencana Integrasi Keuangan Pasca-Merger"
-    ]
+    "benefits": {
+      "id": [
+        "Mengidentifikasi risiko dan liabilitas tersembunyi sebelum penandatanganan kesepakatan",
+        "Menentukan rasio konversi saham yang adil bagi seluruh pemegang saham",
+        "Mencegah friksi operasional pasca-merger agar sinergi bisnis segera terwujud"
+      ],
+      "en": [
+        "Uncovers critical hidden liabilities before definitive agreement signing",
+        "Establishes fair, defensible share conversion ratios for all equity stakeholders",
+        "Prevents post-merger operational gridlock, unlocking synergy value fast"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Laporan Financial & Tax Due Diligence Komprehensif",
+        "Model Valuasi Gabungan & Pro-Forma Financial Statements",
+        "Rencana Integrasi Keuangan Pasca-Merger"
+      ],
+      "en": [
+        "Comprehensive Financial & Tax Due Diligence Report",
+        "Pro-Forma Combined Financial Model & Merger Valuation Deck",
+        "Post-Merger Financial & Accounting Integration Roadmap"
+      ]
+    }
   },
   {
     "id": "acquisition",
     "slug": "acquisition",
-    "title": "Acquisition",
+    "title": {
+      "id": "Akuisisi Perusahaan",
+      "en": "Acquisition"
+    },
     "category": "financial",
-    "categoryName": "Digital Financial Service",
-    "badge": "Transaction Support",
+    "categoryName": {
+      "id": "Layanan Keuangan Digital",
+      "en": "Digital Financial Service"
+    },
+    "badge": {
+      "id": "Dukungan Transaksi",
+      "en": "Transaction Support"
+    },
     "icon": "Building",
-    "shortDescription": "Comprehensive financial analysis, valuation, and strategic advice for identifying and executing acquisitions.",
-    "fullDescription": "Layanan penasihat keuangan (M&A Advisory) untuk memandu proses akuisisi perusahaan target, mulai dari penilaian harga penawaran yang optimal, negosiasi struktur transaksi, hingga pengamanan kepatuhan hukum finansial.",
+    "shortDescription": {
+      "id": "Analisis finansial komprehensif, valuasi target, dan penasihat strategis untuk mengeksekusi akuisisi perusahaan secara aman dan optimal.",
+      "en": "Comprehensive financial analysis, valuation, and strategic advice for identifying and executing acquisitions."
+    },
+    "fullDescription": {
+      "id": "Layanan penasihat keuangan (M&A Advisory) untuk memandu proses akuisisi perusahaan target, mulai dari penilaian harga penawaran yang optimal, negosiasi struktur transaksi, hingga pengamanan kepatuhan hukum finansial.",
+      "en": "Buy-side and sell-side acquisition advisory guiding enterprises through corporate takeovers. We determine strategic target valuations, engineer favorable payment structures, and oversee financial closing."
+    },
     "features": [
-      { "title": "Target Screening & Valuation", "description": "Evaluasi profil calon perusahaan yang akan diakuisisi dan penetapan batas harga wajar." },
-      { "title": "Deal Structuring & Financing", "description": "Penyusunan struktur pembayaran (cash, share-swap, earn-out) yang paling menguntungkan." },
-      { "title": "Closing & Compliance Advisory", "description": "Penyelesaian administrasi finansial, escrow fund, dan pemenuhan syarat regulasi." }
+      {
+        "title": {
+          "id": "Penyaringan Target & Valuasi",
+          "en": "Target Screening & Valuation"
+        },
+        "description": {
+          "id": "Evaluasi profil calon perusahaan yang akan diakuisisi dan penetapan batas harga wajar.",
+          "en": "Quantitative screening of acquisition targets and benchmark fair-price limits."
+        }
+      },
+      {
+        "title": {
+          "id": "Struktur Transaksi & Pendanaan",
+          "en": "Deal Structuring & Financing"
+        },
+        "description": {
+          "id": "Penyusunan struktur pembayaran (cash, share-swap, earn-out) yang paling menguntungkan.",
+          "en": "Designing optimal consideration structures (cash, equity swap, milestone earn-outs)."
+        }
+      },
+      {
+        "title": {
+          "id": "Closing & Kepatuhan Transaksi",
+          "en": "Closing & Compliance Advisory"
+        },
+        "description": {
+          "id": "Penyelesaian administrasi finansial, escrow fund, dan pemenuhan syarat regulasi.",
+          "en": "Overseeing escrow disbursements, regulatory filings, and completion accounts reconciliation."
+        }
+      }
     ],
-    "benefits": [
-      "Mencegah overpaying (membayar terlalu mahal) pada saat akuisisi target",
-      "Struktur kesepakatan yang meminimalkan beban pajak transaksi",
-      "Memaksimalkan penciptaan nilai pemegang saham dari aset yang diakuisisi"
-    ],
-    "deliverables": [
-      "Laporan Analisis Valuasi & Rekomendasi Tawaran Harga",
-      "Term Sheet & Dokumen Rancangan Struktur Transaksi Keuangan",
-      "Peta Integrasi Aset Akuisisi"
-    ]
+    "benefits": {
+      "id": [
+        "Mencegah overpaying (membayar terlalu mahal) pada saat akuisisi target",
+        "Struktur kesepakatan yang meminimalkan beban pajak transaksi",
+        "Memaksimalkan penciptaan nilai pemegang saham dari aset yang diakuisisi"
+      ],
+      "en": [
+        "Guards buyers against overpaying through rigorous empirical valuation",
+        "Tax-advantaged deal structuring maximizing post-transaction cash flows",
+        "Maximizes long-term shareholder value creation from the newly absorbed business"
+      ]
+    },
+    "deliverables": {
+      "id": [
+        "Laporan Analisis Valuasi & Rekomendasi Tawaran Harga",
+        "Term Sheet & Dokumen Rancangan Struktur Transaksi Keuangan",
+        "Peta Integrasi Aset Akuisisi"
+      ],
+      "en": [
+        "Acquisition Valuation Analysis & Bid Recommendation Dossier",
+        "Financial Term Sheet & Transaction Structuring Blueprint",
+        "Target Asset Integration Roadmap & Risk Assessment"
+      ]
+    }
   }
 ]
