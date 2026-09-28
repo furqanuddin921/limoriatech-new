@@ -55,6 +55,64 @@
     "liveUrl": "https://lms.limoriatech.com/"
   },
   {
+    "id": "restoqr",
+    "slug": "restoqr",
+    "title": {
+      "id": "RestoQR — Smart Dine-in & Food Ordering Platform Terpadu",
+      "en": "RestoQR — Integrated Smart Dine-in & Food Ordering Platform"
+    },
+    "client": {
+      "id": "Industri F&B, Jaringan Restoran & Kafe Modern",
+      "en": "F&B Industry, Modern Restaurant Chains & Cafes"
+    },
+    "category": {
+      "id": "Aplikasi Web & Sistem Enterprise",
+      "en": "Web Application & Enterprise System"
+    },
+    "year": "2026",
+    "summary": {
+      "id": "Platform web terpadu enterprise untuk pemesanan makanan mandiri berbasis QR Code di meja restoran, Kitchen Display System (KDS) dengan aging timer audio, POS Kasir & Billing Terminal dengan floor plan visual, cetak struk ESC/POS, serta Backoffice CMS manajemen operasional restoran.",
+      "en": "Enterprise integrated smart dine-in platform featuring QR Code self-ordering PWA, real-time Kitchen Display System (KDS) with audio chimes and aging timers, interactive POS cashier floor plan terminal with ESC/POS thermal printing, and comprehensive backoffice CMS."
+    },
+    "challenge": {
+      "id": "Operasional restoran di jam sibuk kerap mengalami antrean pesanan yang panjang, kesalahan pencatatan pesanan manual oleh pramusaji, keterlambatan koordinasi antara kasir dan dapur, serta kesulitan kalkulasi split bill dan rekonsiliasi kasir harian.",
+      "en": "Peak-hour restaurant operations frequently suffered from long waiter order queues, manual miscommunication between front-of-house and kitchen, delayed ticket fulfillment, and complex split billing and shift cash reconciliations."
+    },
+    "solution": {
+      "id": "Membangun ekosistem 4 antarmuka terintegrasi: Customer Mobile Web (PWA Self-Ordering), Kitchen Display System (KDS) full-screen dark mode dengan aging timer 3 warna dan Web Audio API, POS Kasir dengan denah meja interaktif dan cetak struk ESC/POS, serta Backoffice CMS dengan analitik penjualan dan audit trail.",
+      "en": "Engineered a unified 4-client ecosystem: Customer Mobile Web (PWA Self-Ordering), Kitchen Display System (KDS) in full-screen dark UI with 3-tier aging timers and Web Audio API alerts, POS Billing Terminal with interactive table floor plan and ESC/POS thermal receipt printing, and Backoffice CMS with sales analytics and audit logs."
+    },
+    "impact": {
+      "id": [
+        "Mendukung 4 antarmuka khusus: Customer PWA, Kitchen Display (KDS), POS Kasir, dan Backoffice CMS",
+        "Mempercepat waktu pemesanan tamu hingga 60% tanpa perlu menunggu pramusaji datang",
+        "Aging timer 3 warna (Hijau, Kuning, Merah) pada KDS menekan angka keterlambatan masakan di dapur hingga 85%",
+        "Dukungan multi-metode pembayaran (Cash, EDC, QRIS Dinamis) dengan fitur Split Bill rata maupun per item",
+        "Integrasi cetak struk thermal ESC/POS 58mm/80mm dan laporan penutupan shift kasir (Z-Report)"
+      ],
+      "en": [
+        "Features 4 dedicated interfaces: Customer PWA, Kitchen Display (KDS), POS Cashier, and Backoffice CMS",
+        "Accelerates guest ordering speed by 60% with instant QR code self-service without waiter delays",
+        "3-tier visual aging timer (Green, Yellow, Red) on KDS reduces kitchen preparation delays by 85%",
+        "Multi-method payment support (Cash, EDC, Dynamic QRIS) with equal and per-item split billing capabilities",
+        "Integrated 58mm/80mm ESC/POS thermal receipt printing and automated cashier shift Z-Reports"
+      ]
+    },
+    "techStack": [
+      "Next.js",
+      "React",
+      "FastAPI",
+      "Python",
+      "TypeScript",
+      "WebSocket",
+      "Redis",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Web Audio API"
+    ],
+    "image": "/assets/portfolio/restoqr.png"
+  },
+  {
     "id": "1",
     "slug": "enterprise-resource-planning",
     "title": {

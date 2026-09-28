@@ -187,26 +187,47 @@ export default function HeroSection() {
                 ))}
               </div>
 
-              {/* Live Portfolio Highlight: LMS Sekolah */}
-              <div className="p-3.5 rounded-2xl bg-gradient-to-r from-blue-50 via-indigo-50/50 to-emerald-50/50 border border-blue-200/80 text-xs">
-                <div className="flex items-center justify-between mb-1">
-                  <span className="font-bold text-blue-900 flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                    Live Production Project:
-                  </span>
-                  <a
-                    href="https://lms.limoriatech.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 font-bold flex items-center gap-1"
-                  >
-                    <span>Buka LMS</span>
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
+              {/* Flagship Projects Showcase */}
+              <div className="space-y-2">
+                <div className="p-3 rounded-2xl bg-gradient-to-r from-blue-50 via-indigo-50/50 to-emerald-50/50 border border-blue-200/80 text-xs">
+                  <div className="flex items-center justify-between mb-0.5">
+                    <span className="font-bold text-blue-900 flex items-center gap-1.5 text-[11px]">
+                      <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                      Live Project: LMS Sekolah
+                    </span>
+                    <a
+                      href="https://lms.limoriatech.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 font-bold flex items-center gap-1 text-[11px]"
+                    >
+                      <span>Buka LMS</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  </div>
+                  <p className="text-slate-600 text-[11px] leading-snug">
+                    Sistem Tata Kelola Sekolah & CBT Terpadu (Next.js, FastAPI & PostgreSQL).
+                  </p>
                 </div>
-                <p className="text-slate-600 text-[11px] leading-snug">
-                  LMS Sekolah Terintegrasi (Next.js, FastAPI & PostgreSQL) aktif melayani institusi pendidikan.
-                </p>
+
+                <div className="p-3 rounded-2xl bg-gradient-to-r from-amber-50/80 via-orange-50/40 to-indigo-50/40 border border-amber-200/80 text-xs">
+                  <div className="flex items-center justify-between mb-0.5">
+                    <span className="font-bold text-amber-900 flex items-center gap-1.5 text-[11px]">
+                      <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                      Solusi F&B: RestoQR Platform
+                    </span>
+                    <Link
+                      href="/portfolio/"
+                      className="text-amber-700 hover:text-amber-900 font-bold flex items-center gap-1 text-[11px]"
+                    >
+                      <span>Lihat Detail</span>
+                      <ArrowRight className="w-3 h-3" />
+                    </Link>
+                  </div>
+                  <p className="text-slate-600 text-[11px] leading-snug">
+                    Smart Dine-in QR Ordering, Kitchen Display (KDS), POS Kasir, & Billing Terminal.
+                  </p>
+                </div>
               </div>
 
               {/* Tech stack pills */}

@@ -68,6 +68,16 @@ export default function Footer() {
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
+              <li className="pt-1">
+                <Link
+                  href="/portfolio/"
+                  className="text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-1 text-xs font-semibold"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+                  <span>Solusi F&B: RestoQR Platform</span>
+                  <ArrowUpRight className="w-3 h-3" />
+                </Link>
+              </li>
             </ul>
           </div>
 

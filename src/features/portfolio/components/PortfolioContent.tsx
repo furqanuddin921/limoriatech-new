@@ -10,6 +10,7 @@ import {
   Globe,
   Sparkles,
   SearchX,
+  MessageCircle,
 } from "lucide-react";
 import Container from "@/components/ui/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
@@ -37,7 +38,12 @@ export default function PortfolioContent() {
   const filteredProjects = useMemo(() => {
     if (filterCategory === "all") return projects;
     if (filterCategory === "enterprise") {
-      return projects.filter((p) => p.slug === "lms-sekolah" || p.slug === "enterprise-resource-planning");
+      return projects.filter(
+        (p) =>
+          p.slug === "lms-sekolah" ||
+          p.slug === "restoqr" ||
+          p.slug === "enterprise-resource-planning"
+      );
     }
     if (filterCategory === "mobile") {
       return projects.filter((p) => p.slug === "mobile-field-operations");
@@ -108,7 +114,7 @@ export default function PortfolioContent() {
                         <span className="w-3 h-3 rounded-full bg-emerald-500 inline-block" />
                       </div>
                       <div className="text-[11px] font-mono text-slate-400 bg-slate-900/80 px-4 py-1 rounded-md border border-slate-700">
-                        {project.liveUrl || "https://limoriatech.com"}
+                        {project.liveUrl || (project.slug === "restoqr" ? "restoqr.limoriatech.com" : "https://limoriatech.com")}
                       </div>
                       <div className="w-12" />
                     </div>
@@ -136,12 +142,17 @@ export default function PortfolioContent() {
                       <span className="text-xs font-semibold text-slate-700 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
                         {t("portfolio.clientLabel", "Klien:")} {client}
                       </span>
-                      {project.liveUrl && (
+                      {project.liveUrl ? (
                         <span className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
                           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                           Live Production
                         </span>
-                      )}
+                      ) : project.slug === "restoqr" ? (
+                        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
+                          Enterprise Ready Solution
+                        </span>
+                      ) : null}
                     </div>
 
                     <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
@@ -257,12 +268,28 @@ export default function PortfolioContent() {
                           </Button>
                         </a>
                       )}
+                      {project.slug === "restoqr" && (
+                        <a
+                          href="https://wa.me/6282375371268?text=Halo%20Limoria%20Tech,%20saya%20tertarik%20dengan%20sistem%20pemesanan%20RestoQR"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block"
+                        >
+                          <Button
+                            size="md"
+                            className="w-full justify-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold shadow-md cursor-pointer border-0"
+                          >
+                            <MessageCircle className="w-4 h-4" />
+                            <span>Konsultasi RestoQR via WA</span>
+                          </Button>
+                        </a>
+                      )}
                       <Link href="/contact/" className="block">
                         <Button
                           size="md"
-                          variant={project.liveUrl ? "outline" : "white"}
+                          variant={project.liveUrl || project.slug === "restoqr" ? "outline" : "white"}
                           className={`w-full justify-center font-bold cursor-pointer ${
-                            project.liveUrl
+                            project.liveUrl || project.slug === "restoqr"
                               ? "border-slate-700 text-slate-200 hover:bg-slate-800"
                               : "text-blue-950"
                           }`}
