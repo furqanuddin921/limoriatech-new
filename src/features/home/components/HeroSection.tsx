@@ -1,12 +1,16 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
+import { useLanguage } from "@/context/LanguageContext";
 import { getSiteConfig } from "@/lib/data/site";
 
 export default function HeroSection() {
   const siteConfig = getSiteConfig();
+  const { t } = useLanguage();
 
   return (
     <section className="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-blue-50/50 via-white to-white">
@@ -20,34 +24,37 @@ export default function HeroSection() {
             <div className="inline-flex items-center gap-2">
               <Badge variant="primary" className="py-1 px-3.5 text-xs font-semibold">
                 <Sparkles className="w-3.5 h-3.5 text-blue-600 inline mr-1" />
-                Partner Transformasi Digital
+                {t("hero.badge", "Partner Transformasi Digital")}
               </Badge>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.12]">
-              Konsultan IT untuk{" "}
+              {t("hero.headlineStart", "Konsultan IT untuk")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                Mengembangkan Bisnis Anda
+                {t("hero.headlineHighlight", "Mengembangkan Bisnis Anda")}
               </span>
             </h1>
 
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed mx-auto lg:mx-0">
-              Kami mendampingi Anda dalam <strong className="text-slate-800 font-semibold">perencanaan, pemilihan teknologi, pengembangan, implementasi, hingga pemeliharaan solusi IT</strong> yang tepat sesuai kebutuhan dan tujuan bisnis Anda.
+              {t(
+                "hero.subheadline",
+                "Kami mendampingi Anda dalam perencanaan, pemilihan teknologi, pengembangan, implementasi, hingga pemeliharaan solusi IT yang tepat sesuai kebutuhan dan tujuan bisnis Anda."
+              )}
             </p>
 
             {/* Value checklist */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-6 text-sm font-medium text-slate-700 pt-2">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>Solusi Inovatif & Aman</span>
+                <span>{t("hero.check1", "Solusi Inovatif & Aman")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>Berorientasi Bisnis & Pengguna</span>
+                <span>{t("hero.check2", "Berorientasi Bisnis & Pengguna")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>Teknologi Modern Teruji</span>
+                <span>{t("hero.check3", "Teknologi Modern Teruji")}</span>
               </div>
             </div>
 
@@ -55,13 +62,13 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
               <Link href="/contact/" className="w-full sm:w-auto">
                 <Button size="lg" variant="primary" className="w-full sm:w-auto">
-                  Konsultasikan Kebutuhan Anda
+                  {t("hero.ctaConsult", "Konsultasikan Kebutuhan Anda")}
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
               <Link href="/services/" className="w-full sm:w-auto">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                  Eksplorasi Solusi Kami
+                  {t("hero.ctaExplore", "Eksplorasi Solusi Kami")}
                 </Button>
               </Link>
             </div>
@@ -76,12 +83,16 @@ export default function HeroSection() {
                     <ShieldCheck className="w-7 h-7" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 leading-tight">Limoria Tech Hub</h3>
-                    <p className="text-xs text-slate-500">Enterprise IT Architecture</p>
+                    <h3 className="font-bold text-slate-900 leading-tight">
+                      {t("hero.hubTitle", "Limoria Tech Hub")}
+                    </h3>
+                    <p className="text-xs text-slate-500">
+                      {t("hero.hubSubtitle", "Arsitektur IT Enterprise")}
+                    </p>
                   </div>
                 </div>
                 <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
-                  Ready to Deploy
+                  {t("hero.hubBadge", "Ready to Deploy")}
                 </span>
               </div>
 
@@ -100,7 +111,10 @@ export default function HeroSection() {
               </div>
 
               <div className="p-4 rounded-xl bg-blue-50/70 border border-blue-100 text-xs text-blue-900 leading-relaxed">
-                <strong>Pendekatan Kami:</strong> Menggabungkan pengalaman, inovasi, dan teknologi terkini untuk menciptakan nilai nyata bagi efisiensi perusahaan Anda.
+                {t(
+                  "hero.hubApproach",
+                  "Pendekatan Kami: Menggabungkan pengalaman, inovasi, dan teknologi terkini untuk menciptakan nilai nyata bagi efisiensi perusahaan Anda."
+                )}
               </div>
             </div>
           </div>

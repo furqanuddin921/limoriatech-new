@@ -1,11 +1,15 @@
+"use client";
+
 import Link from "next/link";
 import { MessageSquare, ArrowRight, PhoneCall } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
+import { useLanguage } from "@/context/LanguageContext";
 import { getSiteConfig } from "@/lib/data/site";
 
 export default function CtaSection() {
   const siteConfig = getSiteConfig();
+  const { t } = useLanguage();
 
   return (
     <section className="py-20 bg-white">
@@ -17,21 +21,28 @@ export default function CtaSection() {
 
           <div className="relative z-10 max-w-3xl mx-auto text-center space-y-6">
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-white/20 text-white backdrop-blur-sm">
-              <MessageSquare className="w-3.5 h-3.5" /> Konsultasi Tanpa Biaya
+              <MessageSquare className="w-3.5 h-3.5" />
+              <span>{t("cta.badge", "Konsultasi Tanpa Biaya")}</span>
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-              Mulai Transformasi Digital & Kembangkan Bisnis Anda Bersama Kami
+              {t(
+                "cta.title",
+                "Mulai Transformasi Digital & Kembangkan Bisnis Anda Bersama Kami"
+              )}
             </h2>
 
             <p className="text-base sm:text-lg text-blue-100 leading-relaxed max-w-2xl mx-auto">
-              Diskusikan tantangan teknologi perusahaan Anda dengan tim konsultan IT kami. Kami siap memberikan solusi yang terukur, tepat waktu, dan efisien.
+              {t(
+                "cta.desc",
+                "Diskusikan tantangan teknologi perusahaan Anda dengan tim konsultan IT kami. Kami siap memberikan solusi yang terukur, tepat waktu, dan efisien."
+              )}
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <Link href="/contact/" className="w-full sm:w-auto">
                 <Button size="lg" variant="white" className="w-full sm:w-auto">
-                  Hubungi Kami Sekarang
+                  {t("cta.btnContact", "Hubungi Kami Sekarang")}
                   <ArrowRight className="w-4 h-4 text-blue-900" />
                 </Button>
               </Link>
@@ -47,7 +58,7 @@ export default function CtaSection() {
                   className="w-full sm:w-auto text-white border-white/40 hover:bg-white/10 hover:border-white"
                 >
                   <PhoneCall className="w-4 h-4" />
-                  Chat via WhatsApp
+                  <span>{t("cta.btnWa", "Chat via WhatsApp")}</span>
                 </Button>
               </a>
             </div>

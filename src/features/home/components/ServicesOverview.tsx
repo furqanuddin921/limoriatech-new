@@ -30,6 +30,7 @@ import SectionHeader from "@/components/ui/SectionHeader";
 import Card from "@/components/ui/Card";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
+import { useLanguage } from "@/context/LanguageContext";
 import { getTechServices, getFinancialServices } from "@/lib/data/services";
 import { cn } from "@/lib/utils";
 
@@ -58,6 +59,7 @@ const iconMap: Record<string, any> = {
 
 export default function ServicesOverview() {
   const [activeTab, setActiveTab] = useState<"tech" | "financial">("tech");
+  const { t } = useLanguage();
   const techServices = getTechServices();
   const financialServices = getFinancialServices();
 
@@ -67,9 +69,12 @@ export default function ServicesOverview() {
     <section id="services-overview" className="py-20 bg-slate-50/60 border-y border-slate-200/60">
       <Container>
         <SectionHeader
-          badge="Layanan & Solusi Terintegrasi"
-          title="Solusi Teknologi & Layanan Pelaporan Keuangan"
-          subtitle="Limoria Tech menghadirkan keahlian ganda: konsultasi pengembangan software modern (Tech Service) serta layanan pelaporan keuangan digital komprehensif (Digital Financial Services)."
+          badge={t("services.badge", "Layanan & Solusi Terintegrasi")}
+          title={t("services.title", "Solusi Teknologi & Layanan Pelaporan Keuangan")}
+          subtitle={t(
+            "services.subtitle",
+            "Limoria Tech menghadirkan keahlian ganda: konsultasi pengembangan software modern (Tech Service) serta layanan pelaporan keuangan digital komprehensif (Digital Financial Services)."
+          )}
         />
 
         {/* Tab Switcher */}
@@ -85,7 +90,7 @@ export default function ServicesOverview() {
               )}
             >
               <Cpu className="w-4 h-4" />
-              <span>Tech Services ({techServices.length})</span>
+              <span>{t("services.techTab", "Tech Services")} ({techServices.length})</span>
             </button>
             <button
               onClick={() => setActiveTab("financial")}
@@ -97,7 +102,7 @@ export default function ServicesOverview() {
               )}
             >
               <Calculator className="w-4 h-4" />
-              <span>Digital Financial Services ({financialServices.length})</span>
+              <span>{t("services.financialTab", "Digital Financial Services")} ({financialServices.length})</span>
             </button>
           </div>
         </div>
@@ -110,10 +115,13 @@ export default function ServicesOverview() {
                 Tech Service
               </span>
               <h3 className="text-2xl font-bold text-slate-900">
-                We Provide Solutions On Your Business
+                {t("services.techHeading", "We Provide Solutions On Your Business")}
               </h3>
               <p className="text-sm text-slate-600">
-                Layanan riset, strategi, arsitektur, dan rekayasa perangkat lunak untuk akselerasi pertumbuhan bisnis Anda.
+                {t(
+                  "services.techSubtitle",
+                  "Layanan riset, strategi, arsitektur, dan rekayasa perangkat lunak untuk akselerasi pertumbuhan bisnis Anda."
+                )}
               </p>
             </div>
           ) : (
@@ -122,10 +130,13 @@ export default function ServicesOverview() {
                 Digital Financial Services
               </span>
               <h3 className="text-2xl font-bold text-slate-900">
-                Comprehensive Financial Reporting Expertise
+                {t("services.financialHeading", "Comprehensive Financial Reporting Expertise")}
               </h3>
               <p className="text-sm text-slate-600">
-                Keahlian pelaporan keuangan, perpajakan, audit, litigasi, dan platform keuangan digital terpercaya.
+                {t(
+                  "services.financialSubtitle",
+                  "Keahlian pelaporan keuangan, perpajakan, audit, litigasi, dan platform keuangan digital terpercaya."
+                )}
               </p>
             </div>
           )}
@@ -148,7 +159,9 @@ export default function ServicesOverview() {
                       <Icon className="w-6 h-6" />
                     </div>
                     {service.badge && (
-                      <Badge variant="primary">{service.badge}</Badge>
+                      <Badge variant={activeTab === "financial" ? "success" : "primary"}>
+                        {service.badge}
+                      </Badge>
                     )}
                   </div>
 
@@ -169,7 +182,7 @@ export default function ServicesOverview() {
                     href={`/services/${service.slug}/`}
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 group"
                   >
-                    <span>Pelajari</span>
+                    <span>{t("services.learnMore", "Pelajari")}</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
@@ -182,7 +195,7 @@ export default function ServicesOverview() {
         <div className="text-center">
           <Link href="/services/">
             <Button size="lg" variant="outline">
-              Jelajahi Seluruh Layanan Tech & Financial &rarr;
+              {t("services.viewAll", "Jelajahi Seluruh Layanan Tech & Financial →")}
             </Button>
           </Link>
         </div>

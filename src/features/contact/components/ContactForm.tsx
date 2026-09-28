@@ -5,8 +5,10 @@ import { Send, CheckCircle2, AlertCircle } from "lucide-react";
 import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
 import Textarea from "@/components/ui/Textarea";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ContactForm() {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -65,8 +67,15 @@ export default function ContactForm() {
         <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm flex items-start gap-3">
           <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
           <div>
-            <strong className="font-semibold block">Pesan Berhasil Terkirim!</strong>
-            <span>Terima kasih atas minat Anda. Tim konsultan Limoria Tech akan segera menghubungi Anda.</span>
+            <strong className="font-semibold block">
+              {t("contact.successTitle", "Pesan Berhasil Terkirim!")}
+            </strong>
+            <span>
+              {t(
+                "contact.successDesc",
+                "Terima kasih atas minat Anda. Tim konsultan Limoria Tech akan segera menghubungi Anda."
+              )}
+            </span>
           </div>
         </div>
       )}
@@ -75,7 +84,9 @@ export default function ContactForm() {
         <div className="p-4 rounded-xl bg-rose-50 border border-rose-200 text-rose-800 text-sm flex items-start gap-3">
           <AlertCircle className="w-5 h-5 text-rose-600 shrink-0 mt-0.5" />
           <div>
-            <strong className="font-semibold block">Pengiriman Terkendala</strong>
+            <strong className="font-semibold block">
+              {t("contact.errorTitle", "Pengiriman Terkendala")}
+            </strong>
             <span>{errorMessage}</span>
           </div>
         </div>
@@ -83,14 +94,14 @@ export default function ContactForm() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <Input
-          label="Nama Lengkap *"
+          label={t("contact.fullName", "Nama Lengkap *")}
           placeholder="Contoh: Budi Santoso"
           required
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         />
         <Input
-          label="Email Perusahaan / Pribadi *"
+          label={t("contact.emailLabel", "Email Perusahaan / Pribadi *")}
           type="email"
           placeholder="budi@perusahaan.com"
           required
@@ -101,14 +112,14 @@ export default function ContactForm() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <Input
-          label="Nomor Telepon / WhatsApp *"
+          label={t("contact.phoneLabel", "Nomor Telepon / WhatsApp *")}
           placeholder="08123456789"
           required
           value={formData.phone}
           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
         />
         <Input
-          label="Nama Perusahaan / Organisasi"
+          label={t("contact.companyLabel", "Nama Perusahaan / Organisasi")}
           placeholder="PT Maju Bersama"
           value={formData.company}
           onChange={(e) => setFormData({ ...formData, company: e.target.value })}
@@ -117,27 +128,40 @@ export default function ContactForm() {
 
       <div>
         <label className="block text-sm font-semibold text-slate-700 mb-1.5">
-          Layanan yang Diminati
+          {t("contact.serviceLabel", "Layanan yang Diminati")}
         </label>
         <select
           className="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-white text-slate-900 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition-colors"
           value={formData.service}
           onChange={(e) => setFormData({ ...formData, service: e.target.value })}
         >
-          <option value="Konsultasi IT & Strategi">Konsultasi IT & Strategi Bisnis</option>
-          <option value="Solusi IT yang Inovatif">Solusi IT yang Inovatif</option>
-          <option value="Transformasi Digital">Informasi & Transformasi Digital</option>
-          <option value="Pengembangan Website / Web App">Website & Web Application</option>
-          <option value="Pengembangan Mobile App">Mobile Application (Android & iOS)</option>
-          <option value="Enterprise ERP & System Info">Enterprise & Business Information System</option>
-          <option value="API & Integrasi Sistem">API & System Integration</option>
-          <option value="Custom Software Khusus">Custom Software Development</option>
-          <option value="Technology Partner Jangka Panjang">Technology Partner / Maintenance</option>
+          <optgroup label="Tech Services">
+            <option value="Business Research">Business Research</option>
+            <option value="Strategic Planning">Strategic Planning</option>
+            <option value="Market Analysis">Market Analysis</option>
+            <option value="Website Applications">Website & Web Application</option>
+            <option value="Mobile Applications">Mobile Application (Android & iOS)</option>
+            <option value="Desktop Applications">Desktop Application</option>
+            <option value="Solusi IT Inovatif">Solusi IT Inovatif</option>
+            <option value="Transformasi Digital">Transformasi Digital & API</option>
+          </optgroup>
+          <optgroup label="Digital Financial Services">
+            <option value="Accounting & Financial Statement">Accounting & Financial Statement</option>
+            <option value="Corporate Tax Planning">Corporate Tax Planning & Filing</option>
+            <option value="Financial Audit & Assurance">Independent Financial Audit</option>
+            <option value="Forensic Investigation">Forensic Investigation & Fraud Audit</option>
+            <option value="Litigation Support">Litigation Support & Expert Witness</option>
+            <option value="Liquidator Services">Corporate Liquidator & Winding-Up</option>
+            <option value="Digital Financial Platform">Digital Financial Platform & ERP</option>
+            <option value="Asset Appraisal & Valuation">Asset Appraisal & Business Valuation</option>
+            <option value="Actuarial PSAK 24">Actuarial Valuation (PSAK 24)</option>
+            <option value="Merger & Acquisition Advisory">Merger & Acquisition (M&A)</option>
+          </optgroup>
         </select>
       </div>
 
       <Textarea
-        label="Deskripsi Kebutuhan atau Tantangan *"
+        label={t("contact.msgLabel", "Deskripsi Kebutuhan atau Tantangan *")}
         placeholder="Ceritakan gambaran singkat kebutuhan sistem, skala proyek, atau target waktu yang Anda rencanakan..."
         rows={4}
         required
@@ -154,7 +178,7 @@ export default function ContactForm() {
           className="w-full justify-center"
         >
           <Send className="w-4 h-4" />
-          Kirim Permintaan Konsultasi
+          <span>{t("contact.sendBtn", "Kirim Permintaan Konsultasi")}</span>
         </Button>
       </div>
     </form>

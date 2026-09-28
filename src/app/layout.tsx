@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { LanguageProvider } from "@/context/LanguageContext";
 import { getSiteConfig } from "@/lib/data/site";
 import "./globals.css";
 
@@ -26,12 +27,11 @@ export const metadata: Metadata = {
   keywords: [
     "Konsultan IT",
     "IT Consultant Indonesia",
+    "Financial Report Services",
+    "Accounting & Tax Services",
     "Software House",
     "Transformasi Digital",
     "Pengembangan Aplikasi",
-    "Web Application",
-    "Mobile Application",
-    "Enterprise System",
     "Limoria Tech",
   ],
   authors: [{ name: siteConfig.legalName, url: siteConfig.url }],
@@ -57,9 +57,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-white text-slate-900 selection:bg-blue-600 selection:text-white">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <LanguageProvider>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

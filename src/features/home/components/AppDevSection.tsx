@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import {
   Globe,
@@ -14,28 +16,33 @@ import Container from "@/components/ui/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
+import { useLanguage } from "@/context/LanguageContext";
 import { getAppDevServices } from "@/lib/data/services";
 
 const appIconMap: Record<string, any> = {
-  Globe: Globe,
-  Smartphone: Smartphone,
-  Monitor: Monitor,
-  Building2: Building2,
-  Database: Database,
-  Network: Network,
-  Wrench: Wrench,
+  Globe,
+  Smartphone,
+  Monitor,
+  Building2,
+  Database,
+  Network,
+  Wrench,
 };
 
 export default function AppDevSection() {
   const appServices = getAppDevServices();
+  const { t } = useLanguage();
 
   return (
     <section className="py-20 lg:py-28 bg-white relative">
       <Container>
         <SectionHeader
-          badge="Solusi Pengembangan Aplikasi"
-          title="Pengembangan Aplikasi Berkualitas Tinggi & Skalabel"
-          subtitle="Setiap aplikasi dikembangkan dengan memperhatikan kinerja, keamanan, skalabilitas, kemudahan penggunaan, dan kebutuhan bisnis agar menjadi solusi teknologi yang tepat dan berkelanjutan."
+          badge={t("appDev.badge", "Solusi Pengembangan Aplikasi")}
+          title={t("appDev.title", "Pengembangan Aplikasi Berkualitas Tinggi & Skalabel")}
+          subtitle={t(
+            "appDev.subtitle",
+            "Setiap aplikasi dikembangkan dengan memperhatikan kinerja, keamanan, skalabilitas, kemudahan penggunaan, dan kebutuhan bisnis agar menjadi solusi teknologi yang tepat dan berkelanjutan."
+          )}
         />
 
         {/* 7 Application Development Offerings Grid */}
@@ -65,7 +72,7 @@ export default function AppDevSection() {
 
                 <div className="pt-4 border-t border-slate-100">
                   <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 block mb-2">
-                    Teknologi & Framework
+                    {t("appDev.techStack", "Teknologi & Framework")}
                   </span>
                   <div className="flex flex-wrap gap-1.5">
                     {item.technologies.map((tech, tIdx) => (
@@ -88,20 +95,29 @@ export default function AppDevSection() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
               <h3 className="text-2xl sm:text-3xl font-bold tracking-tight">
-                Siap Membangun Solusi Software Khusus untuk Bisnis Anda?
+                {t(
+                  "appDev.bannerTitle",
+                  "Siap Membangun Solusi Software Khusus untuk Bisnis Anda?"
+                )}
               </h3>
               <p className="text-blue-100/90 text-sm sm:text-base leading-relaxed">
-                Kami siap mendampingi Anda dari tahap perancangan arsitektur, implementasi sistem, hingga pemeliharaan jangka panjang. Semua dikembangkan secara transparan dan berstandar internasional.
+                {t(
+                  "appDev.bannerDesc",
+                  "Kami siap mendampingi Anda dari tahap perancangan arsitektur, implementasi sistem, hingga pemeliharaan jangka panjang. Semua dikembangkan secara transparan dan berstandar internasional."
+                )}
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm text-blue-200">
                 <span className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-400" /> Kinerja Tinggi
+                  <CheckCircle className="w-4 h-4 text-emerald-400" />
+                  <span>{t("appDev.perf", "Kinerja Tinggi")}</span>
                 </span>
                 <span className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-400" /> Keamanan Ketat
+                  <CheckCircle className="w-4 h-4 text-emerald-400" />
+                  <span>{t("appDev.sec", "Keamanan Ketat")}</span>
                 </span>
                 <span className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-400" /> Skalabilitas Mudah
+                  <CheckCircle className="w-4 h-4 text-emerald-400" />
+                  <span>{t("appDev.scal", "Skalabilitas Mudah")}</span>
                 </span>
               </div>
             </div>
@@ -109,7 +125,7 @@ export default function AppDevSection() {
             <div className="lg:col-span-4 flex lg:justify-end">
               <Link href="/contact/">
                 <Button size="lg" variant="white" className="w-full sm:w-auto">
-                  Diskusikan Proyek Anda
+                  {t("appDev.bannerCta", "Diskusikan Proyek Anda")}
                   <ArrowRight className="w-4 h-4 text-blue-900" />
                 </Button>
               </Link>

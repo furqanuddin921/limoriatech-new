@@ -1,26 +1,33 @@
+"use client";
+
 import { Lightbulb, ShieldCheck, Target, Handshake } from "lucide-react";
 import Container from "@/components/ui/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Card from "@/components/ui/Card";
+import { useLanguage } from "@/context/LanguageContext";
 import { getSiteConfig } from "@/lib/data/site";
 
 const valueIconMap: Record<string, any> = {
-  Lightbulb: Lightbulb,
-  ShieldCheck: ShieldCheck,
-  Target: Target,
-  Handshake: Handshake,
+  Lightbulb,
+  ShieldCheck,
+  Target,
+  Handshake,
 };
 
 export default function ValueSection() {
   const siteConfig = getSiteConfig();
+  const { t } = useLanguage();
 
   return (
     <section className="py-20 bg-slate-50 border-t border-slate-200/60">
       <Container>
         <SectionHeader
-          badge="Nilai & Komitmen Kami"
-          title="Mengapa Memilih Limoria Tech sebagai Technology Partner?"
-          subtitle="Kami percaya bahwa teknologi bukan hanya sekadar alat, tetapi merupakan bagian penting dari strategi pertumbuhan bisnis."
+          badge={t("values.badge", "Nilai & Komitmen Kami")}
+          title={t("values.title", "Mengapa Memilih Limoria Tech sebagai Technology Partner?")}
+          subtitle={t(
+            "values.subtitle",
+            "Kami percaya bahwa teknologi bukan hanya sekadar alat, tetapi merupakan bagian penting dari strategi pertumbuhan bisnis."
+          )}
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
