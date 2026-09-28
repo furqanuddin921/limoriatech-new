@@ -152,8 +152,12 @@
     "outcomeTitle": "Reliable & Sustainable Solutions",
     "outcomeDesc": "Systems engineered modularly with proactive uptime monitoring and strict enterprise data compliance.",
     "btnBuild": "Build a Similar Solution",
+    "visitLive": "Visit Live Application",
+    "yearLabel": "Year:",
+    "clientLabel": "Client:",
+    "techStackLabel": "Tech Stack:",
     "ctaTitle": "Looking for Case Studies in Your Specific Industry?",
-    "ctaDesc": "We have proven track records across logistics, manufacturing, fintech, and healthcare. Contact our consultants for a private portfolio presentation.",
+    "ctaDesc": "We have proven track records across education, logistics, manufacturing, fintech, and healthcare. Contact our consultants for a private portfolio presentation.",
     "ctaBtn": "Schedule Portfolio Presentation"
   },
   "footer": {

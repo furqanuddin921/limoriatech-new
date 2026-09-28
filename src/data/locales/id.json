@@ -152,8 +152,12 @@
     "outcomeTitle": "Solusi Andal & Berkelanjutan",
     "outcomeDesc": "Sistem dirancang modular dengan pemantauan uptime dan kepatuhan standar keamanan data perusahaan.",
     "btnBuild": "Bangun Solusi Serupa",
+    "visitLive": "Kunjungi Aplikasi (Live)",
+    "yearLabel": "Tahun:",
+    "clientLabel": "Klien:",
+    "techStackLabel": "Tech Stack:",
     "ctaTitle": "Ingin Melihat Studi Kasus di Industri Spesifik Anda?",
-    "ctaDesc": "Kami memiliki rekam jejak di bidang logistik, manufaktur, fintech, dan healthcare. Hubungi konsultan kami untuk presentasi portofolio privat.",
+    "ctaDesc": "Kami memiliki rekam jejak di bidang edukasi, logistik, manufaktur, fintech, dan healthcare. Hubungi konsultan kami untuk presentasi portofolio privat.",
     "ctaBtn": "Jadwalkan Presentasi Portofolio"
   },
   "footer": {

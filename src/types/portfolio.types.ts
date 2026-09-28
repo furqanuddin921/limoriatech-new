@@ -1,16 +1,19 @@
+import type { Localized } from "./service.types";
+
 export interface ProjectItem {
   id: string;
   slug: string;
-  title: string;
-  client: string;
-  category: "Web Application" | "Mobile App" | "Enterprise System" | "API & Integration";
+  title: Localized<string>;
+  client: Localized<string>;
+  category: Localized<string>;
   year: string;
-  summary: string;
-  challenge: string;
-  solution: string;
-  impact: string[];
+  summary: Localized<string>;
+  challenge: Localized<string>;
+  solution: Localized<string>;
+  impact: Localized<string[]>;
   techStack: string[];
   image: string;
+  liveUrl?: string;
 }
 
 export interface ClientItem {

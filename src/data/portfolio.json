@@ -1,55 +1,185 @@
 [
   {
+    "id": "lms-sekolah",
+    "slug": "lms-sekolah",
+    "title": {
+      "id": "LMS Sekolah — Platform Tata Kelola Sekolah Terpadu & CBT Online",
+      "en": "School LMS — Integrated School Management Platform & Online CBT"
+    },
+    "client": {
+      "id": "Lembaga Pendidikan & Sekolah Terpadu",
+      "en": "Educational Institutions & Integrated Schools"
+    },
+    "category": {
+      "id": "Aplikasi Web & Sistem Enterprise",
+      "en": "Web Application & Enterprise System"
+    },
+    "year": "2026",
+    "summary": {
+      "id": "Platform komprehensif Learning Management System (LMS) dan tata kelola operasional sekolah terpadu dengan 29 modul fungsional, 9 tingkat hak akses (role), ujian daring (CBT), e-rapor, dan portal multi-pengguna yang telah aktif beroperasi secara live.",
+      "en": "Comprehensive enterprise School Learning Management System (LMS) and academic ERP featuring 29 functional modules, 9 RBAC user roles, Computer-Based Testing (CBT), digital report cards, and integrated portals live in production."
+    },
+    "challenge": {
+      "id": "Banyak institusi pendidikan menghadapi kendala fragmentasi operasional: pencatatan absensi manual, pelaksanaan ujian daring yang rentan kendala koneksi dan kecurangan, tagihan SPP yang sulit direkonsiliasi, serta keterlambatan distribusi nilai akademik ke orang tua.",
+      "en": "Educational institutions faced operational fragmentation: manual paper attendance, vulnerable online exam platforms, complicated tuition reconciliations, and delayed grade report communication to parents."
+    },
+    "solution": {
+      "id": "Merancang arsitektur web modern berbasis Skeleton CMS Standard, backend asynchronous berkinerja tinggi FastAPI + PostgreSQL, caching Redis untuk sesi ujian CBT ribuan siswa serentak, serta antarmuka multi-portal responsif untuk Guru, Siswa, dan Orang Tua.",
+      "en": "Architected a modern multi-portal web platform on Skeleton CMS Standard, high-throughput asynchronous FastAPI + PostgreSQL backend, Redis cache for high-concurrency CBT sessions, and responsive portals for Teachers, Students, and Parents."
+    },
+    "impact": {
+      "id": [
+        "Telah berhasil di-deploy dan beroperasi live di https://lms.limoriatech.com/",
+        "Otomatisasi 29 modul fungsional memangkas beban administrasi akademik hingga 70%",
+        "Engine CBT mampu menangani ribuan sesi ujian siswa secara bersamaan tanpa kendala performa",
+        "Transparansi presensi kehadiran, nilai, dan tagihan SPP yang dapat dipantau langsung oleh wali murid"
+      ],
+      "en": [
+        "Live and fully operational in production at https://lms.limoriatech.com/",
+        "29 automated functional modules cutting academic administrative workload by 70%",
+        "High-concurrency CBT engine handling thousands of simultaneous student exam sessions",
+        "Real-time attendance, grade reports, and tuition payment tracking for parents"
+      ]
+    },
+    "techStack": [
+      "FastAPI",
+      "Python",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Redis",
+      "Docker"
+    ],
+    "image": "/assets/portfolio/lms-sekolah.png",
+    "liveUrl": "https://lms.limoriatech.com/"
+  },
+  {
     "id": "1",
     "slug": "enterprise-resource-planning",
-    "title": "Integrated Enterprise Resource Planning (ERP)",
-    "client": "PT Manufaktur Mega Perkasa",
-    "category": "Enterprise System",
+    "title": {
+      "id": "Integrated Enterprise Resource Planning (ERP)",
+      "en": "Integrated Enterprise Resource Planning (ERP)"
+    },
+    "client": {
+      "id": "PT Manufaktur Mega Perkasa",
+      "en": "PT Manufaktur Mega Perkasa"
+    },
+    "category": {
+      "id": "Sistem Enterprise",
+      "en": "Enterprise System"
+    },
     "year": "2025",
-    "summary": "Implementasi sistem ERP terintegrasi untuk mengelola supply chain, inventory, dan akuntansi di 14 pabrik dan gudang.",
-    "challenge": "Sistem lama terfragmentasi sehingga rekonsiliasi data stok dan laporan keuangan memakan waktu hingga 2 minggu setiap akhir bulan.",
-    "solution": "Membangun sistem ERP terpusat dengan sinkronisasi data real-time, integrasi barcode scanner gudang, dan dashboard analitik eksekutif.",
-    "impact": [
-      "Mengurangi waktu rekonsiliasi laporan keuangan bulanan dari 14 hari menjadi 1 hari",
-      "Akurasi stok pergudangan meningkat menjadi 99.4%",
-      "Efisiensi biaya operasional inventaris hingga 28%"
-    ],
+    "summary": {
+      "id": "Implementasi sistem ERP terintegrasi untuk mengelola supply chain, inventory, dan akuntansi di 14 pabrik dan gudang.",
+      "en": "Implementation of an integrated ERP system to manage supply chain, inventory, and enterprise accounting across 14 manufacturing plants and distribution warehouses."
+    },
+    "challenge": {
+      "id": "Sistem lama terfragmentasi sehingga rekonsiliasi data stok dan laporan keuangan memakan waktu hingga 2 minggu setiap akhir bulan.",
+      "en": "Legacy siloed systems caused monthly inventory reconciliation and financial reporting to take over 2 weeks."
+    },
+    "solution": {
+      "id": "Membangun sistem ERP terpusat dengan sinkronisasi data real-time, integrasi barcode scanner gudang, dan dashboard analitik eksekutif.",
+      "en": "Engineered a centralized ERP platform with real-time data sync, warehouse barcode scanner integration, and executive business intelligence dashboards."
+    },
+    "impact": {
+      "id": [
+        "Mengurangi waktu rekonsiliasi laporan keuangan bulanan dari 14 hari menjadi 1 hari",
+        "Akurasi stok pergudangan meningkat menjadi 99.4%",
+        "Efisiensi biaya operasional inventaris hingga 28%"
+      ],
+      "en": [
+        "Reduced monthly financial reconciliation cycle from 14 days to 1 day",
+        "Warehouse inventory accuracy surged to 99.4%",
+        "Achieved a 28% operational expenditure efficiency in logistics"
+      ]
+    },
     "techStack": ["Next.js", "Golang", "PostgreSQL", "Docker", "Redis"],
     "image": "/assets/portfolio/project-1.jpg"
   },
   {
     "id": "2",
     "slug": "mobile-field-operations",
-    "title": "Aplikasi Mobile Operasional & Pelaporan Lapangan",
-    "client": "Mitra Distribusi Nusantara",
-    "category": "Mobile App",
+    "title": {
+      "id": "Aplikasi Mobile Operasional & Pelaporan Lapangan",
+      "en": "Mobile Field Operations & Field Reporting App"
+    },
+    "client": {
+      "id": "Mitra Distribusi Nusantara",
+      "en": "Mitra Distribusi Nusantara"
+    },
+    "category": {
+      "id": "Aplikasi Mobile",
+      "en": "Mobile App"
+    },
     "year": "2025",
-    "summary": "Aplikasi mobile offline-first untuk 500+ kurir dan surveyor lapangan di berbagai wilayah pelosok Indonesia.",
-    "challenge": "Area kerja lapangan sering kehilangan koneksi internet (blind spot), menyebabkan data penyerahan barang tertunda atau hilang.",
-    "solution": "Merancang aplikasi mobile dengan sistem local SQLite database, auto-sync queue saat terdeteksi koneksi, dan geotagging terverifikasi.",
-    "impact": [
-      "Peningkatan 45% kecepatan update status pengiriman ke pelanggan",
-      "Zero data loss berkat mekanisme offline-sync otomatis",
-      "Tingkat kepuasan kurir lapangan 4.8 / 5.0"
-    ],
+    "summary": {
+      "id": "Aplikasi mobile offline-first untuk 500+ kurir dan surveyor lapangan di berbagai wilayah pelosok Indonesia.",
+      "en": "Offline-first mobile application empowering 500+ couriers and field surveyors across remote regions of Indonesia."
+    },
+    "challenge": {
+      "id": "Area kerja lapangan sering kehilangan koneksi internet (blind spot), menyebabkan data penyerahan barang tertunda atau hilang.",
+      "en": "Remote working areas often encountered cellular blackouts, causing delayed or lost proof-of-delivery data."
+    },
+    "solution": {
+      "id": "Merancang aplikasi mobile dengan sistem local SQLite database, auto-sync queue saat terdeteksi koneksi, dan geotagging terverifikasi.",
+      "en": "Designed a mobile app with local SQLite storage, background auto-sync queues upon connection restoration, and verified GPS geotagging."
+    },
+    "impact": {
+      "id": [
+        "Peningkatan 45% kecepatan update status pengiriman ke pelanggan",
+        "Zero data loss berkat mekanisme offline-sync otomatis",
+        "Tingkat kepuasan kurir lapangan 4.8 / 5.0"
+      ],
+      "en": [
+        "45% faster delivery status notifications to end customers",
+        "Zero data loss via resilient automated offline-first synchronization",
+        "Courier field satisfaction rating reached 4.8 / 5.0"
+      ]
+    },
     "techStack": ["Flutter", "Dart", "Node.js", "PostgreSQL", "Google Maps API"],
     "image": "/assets/portfolio/project-2.jpg"
   },
   {
     "id": "3",
     "slug": "banking-integration-gateway",
-    "title": "High-Throughput Payment & API Gateway Middleware",
-    "client": "FinTech Solusi Transaksi",
-    "category": "API & Integration",
+    "title": {
+      "id": "High-Throughput Payment & API Gateway Middleware",
+      "en": "High-Throughput Payment & API Gateway Middleware"
+    },
+    "client": {
+      "id": "FinTech Solusi Transaksi",
+      "en": "FinTech Solusi Transaksi"
+    },
+    "category": {
+      "id": "API & Integrasi",
+      "en": "API & Integration"
+    },
     "year": "2026",
-    "summary": "Pengembangan middleware API terintegrasi yang menghubungkan sistem core banking dengan payment gateway dan e-wallet.",
-    "challenge": "Lonjakan transaksi saat flash sale sering menyebabkan timeout dan ketidaksinkronan saldo akun pengguna.",
-    "solution": "Arsitektur microservices berbasis event-driven dengan Apache Kafka, Redis caching layer, dan otomatisasi rate limiting.",
-    "impact": [
-      "Mampu memproses hingga 8.500 transaksi per detik dengan latensi rata-rata < 120ms",
-      "Availability uptime tercapai di angka 99.98%",
-      "Kepatuhan penuh terhadap standar regulasi keamanan transaksi finansial"
-    ],
+    "summary": {
+      "id": "Pengembangan middleware API terintegrasi yang menghubungkan sistem core banking dengan payment gateway dan e-wallet.",
+      "en": "High-throughput API middleware bridging core banking ledgers with external payment gateways and digital e-wallets."
+    },
+    "challenge": {
+      "id": "Lonjakan transaksi saat flash sale sering menyebabkan timeout dan ketidaksinkronan saldo akun pengguna.",
+      "en": "High-concurrency flash sale traffic surges frequently caused transactional timeouts and balance synchronization lags."
+    },
+    "solution": {
+      "id": "Arsitektur microservices berbasis event-driven dengan Apache Kafka, Redis caching layer, dan otomatisasi rate limiting.",
+      "en": "Event-driven microservices architecture utilizing Apache Kafka message queues, Redis caching, and dynamic token-bucket rate limiting."
+    },
+    "impact": {
+      "id": [
+        "Mampu memproses hingga 8.500 transaksi per detik dengan latensi rata-rata < 120ms",
+        "Availability uptime tercapai di angka 99.98%",
+        "Kepatuhan penuh terhadap standar regulasi keamanan transaksi finansial"
+      ],
+      "en": [
+        "Sustains up to 8,500 transactions per second with average latency < 120ms",
+        "High availability uptime sustained at 99.98%",
+        "Full compliance with strict financial industry security standards"
+      ]
+    },
     "techStack": ["Java Spring Boot", "Kafka", "Redis", "Kubernetes", "PostgreSQL"],
     "image": "/assets/portfolio/project-3.jpg"
   }
