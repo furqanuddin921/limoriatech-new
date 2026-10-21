@@ -5,6 +5,11 @@ export interface ServiceFeature {
   description: Localized<string>;
 }
 
+export interface ServiceFaq {
+  question: Localized<string>;
+  answer: Localized<string>;
+}
+
 export type ServiceCategory = "tech" | "financial";
 
 export interface ServiceItem {
@@ -20,6 +25,7 @@ export interface ServiceItem {
   features: ServiceFeature[];
   benefits: Localized<string[]>;
   deliverables: Localized<string[]>;
+  faqs?: ServiceFaq[];
 }
 
 export interface AppDevService {

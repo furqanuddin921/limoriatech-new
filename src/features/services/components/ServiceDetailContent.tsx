@@ -19,6 +19,8 @@ import Card from "@/components/ui/Card";
 import { useLanguage } from "@/context/LanguageContext";
 import { getLocalized } from "@/lib/utils";
 import { getServices } from "@/lib/data/services";
+import { getSiteConfig } from "@/lib/data/site";
+import ServiceFaqSection from "@/features/services/components/ServiceFaqSection";
 import type { ServiceItem } from "@/types/service.types";
 
 interface ServiceDetailContentProps {
@@ -28,6 +30,7 @@ interface ServiceDetailContentProps {
 export default function ServiceDetailContent({ service }: ServiceDetailContentProps) {
   const { t, language } = useLanguage();
   const allServices = getServices();
+  const siteConfig = getSiteConfig();
   const isFinancial = service.category === "financial";
 
   const title = getLocalized(service.title, language);
@@ -283,6 +286,13 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
             </div>
           </div>
         </div>
+
+        {/* Interactive FAQ Section */}
+        <ServiceFaqSection
+          faqs={service.faqs}
+          serviceTitle={title}
+          whatsappNumber={siteConfig.contact.whatsapp}
+        />
 
         {/* Related Services Recommendation Section */}
         {relatedServices.length > 0 && (

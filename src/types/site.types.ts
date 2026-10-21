@@ -35,6 +35,7 @@ export interface SiteConfig {
   description: string;
   url: string;
   ogImage: string;
+  googleSiteVerification?: string;
   contact: ContactInfo;
   socials: SocialLink[];
   stats: StatItem[];

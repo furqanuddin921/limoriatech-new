@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import dynamic from "next/dynamic";
 import { getProjectBySlug, getAllPortfolioSlugs } from "@/lib/data/portfolio";
+import { getSiteConfig } from "@/lib/data/site";
 import { getLocalized } from "@/lib/utils";
+import JsonLd from "@/components/seo/JsonLd";
+import { getBreadcrumbSchema, getProjectSchema } from "@/lib/seo/schema";
 
 // Lazy-load the heavy interactive client component into its own chunk
 // Reduces initial JS parse cost on first page load
@@ -35,6 +38,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
+  const siteConfig = getSiteConfig();
 
   if (!project) {
     return { title: "Proyek Tidak Ditemukan" };
@@ -43,6 +47,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = getLocalized(project.title, "id");
   const description = getLocalized(project.summary, "id");
   const client = getLocalized(project.client, "id");
+  const imageUrl = project.image || siteConfig.ogImage || "/assets/og-image.png";
 
   return {
     title: `${title} — Studi Kasus`,
@@ -50,17 +55,32 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: `${title} | Limoria Tech Portfolio`,
       description,
-      images: project.image ? [{ url: project.image }] : [],
+      url: `${siteConfig.url}/portfolio/${slug}/`,
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: `${title} - ${client}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} — Studi Kasus | Limoria Tech`,
+      description,
+      images: [imageUrl],
     },
     alternates: {
-      canonical: `/portfolio/${slug}/`,
+      canonical: `${siteConfig.url}/portfolio/${slug}/`,
     },
     keywords: [
       client,
       ...project.techStack,
       "Limoria Tech",
       "studi kasus",
-      "portfolio",
+      "portfolio software",
+      "pengembangan aplikasi",
     ],
   };
 }
@@ -68,10 +88,24 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function PortfolioDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
+  const siteConfig = getSiteConfig();
 
   if (!project) {
     notFound();
   }
 
-  return <PortfolioDetailContent project={project} />;
+  const title = getLocalized(project.title, "id");
+  const breadcrumbSchema = getBreadcrumbSchema(siteConfig.url, [
+    { name: "Beranda", path: "/" },
+    { name: "Portofolio", path: "/portfolio/" },
+    { name: title, path: `/portfolio/${slug}/` },
+  ]);
+  const projectSchema = getProjectSchema(project, siteConfig.url);
+
+  return (
+    <>
+      <JsonLd schema={[breadcrumbSchema, projectSchema]} />
+      <PortfolioDetailContent project={project} />
+    </>
+  );
 }
